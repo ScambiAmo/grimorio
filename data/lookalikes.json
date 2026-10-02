@@ -1,0 +1,23 @@
+{
+ "_nota": "Confusioni pericolose note, curate (non generate dall'IA). Punto di partenza da far rivedere a un esperto.",
+ "Allium ursinum": [
+  {"name": "Convallaria majalis", "danger": "mortale", "note": "Le foglie giovani sono confondibili con l'aglio orsino; il mughetto è cardiotossico."},
+  {"name": "Colchicum autumnale", "danger": "mortale", "note": "Le foglie primaverili sono state scambiate per aglio orsino; contiene colchicina."},
+  {"name": "Arum maculatum", "danger": "alta", "note": "Foglie simili; manca l'odore di aglio quando si sfregano."}
+ ],
+ "Foeniculum vulgare": [{"name": "Conium maculatum", "danger": "mortale", "note": "Le ombrellifere giovani si somigliano; la cicuta è mortale."}],
+ "Daucus carota": [
+  {"name": "Conium maculatum", "danger": "mortale", "note": "Ombrellifera molto simile da giovane; la cicuta è mortale."},
+  {"name": "Aethusa cynapium", "danger": "alta", "note": "Foglie simili al prezzemolo e alla carota selvatica."}
+ ],
+ "Petroselinum crispum": [
+  {"name": "Aethusa cynapium", "danger": "alta", "note": "Falso prezzemolo."},
+  {"name": "Conium maculatum", "danger": "mortale", "note": "Foglie simili al prezzemolo."}
+ ],
+ "Anthriscus sylvestris": [{"name": "Conium maculatum", "danger": "mortale", "note": "Ombrellifera confondibile."}],
+ "Sambucus nigra": [{"name": "Sambucus ebulus", "danger": "alta", "note": "L'ebbio è tossico; infiorescenze e frutti eretti, pianta erbacea."}],
+ "Symphytum officinale": [{"name": "Digitalis purpurea", "danger": "mortale", "note": "Le foglie della digitale sono state scambiate per quelle della consolida."}],
+ "Gentiana lutea": [{"name": "Veratrum album", "danger": "mortale", "note": "Foglie opposte nella genziana, alterne nel veratro."}],
+ "Castanea sativa": [{"name": "Aesculus hippocastanum", "danger": "alta", "note": "I semi di ippocastano sono tossici."}],
+ "Vaccinium myrtillus": [{"name": "Atropa bella-donna", "danger": "mortale", "note": "Bacche scure confondibili."}]
+}

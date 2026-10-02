@@ -1,0 +1,35 @@
+name: maintenance
+# Settimanale: salute di LLM e Worker, invarianti, e "rinnovo" contro la disattivazione dei workflow schedulati (60 giorni senza attività).
+on:
+  schedule: [{ cron: "0 6 * * 0" }]
+  workflow_dispatch:
+permissions: { contents: write, models: read }
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - id: cf
+        run: scripts/ensure-cloudflare.sh
+      - name: Il Worker risponde
+        run: curl -fsS "${{ steps.cf.outputs.worker_url }}/health"
+      - name: "Il modello LLM risponde (se fallisce, il modello è stato ritirato o i termini sono cambiati)"
+        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}", LLM_MODEL: "${{ vars.LLM_MODEL }}" }
+        run: |
+          curl -fsS "${{ vars.LLM_BASE_URL || 'https://models.github.ai/inference' }}/chat/completions" \
+            -H "Authorization: Bearer $GITHUB_TOKEN" -H "Content-Type: application/json" \
+            -d "{\"model\":\"${LLM_MODEL:-openai/gpt-4.1-mini}\",\"messages\":[{\"role\":\"user\",\"content\":\"ok\"}],\"max_tokens\":3}" >/dev/null
+      - run: node scripts/check-invariants.mjs
+      - name: "Rinnovo: un commit se il repo è fermo da 30 giorni [da verificare: un commit del bot conta come attività]"
+        run: |
+          if [ -z "$(git log --since='30 days ago' --oneline | head -n1)" ]; then
+            date -u +%F > .keepalive
+            git config user.name "grimorio-bot"; git config user.email "grimorio-bot@users.noreply.github.com"
+            git add .keepalive && git commit -m "chore: keepalive" && git push
+          fi

@@ -1,0 +1,19 @@
+name = "grimorio-api"
+main = "worker/src/index.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+SITE_URL = "__SITE_URL__"          # sostituito dal deploy (https://<owner>.github.io/<repo>)
+ALLOWED_ORIGIN = "__ORIGIN__"      # sostituito dal deploy (https://<owner>.github.io)
+
+[[kv_namespaces]]
+binding = "STORE"
+id = "__KV_ID__"                   # sostituito dal deploy (scripts/ensure-cloudflare.sh)
+
+# Rate limiting per IP (il Worker usa env.RL solo se esiste; la chiave non viene salvata da noi).
+# Il binding `ratelimit` è GA con opzioni namespace_id e simple {limit, period: 10|60}. L'agente conferma la riga
+# esatta sulla documentazione Cloudflare e la disponibilità nel piano gratuito, poi toglie il commento:
+# [[ratelimits]]
+# name = "RL"
+# namespace_id = "1001"
+# simple = { limit = 20, period = 60 }

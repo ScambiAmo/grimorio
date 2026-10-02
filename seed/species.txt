@@ -1,0 +1,39 @@
+# Una specie per riga (nome scientifico). Aggiungerne una = commit; la generazione parte da sola al prossimo giro.
+# Tisane / uso culinario comune
+Taraxacum officinale
+Matricaria chamomilla
+Tilia cordata
+Malva sylvestris
+Plantago lanceolata
+Urtica dioica
+Sambucus nigra
+Achillea millefolium
+Calendula officinalis
+Lavandula angustifolia
+Thymus vulgaris
+Salvia officinalis
+Salvia rosmarinus
+Origanum vulgare
+Melissa officinalis
+Rosa canina
+Crataegus monogyna
+Hypericum perforatum
+Allium ursinum
+Foeniculum vulgare
+Daucus carota
+# Tossiche e look-alike pericolosi (così i look-alike hanno una scheda a cui rimandare)
+Conium maculatum
+Cicuta virosa
+Aethusa cynapium
+Oenanthe crocata
+Colchicum autumnale
+Arum maculatum
+Convallaria majalis
+Aconitum napellus
+Digitalis purpurea
+Atropa bella-donna
+Veratrum album
+Sambucus ebulus
+Nerium oleander
+Taxus baccata
+Laburnum anagyroides

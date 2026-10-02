@@ -1,0 +1,333 @@
+{
+ "_nota": "Punto di partenza NON rivisto da un tossicologo. 'alto' = lista rossa. Estendibile con una Pull Request.",
+ "Conium": {
+  "tier": "alto",
+  "reason": "Cicuta maggiore: neurotossica, mortale; confondibile con prezzemolo e finocchio"
+ },
+ "Cicuta": {
+  "tier": "alto",
+  "reason": "Cicuta acquatica: cicutossina, mortale"
+ },
+ "Oenanthe": {
+  "tier": "alto",
+  "reason": "Include O. crocata, tra le piante più tossiche d'Europa"
+ },
+ "Aethusa": {
+  "tier": "alto",
+  "reason": "Falso prezzemolo: tossico"
+ },
+ "Colchicum": {
+  "tier": "alto",
+  "reason": "Colchico: colchicina, mortale; confondibile con l'aglio orsino"
+ },
+ "Aconitum": {
+  "tier": "alto",
+  "reason": "Aconito: alcaloidi cardio e neurotossici, mortale"
+ },
+ "Digitalis": {
+  "tier": "alto",
+  "reason": "Digitale: glicosidi cardioattivi, margine di sicurezza strettissimo"
+ },
+ "Veratrum": {
+  "tier": "alto",
+  "reason": "Veratro: alcaloidi tossici; confondibile con la genziana"
+ },
+ "Atropa": {
+  "tier": "alto",
+  "reason": "Belladonna: alcaloidi tropanici, mortale"
+ },
+ "Hyoscyamus": {
+  "tier": "alto",
+  "reason": "Giusquiamo: alcaloidi tropanici"
+ },
+ "Datura": {
+  "tier": "alto",
+  "reason": "Stramonio: alcaloidi tropanici"
+ },
+ "Brugmansia": {
+  "tier": "alto",
+  "reason": "Alcaloidi tropanici"
+ },
+ "Mandragora": {
+  "tier": "alto",
+  "reason": "Alcaloidi tropanici"
+ },
+ "Arum": {
+  "tier": "alto",
+  "reason": "Gigaro: ossalati e aroidina; foglie confondibili con l'aglio orsino"
+ },
+ "Convallaria": {
+  "tier": "alto",
+  "reason": "Mughetto: glicosidi cardioattivi; foglie confondibili con l'aglio orsino"
+ },
+ "Nerium": {
+  "tier": "alto",
+  "reason": "Oleandro: glicosidi cardioattivi, mortale"
+ },
+ "Taxus": {
+  "tier": "alto",
+  "reason": "Tasso: tassine, cardiotossico"
+ },
+ "Ricinus": {
+  "tier": "alto",
+  "reason": "Ricino: ricina, mortale"
+ },
+ "Laburnum": {
+  "tier": "alto",
+  "reason": "Maggiociondolo: citisina"
+ },
+ "Daphne": {
+  "tier": "alto",
+  "reason": "Dafne: dafnetossina, bacche tossiche"
+ },
+ "Helleborus": {
+  "tier": "alto",
+  "reason": "Ellebori: glicosidi cardioattivi e irritanti"
+ },
+ "Bryonia": {
+  "tier": "alto",
+  "reason": "Brionia: cucurbitacine, bacche tossiche"
+ },
+ "Euphorbia": {
+  "tier": "alto",
+  "reason": "Lattice irritante e tossico"
+ },
+ "Heracleum": {
+  "tier": "alto",
+  "reason": "Panace: furocumarine, fototossicità grave"
+ },
+ "Ruta": {
+  "tier": "alto",
+  "reason": "Ruta: fototossica, abortiva"
+ },
+ "Dictamnus": {
+  "tier": "alto",
+  "reason": "Dittamo bianco: fototossico"
+ },
+ "Phytolacca": {
+  "tier": "alto",
+  "reason": "Fitolacca: tossica in tutte le parti"
+ },
+ "Aristolochia": {
+  "tier": "alto",
+  "reason": "Acidi aristolochici: nefrotossici e cancerogeni"
+ },
+ "Pteridium": {
+  "tier": "alto",
+  "reason": "Felce aquilina: ptaquiloside, cancerogeno"
+ },
+ "Senecio": {
+  "tier": "alto",
+  "reason": "Alcaloidi pirrolizidinici: epatotossici"
+ },
+ "Jacobaea": {
+  "tier": "alto",
+  "reason": "Alcaloidi pirrolizidinici: epatotossici"
+ },
+ "Symphytum": {
+  "tier": "alto",
+  "reason": "Consolida: alcaloidi pirrolizidinici"
+ },
+ "Petasites": {
+  "tier": "alto",
+  "reason": "Alcaloidi pirrolizidinici"
+ },
+ "Tussilago": {
+  "tier": "alto",
+  "reason": "Farfara: alcaloidi pirrolizidinici"
+ },
+ "Cytisus": {
+  "tier": "alto",
+  "reason": "Ginestre: alcaloidi chinolizidinici"
+ },
+ "Ranunculus": {
+  "tier": "alto",
+  "reason": "Ranuncoli: protoanemonina, irritante e tossica"
+ },
+ "Hedera": {
+  "tier": "alto",
+  "reason": "Edera: saponine, bacche tossiche"
+ },
+ "Ilex": {
+  "tier": "alto",
+  "reason": "Agrifoglio: bacche tossiche"
+ },
+ "Lantana": {
+  "tier": "alto",
+  "reason": "Lantana: triterpeni epatotossici"
+ },
+ "Narcissus": {
+  "tier": "alto",
+  "reason": "Narcisi: alcaloidi; bulbi confondibili con cipolle"
+ },
+ "Paris": {
+  "tier": "alto",
+  "reason": "Uva di volpe: saponine, bacche tossiche"
+ },
+ "Actaea": {
+  "tier": "alto",
+  "reason": "Bacche tossiche"
+ },
+ "Rhododendron": {
+  "tier": "alto",
+  "reason": "Grayanotossine"
+ },
+ "Chelidonium": {
+  "tier": "alto",
+  "reason": "Celidonia: alcaloidi, epatotossica"
+ },
+ "Drimia": {
+  "tier": "alto",
+  "reason": "Scilla marittima: glicosidi cardioattivi"
+ },
+ "Nicotiana": {
+  "tier": "alto",
+  "reason": "Tabacco: nicotina"
+ },
+ "Aesculus": {
+  "tier": "alto",
+  "reason": "Ippocastano: semi tossici scambiati per castagne"
+ },
+ "Buxus": {
+  "tier": "alto",
+  "reason": "Bosso: alcaloidi tossici"
+ },
+ "Cannabis": {
+  "tier": "alto",
+  "reason": "Solo scheda informativa con aspetti legali e scientifici, senza preparazioni",
+  "protected": false
+ },
+ "Erythroxylum": {
+  "tier": "alto",
+  "reason": "Coca: sostanza controllata"
+ },
+ "Lophophora": {
+  "tier": "alto",
+  "reason": "Peyote: sostanza controllata"
+ },
+ "Ephedra": {
+  "tier": "alto",
+  "reason": "Efedrina: margine di sicurezza stretto"
+ },
+ "Solanum dulcamara": {
+  "tier": "alto",
+  "reason": "Morella rampicante: solanina, bacche tossiche"
+ },
+ "Solanum nigrum": {
+  "tier": "alto",
+  "reason": "Erba morella: bacche acerbe tossiche"
+ },
+ "Sambucus ebulus": {
+  "tier": "alto",
+  "reason": "Ebbio: tossico, confondibile con il sambuco nero"
+ },
+ "Dioscorea communis": {
+  "tier": "alto",
+  "reason": "Tamaro: bacche e radice tossiche"
+ },
+ "Papaver somniferum": {
+  "tier": "alto",
+  "reason": "Papavero da oppio: alcaloidi, restrizioni legali",
+  "protected": false
+ },
+ "Mentha pulegium": {
+  "tier": "alto",
+  "reason": "Menta puleggio: pulegone, epatotossico e abortivo"
+ },
+ "Salvia divinorum": {
+  "tier": "alto",
+  "reason": "Sostanza psicoattiva controllata"
+ },
+ "Prunus laurocerasus": {
+  "tier": "alto",
+  "reason": "Lauroceraso: glicosidi cianogenetici"
+ },
+ "Juniperus sabina": {
+  "tier": "alto",
+  "reason": "Sabina: tossica e abortiva"
+ },
+ "Taraxacum officinale": {
+  "tier": "basso",
+  "reason": "Uso culinario e tisana consolidati"
+ },
+ "Matricaria chamomilla": {
+  "tier": "basso",
+  "reason": "Tisana consolidata"
+ },
+ "Tilia cordata": {
+  "tier": "basso",
+  "reason": "Tisana consolidata"
+ },
+ "Tilia platyphyllos": {
+  "tier": "basso",
+  "reason": "Tisana consolidata"
+ },
+ "Malva sylvestris": {
+  "tier": "basso",
+  "reason": "Tisana e uso culinario consolidati"
+ },
+ "Plantago lanceolata": {
+  "tier": "basso",
+  "reason": "Uso tradizionale consolidato"
+ },
+ "Urtica dioica": {
+  "tier": "basso",
+  "reason": "Uso culinario e tisana consolidati"
+ },
+ "Calendula officinalis": {
+  "tier": "basso",
+  "reason": "Uso tradizionale consolidato"
+ },
+ "Lavandula angustifolia": {
+  "tier": "basso",
+  "reason": "Uso tradizionale consolidato"
+ },
+ "Thymus vulgaris": {
+  "tier": "basso",
+  "reason": "Uso culinario e tisana consolidati"
+ },
+ "Melissa officinalis": {
+  "tier": "basso",
+  "reason": "Tisana consolidata"
+ },
+ "Origanum vulgare": {
+  "tier": "basso",
+  "reason": "Uso culinario consolidato"
+ },
+ "Rosa canina": {
+  "tier": "basso",
+  "reason": "Uso culinario e tisana consolidati"
+ },
+ "Mentha × piperita": {
+  "tier": "basso",
+  "reason": "Tisana e uso culinario consolidati"
+ },
+ "Salvia rosmarinus": {
+  "tier": "basso",
+  "reason": "Uso culinario consolidato (sinonimo storico: Rosmarinus officinalis)"
+ },
+ "Ocimum basilicum": {
+  "tier": "basso",
+  "reason": "Uso culinario consolidato"
+ },
+ "Salvia officinalis": {
+  "tier": "medio",
+  "reason": "Contiene tujone: limitare durata e quantità"
+ },
+ "Sambucus nigra": {
+  "tier": "medio",
+  "reason": "Parti crude, corteccia e foglie tossiche: solo uso culinario previa cottura"
+ },
+ "Achillea millefolium": {
+  "tier": "medio",
+  "reason": "Allergie e interazioni possibili"
+ },
+ "Crataegus monogyna": {
+  "tier": "medio",
+  "reason": "Interazioni con farmaci cardiovascolari"
+ },
+ "Hypericum perforatum": {
+  "tier": "medio",
+  "reason": "Interazioni farmacologiche importanti"
+ }
+}

@@ -1,0 +1,43 @@
+name: generate
+# Ogni ~30 minuti: prende le richieste degli utenti (dal Worker), le rigenerazioni da segnalazioni e il seed,
+# genera le schede con GitHub Models (GITHUB_TOKEN, nessuna chiave), le committa e ripubblica il sito.
+on:
+  schedule: [{ cron: "*/30 * * * *" }]
+  workflow_dispatch:
+permissions: { contents: write, models: read, actions: write }
+concurrency: { group: generate, cancel-in-progress: false }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - id: cf
+        run: scripts/ensure-cloudflare.sh
+      - name: Genera
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          WORKER_URL: ${{ steps.cf.outputs.worker_url }}
+        run: |
+          export QUEUE_KEY=$(printf '%s' "$CLOUDFLARE_API_TOKEN:queue" | sha256sum | cut -c1-48)
+          node scripts/generate.mjs
+      - name: Invarianti, commit e ripubblicazione
+        id: commit
+        run: |
+          node scripts/check-invariants.mjs
+          git config user.name "grimorio-bot"; git config user.email "grimorio-bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m "data: schede aggiornate"
+          git pull --rebase origin "${GITHUB_REF_NAME}" && git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run deploy.yml -f what=web   # i push fatti con GITHUB_TOKEN non fanno partire altri workflow

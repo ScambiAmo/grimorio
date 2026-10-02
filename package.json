@@ -1,0 +1,10 @@
+{
+  "name": "grimorio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"lib/*.test.mjs\" \"worker/*.test.mjs\" \"scripts/*.test.mjs\" \"web/*.test.mjs\"",
+    "invariants": "node scripts/check-invariants.mjs",
+    "generate": "node scripts/generate.mjs"
+  }
+}

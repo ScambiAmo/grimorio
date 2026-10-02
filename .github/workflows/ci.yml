@@ -1,0 +1,22 @@
+name: ci
+on:
+  pull_request:
+  workflow_call:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Test (validatore, policy, Worker, pipeline)
+        run: npm test
+      - name: Invarianti della libreria
+        run: node scripts/check-invariants.mjs
+      - name: Nessun segreto nel repo
+        run: |
+          if git grep -nE "AIza[0-9A-Za-z_-]{30,}|ghp_[0-9A-Za-z]{30,}|github_pat_[0-9A-Za-z_]{30,}|sk-[0-9A-Za-z]{30,}" -- . ':!*.md'; then
+            echo "::error::Possibile segreto nel codice"; exit 1
+          fi
+      - name: "La PWA è completa (nessuna build, file statici)"
+        run: test -f web/index.html && test -f web/app.js && test -f web/sw.js

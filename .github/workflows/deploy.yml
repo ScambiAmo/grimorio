@@ -1,0 +1,66 @@
+name: deploy
+on:
+  push: { branches: [main], paths-ignore: ["data/**", "docs/**"] }
+  workflow_dispatch:
+    inputs:
+      what: { description: "all = Worker + sito, web = solo sito", default: "all" }
+permissions: { contents: read, pages: write, id-token: write }
+concurrency: { group: deploy, cancel-in-progress: false }
+jobs:
+  ci:
+    uses: ./.github/workflows/ci.yml
+  worker:
+    needs: ci
+    if: github.event_name != 'workflow_dispatch' || inputs.what != 'web'
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - id: cf
+        run: scripts/ensure-cloudflare.sh
+      - name: Configura wrangler.toml e segreto della coda
+        run: |
+          owner=$(echo "${{ github.repository_owner }}" | tr 'A-Z' 'a-z')
+          sed -i "s|__SITE_URL__|https://$owner.github.io/${{ github.event.repository.name }}|; s|__ORIGIN__|https://$owner.github.io|; s|__KV_ID__|${{ steps.cf.outputs.kv_id }}|" wrangler.toml
+          qk=$(printf '%s' "$CLOUDFLARE_API_TOKEN:queue" | sha256sum | cut -c1-48)   # derivata: nessun segreto in più da creare
+          echo "::add-mask::$qk"; echo "QUEUE_KEY=$qk" >> "$GITHUB_ENV"
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
+          secrets: |
+            PLANTNET_API_KEY
+            QUEUE_KEY
+        env:
+          PLANTNET_API_KEY: ${{ secrets.PLANTNET_API_KEY }}
+          QUEUE_KEY: ${{ env.QUEUE_KEY }}
+  web:
+    needs: [ci, worker]
+    if: ${{ !cancelled() && needs.ci.result == 'success' && contains(fromJSON('["success","skipped"]'), needs.worker.result) }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - id: cf
+        run: scripts/ensure-cloudflare.sh
+      - name: Assembla il sito (file statici + libreria)
+        run: |
+          mkdir -p dist/data && cp -r web/* dist/ && rm -f dist/*.test.mjs
+          cp -r data/plants data/index.json dist/data/
+          sed -i "s|__API_URL__|${{ steps.cf.outputs.worker_url }}|" dist/config.js
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: dist }
+      - id: deploy
+        uses: actions/deploy-pages@v4

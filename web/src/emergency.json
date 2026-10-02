@@ -1,0 +1,8 @@
+{
+ "_nota": "Unico posto dei numeri di emergenza. L'agente verifica il numero del Centro Antiveleni di Verona (AOUI Verona) sul sito ufficiale e lo inserisce; se non riesce a verificarlo, lascia null e l'app mostra solo Niguarda e il 112.",
+ "emergenza": "112",
+ "centri_antiveleni": [
+  { "nome": "Centro Antiveleni - Ospedale Niguarda, Milano", "telefono": "02 66101029" },
+  { "nome": "Centro Antiveleni - AOUI Verona", "telefono": null }
+ ]
+}
