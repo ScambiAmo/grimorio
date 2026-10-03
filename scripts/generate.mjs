@@ -138,7 +138,7 @@ async function worker(path, init) {
 
 async function main() {
   const index = rebuildIndex(), have = new Set(index.map((p) => p.slug));
-  const failures = readJson("failures.json", {});
+  const failures0 = readJson("failures.json", {}), failures = Array.isArray(failures0) ? {} : failures0; // (era un array: i fallimenti non venivano salvati)
   const tasks = [], ack = [], failed = [];
   const q = (await worker("/queue")) ?? { requests: [], reports: [] };
   for (const r of q.requests) tasks.push({ key: r.gbif_key, name: r.name, kv: r.kv });
@@ -152,21 +152,26 @@ async function main() {
       tasks.push({ name: n, seed: true });
     }
 
-  let llmCalls = 0;
+  let llmCalls = 0, okN = 0, consecutiveErr = 0; const problems = [];
   for (const t of tasks) {
     if (llmCalls >= MAX) break;
     try {
       const r = await generateOne(t);
       if (!r.skipped) llmCalls++;
       if (t.kv) ack.push(t.kv); if (t.reportKvs) ack.push(...t.reportKvs);
-      if (r.ok) { delete failures[t.name ?? t.key]; console.log("OK", r.slug, r.skipped ? "(già presente)" : ""); }
-      else { console.log("FALLITA", t.name ?? t.key, r.reason); const k = t.name ?? String(t.key); failures[k] = { n: (failures[k]?.n ?? 0) + 1, last: new Date().toISOString(), reason: r.reason }; if (t.kv) failed.push({ gbif_key: t.key, reason: r.reason }); }
+      consecutiveErr = 0;
+      if (r.ok) { okN++; delete failures[t.name ?? t.key]; console.log("OK", r.slug, r.skipped ? "(già presente)" : ""); }
+      else { console.log("FALLITA", t.name ?? t.key, r.reason); problems.push(`${t.name ?? t.key}: ${r.reason}`); const k = t.name ?? String(t.key); failures[k] = { n: (failures[k]?.n ?? 0) + 1, last: new Date().toISOString(), reason: r.reason }; if (t.kv) failed.push({ gbif_key: t.key, reason: r.reason }); }
     } catch (e) {
       if (e instanceof Quota) { console.log("Quota LLM esaurita: mi fermo, riprenderò al prossimo giro."); break; }
-      console.log("ERRORE", t.name ?? t.key, e.message);
+      console.log("ERRORE", t.name ?? t.key, e.message); problems.push(`${t.name ?? t.key}: ERRORE ${e.message}`);
+      if (++consecutiveErr >= 3) { console.log("Tre errori di fila: mi fermo (inutile insistere)."); break; }
     }
   }
   rebuildIndex(); writeJson("failures.json", failures);
+  const esc = (x) => String(x).replace(/%/g, "%25").replace(/\r/g, "%0D").replace(/\n/g, "%0A");
+  console.log(`::notice::generate: ${okN} schede ok, ${problems.length} problemi su ${tasks.length} richieste in coda`);
+  for (const x of problems.slice(0, 6)) console.log(`::warning::generate: ${esc(x).slice(0, 280)}`);
   if (ack.length || failed.length) await worker("/queue/ack", { method: "POST", body: JSON.stringify({ keys: ack, failed }) });
 }
 main().catch((e) => { console.error(e); process.exit(0); }); // exit 0: i progressi parziali vengono comunque committati
