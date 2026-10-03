@@ -1,6 +1,6 @@
 // worker/src/index.js — Cloudflare Worker (piano gratuito). Nessun log, nessun salvataggio di foto, IP o utenti.
 // /identify  : inoltra in streaming il multipart a Pl@ntNet (la chiave resta qui) e arricchisce la risposta
-// /request   : mette in coda UNA specie (dopo aver verificato su GBIF che sia una pianta)
+// /request   : mette in coda UNA specie (dopo aver verificato su GBIF che sia una pianta) e, se possibile, avvia subito la generazione
 // /report    : segnalazione anonima (solo slug, sezione, testo breve)
 // /status    : stato di una richiesta
 // /queue*    : solo per la GitHub Action (Bearer QUEUE_KEY)
@@ -53,6 +53,17 @@ async function identify(req, env) {
   return json(env, { ...verdictOf(candidates), candidates, remaining: j.remainingIdentificationRequests ?? null });
 }
 
+// Avvia subito il workflow `generate` invece di aspettare il cron di GitHub (che in pratica gira ogni 3–6 ore).
+// Facoltativo: serve il segreto GH_DISPATCH_TOKEN (fine-grained, solo questo repo, permesso Actions: read/write). Non invia dati utente.
+async function kick(env) {
+  if (!env.GH_DISPATCH_TOKEN || !env.GH_REPO) return false;
+  try {
+    const r = await fetch(`https://api.github.com/repos/${env.GH_REPO}/actions/workflows/generate.yml/dispatches`, { method: "POST", body: JSON.stringify({ ref: env.GH_REF || "main" }),
+      headers: { authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`, accept: "application/vnd.github+json", "x-github-api-version": "2022-11-28", "user-agent": "grimorio-worker", "content-type": "application/json" } });
+    return r.status === 204;
+  } catch { return false; }
+}
+
 async function requestCard(req, env) {
   const { gbif_key } = await req.json().catch(() => ({}));
   if (!Number.isInteger(gbif_key)) return json(env, { error: "richiesta_non_valida" }, 400);
@@ -64,7 +75,7 @@ async function requestCard(req, env) {
   if (await env.STORE.get(`q:${acc.key}`)) return json(env, { status: "in_coda" });
   if ((await env.STORE.list({ prefix: "q:", limit: MAX_PENDING })).keys.length >= MAX_PENDING) return json(env, { status: "coda_piena" });
   await env.STORE.put(`q:${acc.key}`, JSON.stringify({ gbif_key: acc.key, name: acc.name, ts: Date.now() }), { expirationTtl: 7 * 86400 });
-  return json(env, { status: "accodata", name: acc.name });
+  return json(env, { status: "accodata", name: acc.name, fast: await kick(env) });
 }
 
 async function report(req, env) {

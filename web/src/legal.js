@@ -5,4 +5,4 @@ export const AUTO_CARD = "Scheda generata automaticamente da fonti aperte, non v
 export const HARVEST = "La raccolta di molte specie spontanee è regolata da leggi regionali e nazionali.";
 export const LICENSE = "Schede: CC BY-SA 4.0 (derivate da Wikipedia e altre fonti aperte, citate in ogni scheda).";
 export const PLANTNET = "Identificazione con Pl@ntNet (attribuzione e logo: dalla pagina credits di my.plantnet.org).";
-export const PRIVACY = "Nessun account, nessun dato personale: le foto non vengono salvate (EXIF/GPS rimossi sul tuo dispositivo prima dell'invio e inoltrate solo a Pl@ntNet per l'identificazione). Il tuo grimorio resta sul tuo dispositivo. Le segnalazioni sono anonime.";
+export const PRIVACY = "Nessun account, nessun dato personale: le foto non vengono salvate (EXIF/GPS rimossi sul tuo dispositivo prima dell'invio e inoltrate solo a Pl@ntNet per l'identificazione). Il tuo grimorio resta sul tuo dispositivo, comprese le scoperte e una miniatura della tua foto migliore usata per il badge (creato sul dispositivo, mai inviato). Le segnalazioni sono anonime.";

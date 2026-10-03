@@ -28,7 +28,7 @@ test("pipeline end-to-end: seed -> fonti -> LLM -> validatore -> scheda + indice
   assert.deepEqual(p.common_names.it, ["Aglio orsino"]);
   assert.ok(p.sources.every((s) => s.url));
   const idx = JSON.parse(readFileSync(join(d, "index.json"), "utf8"));
-  assert.equal(idx.length, 1); assert.equal(idx[0].slug, "allium-ursinum");
+  assert.equal(idx.length, 1); assert.equal(idx[0].slug, "allium-ursinum"); assert.ok(Date.parse(idx[0].at) > 0, "data di creazione nell'indice");
   assert.match(run({}, d).out, /nessuna scheda|^$|/); // seconda esecuzione: idempotente
   assert.equal(JSON.parse(readFileSync(join(d, "index.json"), "utf8")).length, 1);
 });

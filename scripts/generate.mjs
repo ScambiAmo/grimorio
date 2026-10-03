@@ -127,7 +127,7 @@ async function generateOne(t) {
 function rebuildIndex() {
   mkdirSync(DATA + "plants", { recursive: true });
   const rows = readdirSync(DATA + "plants").filter((f) => f.endsWith(".json")).map((f) => {
-    const p = readJson("plants/" + f); return { slug: f.slice(0, -5), gbif_key: p.gbif_key, name: p.accepted_name, family: p.family, common_names: p.common_names, synonyms: p.synonyms, tier: p.safety_tier, status: p.status, protected: p.is_protected };
+    const p = readJson("plants/" + f); return { slug: f.slice(0, -5), gbif_key: p.gbif_key, name: p.accepted_name, family: p.family, common_names: p.common_names, synonyms: p.synonyms, tier: p.safety_tier, status: p.status, protected: p.is_protected, at: p.generated_at };
   }).sort((a, b) => a.name.localeCompare(b.name));
   writeJson("index.json", rows); return rows;
 }

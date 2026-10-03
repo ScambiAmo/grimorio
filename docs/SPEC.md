@@ -39,12 +39,12 @@ Nessuna decisione sull'LLM (usa GitHub Models), nessuna email di login, nessun n
    coda utenti + rigenerazioni da segnalazioni + seed ─► GBIF · Wikidata · Wikipedia · Europe PMC
    ─► LLM (GitHub Models) ─► validatore deterministico ─► scheda JSON ─► commit ─► deploy del sito
 ```
-Latenza di una specie nuova: da pochi minuti a qualche ora (cron di GitHub best-effort + limiti del free tier LLM). L'app lo dice e ricorda la richiesta sul dispositivo; alla riapertura la scheda compare da sola.
+Latenza di una specie nuova: il cron di GitHub è best-effort e **in pratica gira ogni 3–6 ore** (misurato il 3 ottobre 2026). Con il segreto facoltativo `GH_DISPATCH_TOKEN` (token fine-grained, solo questo repo, *Actions: read/write*) il Worker avvia `generate` subito dopo la richiesta e risponde `fast: true`; l'app lo dice in modo veritiero e ricorda la richiesta sul dispositivo; alla riapertura la scheda compare da sola.
 
 ## 4. Flusso utente
-1. **Camera**: anteprima live (`getUserMedia`, camera posteriore) con modalità guidata foglia → fiore/frutto → portamento. Per ogni organo l'app cattura una breve raffica di fotogrammi e tiene il **più nitido** (varianza del Laplaciano su una copia a bassa risoluzione). Fallback automatico: `<input type="file" accept="image/*" capture="environment">`. **Non** si identifica ogni fotogramma: la quota Pl@ntNet (500/giorno, condivisa) si esaurirebbe in pochi minuti. Le foto non vengono mai salvate.
+1. **Camera**: anteprima live (`getUserMedia`, camera posteriore) e **da 4 a 5 foto obbligatorie** (≤5 = 1 credito Pl@ntNet), senza scegliere l'organo: l'app invia `organs=auto` (se Pl@ntNet rifiutasse il valore, un secondo tentativo senza `organs`). Per ogni scatto tiene il fotogramma **più nitido** tra 3 (varianza del Laplaciano). Fallback: selezione dalla galleria (multipla). **Non** si identifica ogni fotogramma: la quota Pl@ntNet (500/giorno, condivisa) si esaurirebbe in pochi minuti. Le foto non vengono mai salvate sui server.
 2. **Risultato** (verdetto dal Worker, soglie da calibrare): `probabile` (1ª ≥ 0,80, distacco ≥ 0,25, nessuna candidata ≥ 0,10 in lista rossa) · `da_affinare` (chiede altre foto mirate; avviso rosso se c'è lista rossa) · `non_riconosciuta` (1ª < 0,30) · `non_pianta`.
-3. **Scheda presente** → si mostra (0 uso IA). **Assente** → "Aggiungila alla libreria": il Worker verifica Plantae su GBIF, deduplica e accoda.
+3. **Scheda presente** → "Già nell'archivio" e si apre (0 uso IA). **Assente** (e confidenza ≥ 50%) → "Falla entrare nel Grimorio": il Worker verifica Plantae su GBIF, deduplica e accoda; chi ottiene `accodata` è lo scopritore (§11). La ricerca per nome sull'archivio resta gratuita e non usa crediti.
 4. **Quota Pl@ntNet esaurita** → messaggio chiaro + ricerca per nome (client-side su `index.json`). Nessuna identificazione con IA di visione.
 5. **Il mio grimorio**: schede salvate e richieste in attesa, solo su IndexedDB ("N su M"), disponibili offline.
 6. **Segnala errore** per sezione (anonimo).
@@ -112,3 +112,9 @@ Ordine di lavoro (commit piccoli, CI sempre verde)
 7. Rispondi all'utente con 5 righe: URL del sito, cosa è automatico, cosa deve ancora fare lui (solo la calibrazione facoltativa del §9), eventuali blocchi.
 
 FINE PROMPT
+
+## 11. Scoperte e badge (v4.1, 3 ottobre 2026)
+- **Lettura dell'archivio**: `#/archivio` mostra tutte le schede come un unico documento (indice, una sezione per specie, stampabile), senza scaricare nulla.
+- **Scoperta**: quando una richiesta `accodata` dal dispositivo diventa scheda pubblicata, il dispositivo la riconosce da solo (nessun account: lo stato sta in `localStorage`, chiave `scoperte`) e mostra il contributo: foto usate, confidenza, affermazioni con fonte e fonti della scheda, numero d'ordine nell'archivio (da `at` in `index.json`), quota personale sul totale. Chi riceve `in_coda` non è lo scopritore.
+- **Badge** (`web/src/badge.js`, creato **sul dispositivo** dalle foto reali, mai inviate): le regole di forma sono identiche per tutti e imposte da `validateBadge()` — tela 512×512; esagono regolare punta in alto (raggio 240, bordo 14 + filetto interno raggio 214); medaglione tondo r=122 centrato (256, 214) con la foto reale ritagliata al centro; nastro 400×64 con il nome scientifico (≤30 caratteri, corpo 16–28 calcolato dalla lunghezza); 4 testi esatti (SCOPERTA, nome, «N° n · data», famiglia); solo colori esadecimali; contrasto testo ≥ 4,5 su sfondo e nastro; nessun script né riferimento esterno. Cambiano solo i colori (tinte dominanti dei pixel delle foto), i testi e la foto.
+- **Perché non un modello di immagini**: servirebbe caricare le foto su un servizio terzo (contro il principio «nessun dato utente») e un modello generativo non garantisce forma e testi identici per tutti. Il «generatore» è quindi deterministico e verificabile; l'IA resta fuori dal badge.

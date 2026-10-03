@@ -18,13 +18,14 @@ const kvStore = new Map();
 const STORE = { get: async (k) => kvStore.get(k) ?? null, put: async (k, v) => void kvStore.set(k, v), delete: async (k) => void kvStore.delete(k),
   list: async ({ prefix = "", limit = 1000 } = {}) => ({ keys: [...kvStore.keys()].filter((k) => k.startsWith(prefix)).slice(0, limit).map((name) => ({ name })) }) };
 const env = { STORE, QUEUE_KEY: "k", PLANTNET_API_KEY: "pk", SITE_URL: "https://x.github.io/g", ALLOWED_ORIGIN: "https://x.github.io" };
-const calls = [];
+const calls = [], dispatches = []; let dispatchStatus = 204;
 globalThis.fetch = async (url, init) => {
   const u = String(url); calls.push(u);
   const R = (b, s = 200) => new Response(JSON.stringify(b), { status: s });
   if (u.includes("my-api.plantnet.org")) return R({ remainingIdentificationRequests: 321, results: [
     { score: 0.91, species: { scientificNameWithoutAuthor: "Allium ursinum", genus: { scientificNameWithoutAuthor: "Allium" } }, gbif: { id: "100" } },
     { score: 0.12, species: { scientificNameWithoutAuthor: "Convallaria majalis", genus: { scientificNameWithoutAuthor: "Convallaria" } }, gbif: { id: "200" } }] });
+  if (u.includes("api.github.com/repos/")) { dispatches.push({ u, auth: init.headers.authorization, body: init.body }); return new Response(null, { status: dispatchStatus }); }
   if (u.endsWith("/species/100")) return R({ key: 100, kingdom: "Plantae", rank: "SPECIES", canonicalName: "Allium ursinum" });
   if (u.endsWith("/species/200")) return R({ key: 200, kingdom: "Plantae", rank: "SPECIES", canonicalName: "Convallaria majalis" });
   if (u.endsWith("/species/300")) return R({ key: 300, kingdom: "Fungi", rank: "SPECIES", canonicalName: "Amanita phalloides" });
@@ -48,6 +49,18 @@ test("request: solo piante, dedupe, già presente", async () => {
   assert.equal((await (await post("/request", { gbif_key: 100 })).json()).status, "accodata");
   assert.equal((await (await post("/request", { gbif_key: 100 })).json()).status, "in_coda");
   assert.equal((await (await call("/status?gbif_key=100")).json()).status, "in_coda");
+});
+test("request: senza segreto la generazione aspetta il cron (fast=false); con il segreto parte subito", async () => {
+  kvStore.delete("q:100"); const r0 = await (await post("/request", { gbif_key: 100 })).json();
+  assert.equal(r0.status, "accodata"); assert.equal(r0.fast, false); assert.equal(dispatches.length, 0);
+  kvStore.delete("q:100"); env.GH_DISPATCH_TOKEN = "tok"; env.GH_REPO = "o/r";
+  const r1 = await (await post("/request", { gbif_key: 100 })).json();
+  assert.equal(r1.fast, true); assert.equal(dispatches.length, 1);
+  assert.ok(dispatches[0].u.endsWith("/repos/o/r/actions/workflows/generate.yml/dispatches")); assert.equal(dispatches[0].auth, "Bearer tok"); assert.deepEqual(JSON.parse(dispatches[0].body), { ref: "main" });
+  assert.ok(!JSON.stringify(r1).includes("tok"), "il segreto non esce mai nella risposta");
+  assert.equal((await (await post("/request", { gbif_key: 100 })).json()).status, "in_coda"); assert.equal(dispatches.length, 1, "già in coda: nessun nuovo avvio");
+  kvStore.delete("q:100"); dispatchStatus = 401; assert.equal((await (await post("/request", { gbif_key: 100 })).json()).fast, false, "token errato: ripiego sul cron");
+  dispatchStatus = 204; delete env.GH_DISPATCH_TOKEN;
 });
 test("report: validazione e nessun dato personale salvato", async () => {
   assert.equal((await post("/report", { slug: "../x", message: "m" })).status, 400);

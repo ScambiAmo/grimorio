@@ -1,0 +1,13 @@
+name: llm-probe
+# Diagnostica manuale: verifica cosa risponde GitHub Models al GITHUB_TOKEN dell'Action (esito nelle annotazioni del job).
+on: workflow_dispatch
+permissions: { contents: read, models: read }
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/llm-probe.mjs
+        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
