@@ -85,8 +85,10 @@ async function llm(system, user) {
   });
   if (res.status === 429) throw new Quota("429");
   if (!res.ok) throw new Error(`LLM ${res.status} ${(await res.text()).slice(0, 200)}`);
-  const txt = (await res.json()).choices?.[0]?.message?.content ?? "";
-  return JSON.parse(txt.replace(/^\s*```(?:json)?|```\s*$/g, "").trim());
+  const raw = await res.text();
+  let data; try { data = JSON.parse(raw); } catch { throw new Error(`LLM: risposta non JSON (HTTP ${res.status}, ${res.headers.get("content-type")}, url ${res.url}): ${JSON.stringify(raw.slice(0, 160))}`); }
+  const txt = data.choices?.[0]?.message?.content ?? "";
+  try { return JSON.parse(txt.replace(/^\s*```(?:json)?|```\s*$/g, "").trim()); } catch { throw new Error(`LLM: il modello non ha risposto in JSON (${data.model ?? "?"}): ${JSON.stringify(String(txt).slice(0, 120))}`); }
 }
 
 // ---------- Una scheda
