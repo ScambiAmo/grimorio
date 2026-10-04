@@ -1,0 +1,230 @@
+{
+ "gbif_key": 5394163,
+ "accepted_name": "Taraxacum officinale",
+ "family": "Asteraceae",
+ "common_names": {
+  "it": [
+   "Tarassaco comune",
+   "Taràssaco comune",
+   "soffione"
+  ],
+  "en": [
+   "Blowball",
+   "Common Dandelion",
+   "Common Dandelion, Blow Ball, Faceclock",
+   "Common dandelion, Blow ball, Faceclock",
+   "Dandelion",
+   "Eurasian dandelion",
+   "Faceclock",
+   "Lion's Tooth"
+  ]
+ },
+ "synonyms": [
+  "Chondrilla taraxacum",
+  "Crepis taraxacum",
+  "Leontodon officinalis",
+  "Leontodon taraxacum",
+  "Leontodon taraxacum vulgare",
+  "Leontodon vulgaris",
+  "Taraxacum dens-leonis",
+  "Taraxacum dens-leonis officinale",
+  "Taraxacum officinale dens-leonis",
+  "Taraxacum officinale vulgare",
+  "Taraxacum officinale angustifolium",
+  "Taraxacum palustre vulgare",
+  "Taraxacum taraxacum",
+  "Taraxacum vulgare",
+  "Taraxacum vulgare dens-leonis"
+ ],
+ "safety_tier": "basso",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-04T21:47:16.228Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Taraxacum_officinale",
+   "title": "Taraxacum officinale",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Taraxacum_officinale",
+   "title": "Taraxacum officinale",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/40786212",
+   "pmid": "40786212",
+   "title": "New prospects in oncotherapy: bioactive compounds from &lt;i&gt;Taraxacum officinale&lt;/i&gt;.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S4",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42513226",
+   "pmid": "42513226",
+   "title": "Phytochemical Dynamics and Antimicrobial Efficacy of Dandelion (&lt;i&gt;Taraxacum officinale&lt;/i&gt; L.) from Central Plateau of Moldova, Romania.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S5",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42005319",
+   "pmid": "42005319",
+   "title": "A Herbal Pair of &lt;i&gt;Taraxacum officinale&lt;/i&gt; F.H.Wigg. and &lt;i&gt;Lonicera japonica&lt;/i&gt; Thunb. Ameliorates Obesity and Modulates AMPK Signaling.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q131219",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Taraxacum_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-135.jpg/960px-Taraxacum_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-135.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Walther Otto Müller",
+   "license": "Public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Taraxacum_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-135.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Taraxacum officinale",
+   "s": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Taraxacum officinale",
+     "s": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "aree con terreni umidi",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "distribution": {
+    "t": "Eurasia, America, Africa, Australia e Nuova Zelanda",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "primavera",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": {
+     "t": "autunno e primavera",
+     "s": [
+      "S4"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "nessuna tossicità segnalata",
+     "s": [
+      "S3",
+      "S4",
+      "S5"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "taraxasterol, acido clorogenico, acido chicorico, acido taraxinico",
+     "s": [
+      "S3"
+     ]
+    }
+   ],
+   "traditional_uses": [
+    {
+     "t": "uso tradizionale nella medicina popolare",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": [
+    {
+     "name": "sciroppo di tarassaco",
+     "part": "fiori",
+     "claim": {
+      "t": "preparato con i fiori",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ]
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "foglie, fiori, radici",
+     "season": "primavera",
+     "claim": {
+      "t": "usati in insalate",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [],
+   "preparation_effects": [],
+   "pairings": []
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

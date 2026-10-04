@@ -1,12 +1,7 @@
 {
- "Taraxacum officinale": {
-  "n": 1,
-  "last": "2026-10-04T21:43:32.252Z",
-  "reason": "troppe_affermazioni_scartate,tossicita_mancante"
- },
  "Tilia cordata": {
-  "n": 1,
-  "last": "2026-10-04T21:44:26.556Z",
-  "reason": "tossicita_mancante"
+  "n": 2,
+  "last": "2026-10-04T21:47:58.290Z",
+  "reason": "tossicita_mancante → tossicita_mancante"
  }
 }

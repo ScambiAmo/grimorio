@@ -85,5 +85,49 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-04T21:44:01.547Z"
+ },
+ {
+  "slug": "taraxacum-officinale",
+  "gbif_key": 5394163,
+  "name": "Taraxacum officinale",
+  "family": "Asteraceae",
+  "common_names": {
+   "it": [
+    "Tarassaco comune",
+    "Taràssaco comune",
+    "soffione"
+   ],
+   "en": [
+    "Blowball",
+    "Common Dandelion",
+    "Common Dandelion, Blow Ball, Faceclock",
+    "Common dandelion, Blow ball, Faceclock",
+    "Dandelion",
+    "Eurasian dandelion",
+    "Faceclock",
+    "Lion's Tooth"
+   ]
+  },
+  "synonyms": [
+   "Chondrilla taraxacum",
+   "Crepis taraxacum",
+   "Leontodon officinalis",
+   "Leontodon taraxacum",
+   "Leontodon taraxacum vulgare",
+   "Leontodon vulgaris",
+   "Taraxacum dens-leonis",
+   "Taraxacum dens-leonis officinale",
+   "Taraxacum officinale dens-leonis",
+   "Taraxacum officinale vulgare",
+   "Taraxacum officinale angustifolium",
+   "Taraxacum palustre vulgare",
+   "Taraxacum taraxacum",
+   "Taraxacum vulgare",
+   "Taraxacum vulgare dens-leonis"
+  ],
+  "tier": "basso",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-04T21:47:16.228Z"
  }
 ]
