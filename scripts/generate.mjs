@@ -8,9 +8,12 @@ import { SYSTEM, userPrompt } from "../lib/prompt.js";
 
 const env = process.env;
 const UA = `GrimorioBotanico/4 (https://github.com/${env.GITHUB_REPOSITORY || "owner/grimorio"}; biblioteca botanica aperta)`;
-const BASE = env.LLM_BASE_URL || "https://models.github.ai/inference";
-const MODEL = env.LLM_MODEL || "openai/gpt-4.1-mini"; // [da verificare nel catalogo: GET https://models.github.ai/catalog/models]
-const TOKEN = env.LLM_API_KEY || env.GITHUB_TOKEN;
+// Fornitore LLM. GitHub Models con il GITHUB_TOKEN dell'Action risponde "OK" (text/plain) a ogni richiesta, catalogo compreso (sonda del 3 ottobre 2026):
+// per questo, se ci sono le credenziali Cloudflare, si usa Workers AI (API compatibile OpenAI, 10.000 neuroni/giorno gratis). LLM_BASE_URL/LLM_MODEL/LLM_API_KEY prevalgono.
+const CF = !env.LLM_BASE_URL && !!env.CLOUDFLARE_ACCOUNT_ID && !!env.CLOUDFLARE_API_TOKEN;
+const BASE = env.LLM_BASE_URL || (CF ? `https://api.cloudflare.com/client/v4/accounts/${env.CLOUDFLARE_ACCOUNT_ID}/ai/v1` : "https://models.github.ai/inference");
+const MODEL = env.LLM_MODEL || (CF ? "@cf/meta/llama-3.3-70b-instruct-fp8-fast" : "openai/gpt-4.1-mini"); // [GitHub Models: da verificare nel catalogo]
+const TOKEN = env.LLM_API_KEY || (CF ? env.CLOUDFLARE_API_TOKEN : env.GITHUB_TOKEN);
 const MAX = Number(env.MAX_PER_RUN || 4), GAP = Number(env.LLM_GAP_MS || 8000), BUDGET = Number(env.FRAG_BUDGET || 14000);
 const DATA = env.DATA_DIR ? env.DATA_DIR.replace(/\/?$/, "/") : new URL("../data/", import.meta.url).pathname;
 const SEED = env.SEED_FILE || new URL("../seed/species.txt", import.meta.url).pathname;
@@ -80,15 +83,18 @@ async function commonsImage(file) {
 async function llm(system, user) {
   const res = await fetch(`${BASE}/chat/completions`, {
     method: "POST", headers: { "content-type": "application/json", authorization: `Bearer ${TOKEN}`, "user-agent": UA },
-    body: JSON.stringify({ model: MODEL, temperature: 0.1, response_format: { type: "json_object" }, messages: [{ role: "system", content: system }, { role: "user", content: user }] }),
-    signal: AbortSignal.timeout(120000),
+    body: JSON.stringify({ model: MODEL, temperature: 0.1, max_tokens: 4096, ...(CF ? {} : { response_format: { type: "json_object" } }), messages: [{ role: "system", content: system }, { role: "user", content: user }] }),
+    signal: AbortSignal.timeout(180000),
   });
   if (res.status === 429) throw new Quota("429");
+  if (res.status === 401 || res.status === 403) throw new Error(`LLM ${res.status}: ${CF ? "il token Cloudflare non ha il permesso Workers AI (Read + Edit)" : "accesso negato"} — ${(await res.text()).slice(0, 160)}`);
   if (!res.ok) throw new Error(`LLM ${res.status} ${(await res.text()).slice(0, 200)}`);
   const raw = await res.text();
   let data; try { data = JSON.parse(raw); } catch { throw new Error(`LLM: risposta non JSON (HTTP ${res.status}, ${res.headers.get("content-type")}, url ${res.url}): ${JSON.stringify(raw.slice(0, 160))}`); }
-  const txt = data.choices?.[0]?.message?.content ?? "";
-  try { return JSON.parse(txt.replace(/^\s*```(?:json)?|```\s*$/g, "").trim()); } catch { throw new Error(`LLM: il modello non ha risposto in JSON (${data.model ?? "?"}): ${JSON.stringify(String(txt).slice(0, 120))}`); }
+  const out = data.choices?.[0]?.message?.content ?? "";
+  if (out && typeof out === "object") return out;
+  const txt = String(out), from = txt.indexOf("{"), to = txt.lastIndexOf("}"); // tollera ```json … ``` e frasi attorno al JSON
+  try { return JSON.parse(from >= 0 && to > from ? txt.slice(from, to + 1) : txt.trim()); } catch { throw new Error(`LLM: il modello non ha risposto in JSON (${data.model ?? MODEL}, ${data.usage?.completion_tokens ?? "?"} token${data.choices?.[0]?.finish_reason === "length" ? ", TRONCATO" : ""}): ${JSON.stringify(txt.slice(0, 120))}`); }
 }
 
 // ---------- Una scheda

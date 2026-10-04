@@ -38,3 +38,14 @@ test("quota LLM esaurita: nessuna scheda, nessun crash, si riprova al prossimo g
   assert.match(out, /Quota LLM esaurita/);
   assert.equal(existsSync(join(d, "plants/allium-ursinum.json")), false);
 });
+
+test("Cloudflare Workers AI: usato se ci sono le credenziali, anche con JSON dentro un blocco ``` e testo attorno", () => {
+  const { d, out } = run({ CLOUDFLARE_ACCOUNT_ID: "acc", CLOUDFLARE_API_TOKEN: "tok", STUB_EXPECT_CF: "1", STUB_LLM: "fence" });
+  assert.match(out, /OK allium-ursinum/); assert.ok(existsSync(join(d, "plants/allium-ursinum.json")));
+  assert.equal(JSON.parse(readFileSync(join(d, "plants/allium-ursinum.json"), "utf8")).model, "@cf/meta/llama-3.3-70b-instruct-fp8-fast");
+});
+test("token Cloudflare senza permesso Workers AI: errore chiaro in annotazione, nessuna scheda, nessun crash", () => {
+  const { d, out } = run({ CLOUDFLARE_ACCOUNT_ID: "acc", CLOUDFLARE_API_TOKEN: "tok", STUB_LLM: "401" });
+  assert.match(out, /non ha il permesso Workers AI/); assert.match(out, /::warning::generate: .*Workers AI/);
+  assert.equal(existsSync(join(d, "plants/allium-ursinum.json")), false);
+});

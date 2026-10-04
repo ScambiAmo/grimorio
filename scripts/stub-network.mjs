@@ -12,6 +12,9 @@ const CARD = {
 };
 globalThis.fetch = async (url) => {
   const u = String(url);
+  if (process.env.STUB_EXPECT_CF && u.includes("/chat/completions") && !u.startsWith("https://api.cloudflare.com/client/v4/accounts/acc/ai/v1/")) return new Response("url sbagliato", { status: 500 });
+  if (process.env.STUB_LLM === "401" && u.includes("/chat/completions")) return new Response(JSON.stringify({ success: false, errors: [{ code: 10000, message: "Authentication error" }] }), { status: 401 });
+  if (process.env.STUB_LLM === "fence" && u.includes("/chat/completions")) return R({ choices: [{ message: { content: "Ecco la scheda:\n```json\n" + JSON.stringify(CARD) + "\n```" } }] });
   if (u.includes("models.github.ai") || u.includes("/chat/completions")) return process.env.STUB_LLM === "429" ? new Response("", { status: 429 }) : R({ choices: [{ message: { content: JSON.stringify(CARD) } }] });
   if (u.includes("/species/match")) return R({ usageKey: 5, matchType: "EXACT" });
   if (u.endsWith("/species/5")) return R({ key: 5, kingdom: "Plantae", rank: "SPECIES", canonicalName: "Allium ursinum", family: "Amaryllidaceae" });
