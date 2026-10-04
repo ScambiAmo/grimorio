@@ -1,0 +1,222 @@
+{
+ "gbif_key": 3029817,
+ "accepted_name": "Fragaria vesca",
+ "family": "Rosaceae",
+ "common_names": {
+  "it": [
+   "Fragola comune",
+   "Fragola di bosco",
+   "Fragolina di bosco"
+  ],
+  "en": [
+   "Alpine Strawberry",
+   "European Strawberry",
+   "European strawberry",
+   "Hillside Strawberry",
+   "Thin-leaved Wild Strawberry",
+   "Wild Strawberry",
+   "Woodland Strawberry",
+   "Woodland strawberry"
+  ]
+ },
+ "synonyms": [
+  "Fragaria californica",
+  "Fragaria vesca vesca"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-04T23:40:17.465Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Fragaria_vesca",
+   "title": "Fragaria vesca",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Fragaria_vesca",
+   "title": "Fragaria vesca",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S4",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/40207736",
+   "pmid": "40207736",
+   "title": "Assessment of the Nutraceutical Properties of Wild Strawberry (Fragaria vesca L.) Extracts on Human Colorectal Cell Lines.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q146684",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Fragaria_vesca_fruit_-_Keila.jpg/960px-Fragaria_vesca_fruit_-_Keila.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Ivar Leidus",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Fragaria_vesca_fruit_-_Keila.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.keys[0]",
+    "err": "citazione_non_trovata",
+    "t": "Fragaria vesca"
+   },
+   {
+    "path": "med.active_principles[1]",
+    "err": "citazione_non_trovata",
+    "t": "tannino"
+   },
+   {
+    "path": "med.active_principles[2]",
+    "err": "citazione_non_trovata",
+    "t": "flavone"
+   },
+   {
+    "path": "med.active_principles[5]",
+    "err": "citazione_non_trovata",
+    "t": "ferro"
+   },
+   {
+    "path": "med.active_principles[6]",
+    "err": "citazione_non_trovata",
+    "t": "calcio"
+   },
+   {
+    "path": "med.active_principles[7]",
+    "err": "citazione_non_trovata",
+    "t": "fosforo"
+   },
+   {
+    "path": "med.preparations[0].claim",
+    "err": "vuota",
+    "t": ""
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La fragola di bosco è una pianta erbacea della famiglia delle Rosacee",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [],
+   "habitat": {
+    "t": "sottobosco, boschi radi, scarpate e prati",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "emisfero settentrionale",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "aprile-luglio",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": {
+     "t": "8 mesi dopo l'impianto",
+     "s": [
+      "S1"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "nessuna tossicità segnalata",
+     "s": [
+      "S4"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "oli essenziali",
+     "s": [
+      "S1"
+     ]
+    },
+    {
+     "t": "vitamina C",
+     "s": [
+      "S1"
+     ]
+    },
+    {
+     "t": "iodio",
+     "s": [
+      "S1"
+     ]
+    },
+    {
+     "t": "acido salicilico",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Falsa fragola",
+    "danger": "bassa",
+    "claim": {
+     "t": "confusione possibile",
+     "s": [
+      "S1"
+     ]
+    },
+    "distinguishing_features": [
+     {
+      "t": "odore e sapore",
+      "s": [
+       "S1"
+      ]
+     }
+    ]
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

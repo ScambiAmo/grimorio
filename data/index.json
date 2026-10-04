@@ -1,5 +1,36 @@
 [
  {
+  "slug": "fragaria-vesca",
+  "gbif_key": 3029817,
+  "name": "Fragaria vesca",
+  "family": "Rosaceae",
+  "common_names": {
+   "it": [
+    "Fragola comune",
+    "Fragola di bosco",
+    "Fragolina di bosco"
+   ],
+   "en": [
+    "Alpine Strawberry",
+    "European Strawberry",
+    "European strawberry",
+    "Hillside Strawberry",
+    "Thin-leaved Wild Strawberry",
+    "Wild Strawberry",
+    "Woodland Strawberry",
+    "Woodland strawberry"
+   ]
+  },
+  "synonyms": [
+   "Fragaria californica",
+   "Fragaria vesca vesca"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-04T23:40:17.465Z"
+ },
+ {
   "slug": "hypericum-perforatum",
   "gbif_key": 3189486,
   "name": "Hypericum perforatum",
@@ -129,5 +160,36 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-04T21:47:16.228Z"
+ },
+ {
+  "slug": "vaccinium-myrtillus",
+  "gbif_key": 2882833,
+  "name": "Vaccinium myrtillus",
+  "family": "Ericaceae",
+  "common_names": {
+   "it": [
+    "Mirtillo nero"
+   ],
+   "en": [
+    "Bilberry",
+    "Blaeberry",
+    "European blueberry",
+    "bilberry",
+    "blaeberry",
+    "common-blueberry",
+    "dwarf bilberry",
+    "dwarf whortleberry"
+   ]
+  },
+  "synonyms": [
+   "Myrtillus niger",
+   "Myrtillus nigra",
+   "Vaccinium myrtillus minoriflora",
+   "Vaccinium myrtillus myrtillus"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-04T23:39:23.329Z"
  }
 ]

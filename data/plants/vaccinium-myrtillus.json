@@ -1,0 +1,173 @@
+{
+ "gbif_key": 2882833,
+ "accepted_name": "Vaccinium myrtillus",
+ "family": "Ericaceae",
+ "common_names": {
+  "it": [
+   "Mirtillo nero"
+  ],
+  "en": [
+   "Bilberry",
+   "Blaeberry",
+   "European blueberry",
+   "bilberry",
+   "blaeberry",
+   "common-blueberry",
+   "dwarf bilberry",
+   "dwarf whortleberry"
+  ]
+ },
+ "synonyms": [
+  "Myrtillus niger",
+  "Myrtillus nigra",
+  "Vaccinium myrtillus minoriflora",
+  "Vaccinium myrtillus myrtillus"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-04T23:39:23.329Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Vaccinium_myrtillus",
+   "title": "Vaccinium myrtillus",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Vaccinium_myrtillus",
+   "title": "Vaccinium myrtillus",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q5413585",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/203_Vaccinum_myrtillus_L.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "author": "Amédée Masclef",
+   "license": "Public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:203_Vaccinum_myrtillus_L.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "med.active_principles[0]",
+    "err": "citazione_non_trovata",
+    "t": "Antocianine"
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Vaccinium myrtillus è una pianta con frutti commestibili di colore blu",
+   "s": [
+    "S1",
+    "S2"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Piccolo arbusto caducifoglio con portamento espanso",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Terreni acidi, peccete e faggete subalpine e montane",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Eurasia, Europa, Asia, Giappone, Groenlandia, Canada, Stati Uniti",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Maggio",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": {
+     "t": "Luglio-agosto",
+     "s": [
+      "S1"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "I consumi delle foglie possono essere pericolosi",
+     "s": [
+      "S2"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Vaccinium corymbosum",
+    "danger": "bassa",
+    "claim": {
+     "t": "Specie simile con frutti più grandi",
+     "s": [
+      "S1"
+     ]
+    },
+    "distinguishing_features": [
+     {
+      "t": "Dimensioni dei frutti",
+      "s": [
+       "S1"
+      ]
+     }
+    ]
+   }
+  ],
+  "lookalikes_curated": [
+   {
+    "name": "Atropa bella-donna",
+    "danger": "mortale",
+    "note": "Bacche scure confondibili."
+   }
+  ]
+ }
+}
