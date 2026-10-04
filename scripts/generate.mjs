@@ -97,6 +97,15 @@ async function llm(system, user) {
   try { return JSON.parse(from >= 0 && to > from ? txt.slice(from, to + 1) : txt.trim()); } catch { throw new Error(`LLM: il modello non ha risposto in JSON (${data.model ?? MODEL}, ${data.usage?.completion_tokens ?? "?"} token${data.choices?.[0]?.finish_reason === "length" ? ", TRONCATO" : ""}): ${JSON.stringify(txt.slice(0, 120))}`); }
 }
 
+const HINTS = [
+  ["troppe_affermazioni_scartate", 'Molte citazioni "q" non comparivano alla lettera nei frammenti: copia ogni "q" senza cambiare una parola (nella lingua del frammento, anche inglese), scrivi meno affermazioni ma ciascuna con una "q" esatta.'],
+  ["tossicita_mancante", 'Almeno un frammento parla di tossicità, effetti avversi, allergie o interazioni: riportali in toxicity.claims con la loro "q" letterale.'],
+  ["lookalikes_mancante", 'Il campo "lookalikes" deve essere presente (anche come elenco vuoto).'],
+  ["sintesi_mancante", 'Il campo "summary" deve essere compilato con una sintesi supportata da una "q" letterale.'],
+  ["scheda_vuota", 'Includi le affermazioni che i frammenti sostengono, ciascuna con "q" letterale.'],
+  ["schema_non_conforme", "Rispetta esattamente la struttura di <schema>."],
+];
+
 // ---------- Una scheda
 async function generateOne(t) {
   const g = await gbifResolve(t);
@@ -114,8 +123,16 @@ async function generateOne(t) {
 
   const pol = policy.decide(g.name);
   await sleep(GAP);
-  const card = await llm(SYSTEM, userPrompt(g.name, frags));
-  const v = validateCard(card, fragMap, { tier: pol.tier, redListed: policy.isRed(g.name) }, { isRed: policy.isRed, curatedLookalikes: curatedMap[g.name] ?? [] });
+  const check = (card) => validateCard(card, fragMap, { tier: pol.tier, redListed: policy.isRed(g.name) }, { isRed: policy.isRed, curatedLookalikes: curatedMap[g.name] ?? [] });
+  let retried = false, v = check(await llm(SYSTEM, userPrompt(g.name, frags)));
+  // Un solo secondo tentativo, con il motivo del blocco: il controllo resta quello di prima (nessuna scorciatoia sulla sicurezza), cambia solo l'istruzione al modello.
+  if (v.blocked.length && !env.NO_RETRY) {
+    const first = v.blocked.join(",");
+    await sleep(GAP);
+    v = check(await llm(SYSTEM, userPrompt(g.name, frags) + `\n<correzione>La bozza precedente è stata scartata dal controllo automatico (${first}). ${HINTS.filter(([k]) => first.includes(k)).map(([, t]) => t).join(" ")} Rispondi di nuovo con SOLO il JSON.</correzione>`));
+    if (v.blocked.length) return { ok: false, reason: `${first} → ${v.blocked.join(",")}`, calls: 2 };
+    console.log("recuperata al secondo tentativo:", g.name, "(prima:", first + ")"); retried = true;
+  }
   if (v.blocked.length) return { ok: false, reason: v.blocked.join(",") };
 
   const cited = new Set(JSON.stringify(v.card).match(/"S\d+"/g)?.map((x) => x.slice(1, -1)));
@@ -127,7 +144,7 @@ async function generateOne(t) {
     sources: frags.filter((f) => cited.has(f.key) || f.kind === "wikidata").map(({ key, kind, url, pmid, title, license }) => ({ key, kind, url, pmid, title, license })),
     images: img ? [img] : [], auto_checks: { dropped: v.dropped, red_flag: v.redFlag }, content: v.card,
   });
-  return { ok: true, slug };
+  return { ok: true, slug, recovered: retried };
 }
 
 function rebuildIndex() {
@@ -165,7 +182,7 @@ async function main() {
     if (llmCalls >= MAX) break;
     try {
       const r = await generateOne(t);
-      if (!r.skipped) llmCalls++;
+      if (!r.skipped) llmCalls += r.calls ?? (r.recovered ? 2 : 1);
       if (t.kv) ack.push(t.kv); if (t.reportKvs) ack.push(...t.reportKvs);
       consecutiveErr = 0;
       if (r.ok) { okN++; delete failures[t.name ?? t.key]; console.log("OK", r.slug, r.skipped ? "(già presente)" : ""); }

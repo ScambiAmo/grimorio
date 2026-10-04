@@ -10,10 +10,11 @@ const CARD = {
   warnings: [], therapeutic_and_medicinal: { preparations: [{ name: "Infuso", part: "foglie", claim: { t: "Infuso", s: ["S1"], q: "è una pianta erbacea perenne" } }] },
   culinary_uses: { edible_parts: [{ part: "foglie", claim: { t: "Foglie", s: ["S1"], q: "è una pianta erbacea perenne" } }] }, legal: { protection: null },
 };
-globalThis.fetch = async (url) => {
+globalThis.fetch = async function (url) {
   const u = String(url);
   if (process.env.STUB_EXPECT_CF && u.includes("/chat/completions") && !u.startsWith("https://api.cloudflare.com/client/v4/accounts/acc/ai/v1/")) return new Response("url sbagliato", { status: 500 });
   if (process.env.STUB_LLM === "401" && u.includes("/chat/completions")) return new Response(JSON.stringify({ success: false, errors: [{ code: 10000, message: "Authentication error" }] }), { status: 401 });
+  if (process.env.STUB_LLM === "retry" && u.includes("/chat/completions")) { const body = JSON.parse(arguments[1].body), asked = body.messages[1].content.includes("<correzione>"); return R({ choices: [{ message: { content: JSON.stringify(asked ? CARD : { ...CARD, summary: { t: "x", s: ["S1"], q: "frase mai scritta nei frammenti" }, identification: { keys: [{ t: "y", s: ["S1"], q: "altra frase inventata" }], habitat: null, distribution: null, season: {} }, toxicity: { claims: [{ t: "z", s: ["S1"], q: "ancora inventata" }] }, lookalikes: [] }) } }] }); }
   if (process.env.STUB_LLM === "fence" && u.includes("/chat/completions")) return R({ choices: [{ message: { content: "Ecco la scheda:\n```json\n" + JSON.stringify(CARD) + "\n```" } }] });
   if (u.includes("models.github.ai") || u.includes("/chat/completions")) return process.env.STUB_LLM === "429" ? new Response("", { status: 429 }) : R({ choices: [{ message: { content: JSON.stringify(CARD) } }] });
   if (u.includes("/species/match")) return R({ usageKey: 5, matchType: "EXACT" });

@@ -49,3 +49,11 @@ test("token Cloudflare senza permesso Workers AI: errore chiaro in annotazione, 
   assert.match(out, /non ha il permesso Workers AI/); assert.match(out, /::warning::generate: .*Workers AI/);
   assert.equal(existsSync(join(d, "plants/allium-ursinum.json")), false);
 });
+
+test("scheda bloccata al primo tentativo: un secondo tentativo con il motivo; se riesce passa gli stessi controlli, se no resta non pubblicata", () => {
+  const ok = run({ STUB_LLM: "retry" });
+  assert.match(ok.out, /recuperata al secondo tentativo: Allium ursinum/); assert.match(ok.out, /OK allium-ursinum/);
+  assert.ok(existsSync(join(ok.d, "plants/allium-ursinum.json")));
+  const no = run({ STUB_LLM: "retry", NO_RETRY: "1" });
+  assert.match(no.out, /FALLITA Allium ursinum/); assert.equal(existsSync(join(no.d, "plants/allium-ursinum.json")), false, "senza secondo tentativo la bozza difettosa non viene pubblicata");
+});
