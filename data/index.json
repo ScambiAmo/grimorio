@@ -1,1 +1,89 @@
-[]
+[
+ {
+  "slug": "hypericum-perforatum",
+  "gbif_key": 3189486,
+  "name": "Hypericum perforatum",
+  "family": "Hypericaceae",
+  "common_names": {
+   "it": [
+    "Erba di San Giovanni comune",
+    "Iperico perforato"
+   ],
+   "en": [
+    "Common St. John's Wort",
+    "Common St. Johnswort",
+    "Gammock",
+    "Goatweed",
+    "Herb-John",
+    "Klamath Weed",
+    "Klamath weed",
+    "Klamathweed"
+   ]
+  },
+  "synonyms": [
+   "Hypericum perforatum floribundum"
+  ],
+  "tier": "medio",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-04T21:42:58.768Z"
+ },
+ {
+  "slug": "matricaria-chamomilla",
+  "gbif_key": 8370958,
+  "name": "Matricaria chamomilla",
+  "family": "Asteraceae",
+  "common_names": {
+   "it": [
+    "Camomilla comune",
+    "camomilla"
+   ],
+   "en": [
+    "Annual Chamomile",
+    "Crown mayweed",
+    "German camomile",
+    "German chamomile",
+    "German mayweed",
+    "Hungarian chamomile",
+    "Scented Mayweed",
+    "blue chamomile"
+   ]
+  },
+  "synonyms": [
+   "Anthemis vulgaris",
+   "Camomilla patens",
+   "Chamaemelum chamomilla",
+   "Chamaemelum suaveolens",
+   "Chamaemelum vulgare",
+   "Chamomilla chamomilla",
+   "Chamomilla chamomilla courrantiana",
+   "Chamomilla chamomilla kochiana",
+   "Chamomilla chamomilla pusilla",
+   "Chamomilla chamomilla suaveolens",
+   "Chamomilla chamomilla coronata",
+   "Chamomilla chamomilla pappulosa",
+   "Chamomilla chamomilla recutita",
+   "Chamomilla courrantiana",
+   "Chamomilla meridionalis",
+   "Chamomilla officinalis",
+   "Chamomilla patens",
+   "Chamomilla recutita",
+   "Chamomilla recutita bayeri",
+   "Chamomilla recutita recutita",
+   "Chamomilla unilateralis",
+   "Chamomilla vulgaris",
+   "Chrysanthemum chamomilla",
+   "Chrysanthemum suaveolens",
+   "Courrantia chamomilloides",
+   "Leucanthemum chamaemelum",
+   "Matricaria bayeri",
+   "Matricaria capitellata",
+   "Matricaria chamaemilla",
+   "Matricaria chamomilla courrantiana"
+  ],
+  "tier": "basso",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-04T21:44:01.547Z"
+ }
+]

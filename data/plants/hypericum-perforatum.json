@@ -1,0 +1,166 @@
+{
+ "gbif_key": 3189486,
+ "accepted_name": "Hypericum perforatum",
+ "family": "Hypericaceae",
+ "common_names": {
+  "it": [
+   "Erba di San Giovanni comune",
+   "Iperico perforato"
+  ],
+  "en": [
+   "Common St. John's Wort",
+   "Common St. Johnswort",
+   "Gammock",
+   "Goatweed",
+   "Herb-John",
+   "Klamath Weed",
+   "Klamath weed",
+   "Klamathweed"
+  ]
+ },
+ "synonyms": [
+  "Hypericum perforatum floribundum"
+ ],
+ "safety_tier": "medio",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-04T21:42:58.768Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Hypericum_perforatum",
+   "title": "Hypericum perforatum",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Hypericum_perforatum",
+   "title": "Hypericum perforatum",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q158289",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/%28MHNT%29_Hypericum_perforatum_flower_and_buttons.jpg/960px-%28MHNT%29_Hypericum_perforatum_flower_and_buttons.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Didier Descouens",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:(MHNT)_Hypericum_perforatum_flower_and_buttons.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "med.active_principles[0]",
+    "err": "citazione_non_trovata",
+    "t": "ipericina"
+   },
+   {
+    "path": "med.active_principles[1]",
+    "err": "citazione_non_trovata",
+    "t": "iperforina"
+   },
+   {
+    "path": "med.traditional_uses[1]",
+    "err": "citazione_non_trovata",
+    "t": "trattamento di ferite"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Hypericum perforatum è una pianta officinale perenne semisempreverde",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "foglie con piccole vescichette oleose",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "posizioni soleggiate o semiombreggiate e asciutte",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "diffuso in tutte le regioni d'Italia e nel resto del mondo",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "fioritura massima verso il 24 giugno",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "pianta tossica",
+     "s": [
+      "S2"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [
+    {
+     "t": "trattamento di depressione",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "contraindications": [],
+   "interactions": [
+    {
+     "t": "interazione con vari farmaci",
+     "s": [
+      "S2"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "edible_parts": [],
+   "flavor_profile": [],
+   "preparation_effects": [],
+   "pairings": []
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

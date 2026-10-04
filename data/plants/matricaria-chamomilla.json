@@ -1,0 +1,256 @@
+{
+ "gbif_key": 8370958,
+ "accepted_name": "Matricaria chamomilla",
+ "family": "Asteraceae",
+ "common_names": {
+  "it": [
+   "Camomilla comune",
+   "camomilla"
+  ],
+  "en": [
+   "Annual Chamomile",
+   "Crown mayweed",
+   "German camomile",
+   "German chamomile",
+   "German mayweed",
+   "Hungarian chamomile",
+   "Scented Mayweed",
+   "blue chamomile"
+  ]
+ },
+ "synonyms": [
+  "Anthemis vulgaris",
+  "Camomilla patens",
+  "Chamaemelum chamomilla",
+  "Chamaemelum suaveolens",
+  "Chamaemelum vulgare",
+  "Chamomilla chamomilla",
+  "Chamomilla chamomilla courrantiana",
+  "Chamomilla chamomilla kochiana",
+  "Chamomilla chamomilla pusilla",
+  "Chamomilla chamomilla suaveolens",
+  "Chamomilla chamomilla coronata",
+  "Chamomilla chamomilla pappulosa",
+  "Chamomilla chamomilla recutita",
+  "Chamomilla courrantiana",
+  "Chamomilla meridionalis",
+  "Chamomilla officinalis",
+  "Chamomilla patens",
+  "Chamomilla recutita",
+  "Chamomilla recutita bayeri",
+  "Chamomilla recutita recutita",
+  "Chamomilla unilateralis",
+  "Chamomilla vulgaris",
+  "Chrysanthemum chamomilla",
+  "Chrysanthemum suaveolens",
+  "Courrantia chamomilloides",
+  "Leucanthemum chamaemelum",
+  "Matricaria bayeri",
+  "Matricaria capitellata",
+  "Matricaria chamaemilla",
+  "Matricaria chamomilla courrantiana"
+ ],
+ "safety_tier": "basso",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-04T21:44:01.547Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Matricaria_chamomilla",
+   "title": "Matricaria chamomilla",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla",
+   "title": "Matricaria chamomilla",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q28437",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Matricaria_recutita_0.1_R.jpg/960px-Matricaria_recutita_0.1_R.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Rob Hille",
+   "license": "Public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Matricaria_recutita_0.1_R.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "med.active_principles[0]",
+    "err": "citazione_non_trovata",
+    "t": "Azulene"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La camomilla comune è una specie di pianta angiosperma dicotiledone della famiglia delle Asteracee",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "La pianta è spiccatamente aromatica",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": null,
+   "distribution": {
+    "t": "La specie è distribuita in Europa e in Asia ed è naturalizzata anche in altri continenti",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "La fioritura avviene da maggio a agosto",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "La pianta può causare allergie e interagire con altri farmaci",
+     "s": [
+      "S2"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "La pianta può causare allergie e interagire con altri farmaci",
+    "s": [
+     "S2"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Bisabololo",
+     "s": [
+      "S2"
+     ]
+    }
+   ],
+   "traditional_uses": [
+    {
+     "t": "La camomilla è utilizzata per fare un tè",
+     "s": [
+      "S2"
+     ]
+    }
+   ],
+   "contraindications": [
+    {
+     "t": "La pianta può causare allergie e interagire con altri farmaci",
+     "s": [
+      "S2"
+     ]
+    }
+   ],
+   "interactions": [
+    {
+     "t": "La pianta può interagire con anticoagulanti",
+     "s": [
+      "S2"
+     ]
+    }
+   ],
+   "preparations": [
+    {
+     "name": "Tè",
+     "part": "Fiori",
+     "claim": {
+      "t": "La camomilla è utilizzata per fare un tè",
+      "s": [
+       "S2"
+      ]
+     }
+    }
+   ]
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "Fiori",
+     "season": null,
+     "claim": {
+      "t": "I fiori sono utilizzati per fare un tè",
+      "s": [
+       "S2"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [
+    {
+     "t": "Aromatico",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "preparation_effects": [
+    {
+     "t": "La pianta può causare allergie e interagire con altri farmaci",
+     "s": [
+      "S2"
+     ]
+    }
+   ],
+   "pairings": []
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Anthemis arvensis",
+    "danger": "bassa",
+    "claim": {
+     "t": "La camomilla tedesca si distingue dalla camomilla cornicola per la presenza di una cavità nel ricettacolo",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": [
+     {
+      "t": "Presenza di una cavità nel ricettacolo",
+      "s": [
+       "S2"
+      ]
+     }
+    ]
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}
