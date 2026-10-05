@@ -56,13 +56,16 @@ if (typeof document !== "undefined") {
   const shotsHtml = () => shots.map((s, i) => `<img src="${s.url}" width="64" data-i="${i}" title="Tocca per togliere" alt="foto ${i + 1}">`).join("");
 
   async function home() {
-    app.innerHTML = `<input id="q" type="search" placeholder="Cerca per nome nell'archivio (italiano o latino)…"><div id="res"></div>
-<div class="c"><h3 style="margin:.2rem 0">Scopri una pianta</h3>
+    const mine = ls("scoperte", []).filter((x) => x.status === "scoperta").length;
+    app.innerHTML = `<div class="stat"><div><b>${index.length}</b><span>specie nell'archivio</span></div><div><b>${mine}</b><span>tue scoperte</span></div></div>
+<input id="q" type="search" placeholder="Cerca per nome nell'archivio (italiano o latino)…"><div id="res"></div>
+<div class="c"><h3>Scopri una pianta</h3>
 <p><small>Scatta almeno ${MIN_SHOTS} foto (massimo ${MAX_SHOTS}) da angolazioni diverse: pianta intera, foglie, fiori o frutti, fusto. Prima la cerchiamo nell'archivio; se non c'è, puoi farla entrare tu nel Grimorio e ricevere il tuo badge.</small></p>
 <video id="v" playsinline muted></video>
-<p><button id="snap">📷 Scatta</button> <label class="s" style="padding:.6rem .9rem;border:1px solid var(--g);border-radius:10px">Aggiungi dalla galleria<input id="f" type="file" accept="image/*" multiple hidden></label></p>
+<p><button id="snap">📷 Scatta</button> <label class="s" style="padding:.6rem .9rem;border:1.5px solid var(--orange);border-radius:999px;color:var(--orange);cursor:pointer">Aggiungi dalla galleria<input id="f" type="file" accept="image/*" multiple hidden></label></p>
 <div id="sh"></div><p><button id="go" disabled>Cerca</button> <button class="s" id="rs">Azzera</button> <small id="hint"></small></p></div>
-<p><small>${esc(DISCLAIMER)}</small></p><p><a href="#/i">Privacy e crediti</a></p>`;
+<p class="cta"><a href="#/archivio"><button class="s">Leggi tutto l'archivio</button></a></p>
+<p><small>${esc(DISCLAIMER)}</small></p>`;
     $("#q").oninput = (e) => { $("#res").innerHTML = search(index, e.target.value).map((p) => `<div class="c"><a href="#/p/${esc(p.slug)}">${esc(p.name)}</a> <small>${esc((p.common_names?.it || [])[0] || "")}</small></div>`).join(""); };
     const v = $("#v"); stop(); stream = await navigator.mediaDevices?.getUserMedia({ video: { facingMode: { ideal: "environment" } }, audio: false }).catch(() => null);
     if (stream) { v.srcObject = stream; v.play(); } else v.hidden = true;
@@ -175,10 +178,17 @@ ${wt.map((x) => `<p><a href="#/s/${x.gbif_key}">⏳ ${esc(x.name)}: in preparazi
     const e = await fetch("src/emergency.json").then((r) => r.json()).catch(() => ({ centri_antiveleni: [] }));
     app.innerHTML = `<h2>Privacy e crediti</h2><p>${esc(PRIVACY)}</p><p>${esc(PLANTNET)}</p><p>${esc(LICENSE)}</p><h3>Emergenze</h3><p>${esc(e.emergenza || "112")}</p><ul>${(e.centri_antiveleni || []).filter((c) => c.telefono).map((c) => `<li>${esc(c.nome)}: ${esc(c.telefono)}</li>`).join("")}</ul><p><a href="#/">← Indietro</a></p>`;
   }
+  const chrome = (h) => {
+    document.body.className = h === "/" ? "home" : "inner";
+    const cur = h === "/" ? "#/" : h === "/archivio" ? "#/archivio" : h === "/g" ? "#/g" : "";
+    document.querySelectorAll("header nav a").forEach((a) => (a.getAttribute("href") === cur ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current")));
+    try { window.scrollTo(0, 0); } catch {}
+  };
   const route = async () => {
     stop(); clearInterval(timer); const h = location.hash.slice(1) || "/";
     if (!index.length || ls("scoperte", []).some((r) => r.status === "attesa")) await load();
     const fresh = await settle(); if (fresh.length && !h.startsWith("/b/")) { location.hash = "#/b/" + fresh[0].gbif_key; return; }
+    chrome(h);
     if (h.startsWith("/p/")) card(h.slice(3)); else if (h === "/g") grimorio(); else if (h === "/archivio") archive(); else if (h.startsWith("/s/")) wait(+h.slice(3)); else if (h.startsWith("/b/")) reveal(+h.slice(3)); else if (h === "/i") privacy(); else home();
   };
   addEventListener("hashchange", route); route();

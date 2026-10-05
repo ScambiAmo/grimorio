@@ -1,4 +1,4 @@
-const V = "g5", SHELL = ["./", "index.html", "app.js", "config.js", "src/legal.js", "src/badge.js", "src/emergency.json", "icon.svg"];
+const V = "g6", SHELL = ["./", "index.html", "app.js", "config.js", "src/legal.js", "src/badge.js", "fonts/londrina-solid-latin-400-normal.woff2", "fonts/londrina-solid-latin-900-normal.woff2", "fonts/raleway-latin-300-normal.woff2", "fonts/raleway-latin-400-normal.woff2", "fonts/raleway-latin-600-normal.woff2", "src/emergency.json", "icon.svg"];
 self.addEventListener("install", (e) => e.waitUntil(caches.open(V).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())));
 self.addEventListener("activate", (e) => e.waitUntil(caches.keys().then((k) => Promise.all(k.filter((x) => x !== V).map((x) => caches.delete(x)))).then(() => self.clients.claim())));
 self.addEventListener("fetch", (e) => {

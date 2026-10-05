@@ -9,7 +9,7 @@ const root = new URL("../", import.meta.url).pathname;
 function run(extraEnv = {}, dir) {
   const d = dir ?? mkdtempSync(join(tmpdir(), "g-"));
   if (!dir) { for (const f of ["taxa_policy.json", "lookalikes.json"]) copyFileSync(root + "data/" + f, join(d, f)); writeFileSync(join(d, "seed.txt"), "# seed\nAllium ursinum\n"); }
-  const r = spawnSync("node", ["--import", root + "scripts/stub-network.mjs", root + "scripts/generate.mjs"], { env: { ...process.env, DATA_DIR: d, SEED_FILE: join(d, "seed.txt"), LLM_GAP_MS: "0", MAX_PER_RUN: "3", GITHUB_TOKEN: "t", ...extraEnv }, encoding: "utf8" });
+  const r = spawnSync("node", ["--import", root + "scripts/stub-network.mjs", root + "scripts/generate.mjs"], { env: { ...process.env, DATA_DIR: d, SEED_FILE: join(d, "seed.txt"), LLM_GAP_MS: "0", MAX_PER_RUN: "3", GITHUB_TOKEN: "t", BOOK_FILE: join(d, "nessun-libro.json"), ...extraEnv }, encoding: "utf8" });
   return { d, out: r.stdout + r.stderr };
 }
 
@@ -56,4 +56,14 @@ test("scheda bloccata al primo tentativo: un secondo tentativo con il motivo; se
   assert.ok(existsSync(join(ok.d, "plants/allium-ursinum.json")));
   const no = run({ STUB_LLM: "retry", NO_RETRY: "1" });
   assert.match(no.out, /FALLITA Allium ursinum/); assert.equal(existsSync(join(no.d, "plants/allium-ursinum.json")), false, "senza secondo tentativo la bozza difettosa non viene pubblicata");
+});
+
+test("appunti del libro: arrivano al modello come fonte in più, la specie fuori archivio viene creata, il registro evita rigenerazioni a catena", () => {
+  const f = join(mkdtempSync(join(tmpdir(), "libro-")), "libro.json");
+  writeFileSync(f, JSON.stringify([{ name: "Allium ursinum", it: "aglio orsino", text: "MARCATORE_LIBRO Foglie lanceolate, odore di aglio." }]));
+  const a = run({ BOOK_FILE: f, STUB_EXPECT_BOOK: "1" });
+  assert.match(a.out, /OK allium-ursinum/); assert.ok(existsSync(join(a.d, "plants/allium-ursinum.json")));
+  assert.ok(Object.keys(JSON.parse(readFileSync(join(a.d, "book_done.json"), "utf8"))).includes("Allium ursinum"), "registrato");
+  const b = run({ BOOK_FILE: f, STUB_EXPECT_BOOK: "1" }, a.d);
+  assert.ok(!/FALLITA|ERRORE/.test(b.out));
 });

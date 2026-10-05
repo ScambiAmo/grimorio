@@ -13,6 +13,7 @@ const CARD = {
 globalThis.fetch = async function (url) {
   const u = String(url);
   if (process.env.STUB_EXPECT_CF && u.includes("/chat/completions") && !u.startsWith("https://api.cloudflare.com/client/v4/accounts/acc/ai/v1/")) return new Response("url sbagliato", { status: 500 });
+  if (process.env.STUB_EXPECT_BOOK && u.includes("/chat/completions") && !String(arguments[1]?.body).includes("MARCATORE_LIBRO")) return new Response("manca il libro", { status: 500 });
   if (process.env.STUB_LLM === "401" && u.includes("/chat/completions")) return new Response(JSON.stringify({ success: false, errors: [{ code: 10000, message: "Authentication error" }] }), { status: 401 });
   if (process.env.STUB_LLM === "retry" && u.includes("/chat/completions")) { const body = JSON.parse(arguments[1].body), asked = body.messages[1].content.includes("<correzione>"); return R({ choices: [{ message: { content: JSON.stringify(asked ? CARD : { ...CARD, summary: { t: "x", s: ["S1"], q: "frase mai scritta nei frammenti" }, identification: { keys: [{ t: "y", s: ["S1"], q: "altra frase inventata" }], habitat: null, distribution: null, season: {} }, toxicity: { claims: [{ t: "z", s: ["S1"], q: "ancora inventata" }] }, lookalikes: [] }) } }] }); }
   if (process.env.STUB_LLM === "fence" && u.includes("/chat/completions")) return R({ choices: [{ message: { content: "Ecco la scheda:\n```json\n" + JSON.stringify(CARD) + "\n```" } }] });

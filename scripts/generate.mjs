@@ -14,6 +14,12 @@ const CF = !env.LLM_BASE_URL && !!env.CLOUDFLARE_ACCOUNT_ID && !!env.CLOUDFLARE_
 const BASE = env.LLM_BASE_URL || (CF ? `https://api.cloudflare.com/client/v4/accounts/${env.CLOUDFLARE_ACCOUNT_ID}/ai/v1` : "https://models.github.ai/inference");
 const MODEL = env.LLM_MODEL || (CF ? "@cf/meta/llama-3.3-70b-instruct-fp8-fast" : "openai/gpt-4.1-mini"); // [GitHub Models: da verificare nel catalogo]
 const TOKEN = env.LLM_API_KEY || (CF ? env.CLOUDFLARE_API_TOKEN : env.GITHUB_TOKEN);
+// Appunti dell'autrice (seed/libro_erbe.json): entrano come UNA FONTE in più per il modello, mai al posto delle fonti aperte.
+// Valgono le stesse regole di tutte le schede: ogni affermazione deve avere una citazione letterale presente nel testo, e la politica per specie decide cosa si può pubblicare.
+const BOOK_FILE = env.BOOK_FILE || new URL("../seed/libro_erbe.json", import.meta.url).pathname;
+const BOOK = (() => { try { return JSON.parse(readFileSync(BOOK_FILE, "utf8")); } catch { return []; } })();
+const BOOK_URL = "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json";
+const bookFor = (name) => BOOK.find((b) => slugOf(b.name) === slugOf(name));
 const MAX = Number(env.MAX_PER_RUN || 4), GAP = Number(env.LLM_GAP_MS || 8000), BUDGET = Number(env.FRAG_BUDGET || 14000);
 const DATA = env.DATA_DIR ? env.DATA_DIR.replace(/\/?$/, "/") : new URL("../data/", import.meta.url).pathname;
 const SEED = env.SEED_FILE || new URL("../seed/species.txt", import.meta.url).pathname;
@@ -116,6 +122,8 @@ async function generateOne(t) {
   const wd = await wikidata(g.gbif_key);
   const raw = [await wikipedia("it", wd?.it || g.name, Math.round(BUDGET * 0.4)), await wikipedia("en", wd?.en || g.name, Math.round(BUDGET * 0.3)), ...(await europepmc(g.name))].filter(Boolean);
   const names = [...(wd?.labels?.it ? [wd.labels.it] : []), ...g.common.it.slice(0, 5), ...g.common.en.slice(0, 5)];
+  const bk = bookFor(g.name);
+  if (bk) raw.push({ kind: "libro", label: "libro delle erbe (appunti dell'autrice)", text: bk.text.slice(0, Math.round(BUDGET * 0.35)), url: BOOK_URL, title: "Appunti dal libro delle erbe", license: "CC BY-SA 4.0 (appunti dell'autrice)" });
   if (names.length) raw.push({ kind: "wikidata", label: "wikidata", text: `Nomi: ${names.join(", ")}.`, url: `https://www.wikidata.org/wiki/${wd?.qid ?? ""}`, title: "Wikidata", license: "CC0" });
   if (!raw.some((f) => f.kind === "wikipedia" || f.kind === "europepmc")) return { ok: false, reason: "nessuna_fonte_testuale" };
   const frags = raw.map((f, i) => ({ ...f, key: `S${i + 1}` }));
@@ -170,6 +178,12 @@ async function main() {
   const bySlug = {};
   for (const r of q.reports) (bySlug[r.slug] ??= []).push(r.kv);
   for (const [slug, kvs] of Object.entries(bySlug)) if (kvs.length >= 3 && have.has(slug)) { const p = readJson(`plants/${slug}.json`); tasks.push({ key: p.gbif_key, name: p.accepted_name, force: true, reportKvs: kvs }); }
+  const bookDone = readJson("book_done.json", {});
+  for (const b of BOOK) {
+    const f = failures[b.name]; if (f && f.n >= 3 && Date.now() - Date.parse(f.last) < 14 * 864e5) continue;
+    if (!have.has(slugOf(b.name))) { if (!tasks.some((t) => t.name === b.name)) tasks.push({ name: b.name, seed: true, book: true }); }
+    else if (!bookDone[b.name]) { const p = readJson(`plants/${slugOf(b.name)}.json`); tasks.push({ key: p.gbif_key, name: p.accepted_name, force: true, book: true }); }
+  }
   if (existsSync(SEED))
     for (const line of readFileSync(SEED, "utf8").split("\n")) {
       const n = line.trim(); if (!n || n.startsWith("#") || have.has(slugOf(n))) continue;
@@ -185,6 +199,8 @@ async function main() {
       if (!r.skipped) llmCalls += r.calls ?? (r.recovered ? 2 : 1);
       if (t.kv) ack.push(t.kv); if (t.reportKvs) ack.push(...t.reportKvs);
       consecutiveErr = 0;
+      const now = new Date().toISOString(), bk = BOOK.find((b) => slugOf(b.name) === r.slug);
+      if (r.ok && !r.skipped && bk) bookDone[bk.name] = now; else if (!r.ok && t.book && t.force) bookDone[t.name] = now; // niente cicli infiniti sulle schede già esistenti
       if (r.ok) { okN++; delete failures[t.name ?? t.key]; console.log("OK", r.slug, r.skipped ? "(già presente)" : ""); }
       else { console.log("FALLITA", t.name ?? t.key, r.reason); problems.push(`${t.name ?? t.key}: ${r.reason}`); const k = t.name ?? String(t.key); failures[k] = { n: (failures[k]?.n ?? 0) + 1, last: new Date().toISOString(), reason: r.reason }; if (t.kv) failed.push({ gbif_key: t.key, reason: r.reason }); }
     } catch (e) {
@@ -193,7 +209,7 @@ async function main() {
       if (++consecutiveErr >= 3) { console.log("Tre errori di fila: mi fermo (inutile insistere)."); break; }
     }
   }
-  rebuildIndex(); writeJson("failures.json", failures);
+  rebuildIndex(); writeJson("failures.json", failures); writeJson("book_done.json", bookDone);
   const esc = (x) => String(x).replace(/%/g, "%25").replace(/\r/g, "%0D").replace(/\n/g, "%0A");
   console.log(`::notice::generate: ${okN} schede ok, ${problems.length} problemi su ${tasks.length} richieste in coda`);
   for (const x of problems.slice(0, 6)) console.log(`::warning::generate: ${esc(x).slice(0, 280)}`);
