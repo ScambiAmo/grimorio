@@ -1,0 +1,197 @@
+{
+ "gbif_key": 5331916,
+ "accepted_name": "Betula pendula",
+ "family": "Betulaceae",
+ "common_names": {
+  "it": [
+   "Betulla verrucosa",
+   "betulla"
+  ],
+  "en": [
+   "Common Birch",
+   "East Asian White Birch",
+   "East Asian white birch",
+   "European White Birch",
+   "European weeping birch",
+   "European white birch",
+   "Silver Birch",
+   "Weeping Birch"
+  ]
+ },
+ "synonyms": [
+  "Betula alba arborescens",
+  "Betula alba pendula",
+  "Betula alba carelica",
+  "Betula alba microphylla",
+  "Betula alba urticifolia",
+  "Betula ethmensis",
+  "Betula laciniata",
+  "Betula lobulata",
+  "Betula pendula dalecarlica",
+  "Betula pendula pendula",
+  "Betula pendula purpurea",
+  "Betula pendula oycowiensis",
+  "Betula verrucosa",
+  "Betula verrucosa dalecarlica",
+  "Betula verrucosa elegans",
+  "Betula verrucosa bircalensis",
+  "Betula verrusosa serrata"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-05T02:33:34.039Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Betula_pendula",
+   "title": "Betula pendula",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Betula_pendula",
+   "title": "Betula pendula",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42738697",
+   "pmid": "42738697",
+   "title": "Comparative Metabolite Profiling of &lt;i&gt;Betula pendula&lt;/i&gt; Roth and &lt;i&gt;Betula pubescens&lt;/i&gt; Ehrh. Leaf Extracts Reveals Antioxidant and Hepatoprotective Potential.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S4",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42047532",
+   "pmid": "42047532",
+   "title": "Removal and Detoxification of Safranin in Aqueous Solutions Using a Betula pendula Roth Based Biomass: Isotherm, Kinetics, Thermodynamics of the Biosorption Process, and Molecular Insights Into the Mechanism of Safranin Ecotoxicity.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q156895",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Betula_pendula_Finland.jpg/960px-Betula_pendula_Finland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Percita at Flickr",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Betula_pendula_Finland.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.distribution",
+    "err": "citazione_non_trovata",
+    "t": "Italia, Piemonte, Lombardia, Appennino settentrionale, Abruzzo, Appennino campano"
+   },
+   {
+    "path": "med.active_principles[0]",
+    "err": "citazione_non_trovata",
+    "t": "Flavonoidi e composti polifenolici"
+   },
+   {
+    "path": "med.preparations[0].claim",
+    "err": "citazione_non_trovata",
+    "t": "Estratti di foglie di betulla pendula"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La betulla pendula è una pianta appartenente alla famiglia Betulaceae.",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Albero che può raggiungere i 30 m di altezza.",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Eurasia e Nord America",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "distribution": null,
+   "season": {
+    "flowering": null,
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Effetti avversi sulla fisiologia e anatomia di Allium cepa L.",
+     "s": [
+      "S4"
+     ]
+    },
+    {
+     "t": "Cytotoxicity su cellule LX-2 e HepG2",
+     "s": [
+      "S3"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Betula pubescens",
+    "danger": "bassa",
+    "claim": {
+     "t": "La betulla pendula può essere confusa con la betulla pubescens",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": [
+     {
+      "t": "Foglie pelose e giovani rami pelosi",
+      "s": [
+       "S2"
+      ]
+     }
+    ]
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

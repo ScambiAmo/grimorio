@@ -8,5 +8,10 @@
   "n": 1,
   "last": "2026-10-04T23:41:10.181Z",
   "reason": "troppe_affermazioni_scartate,tossicita_mancante → tossicita_mancante"
+ },
+ "Picea abies": {
+  "n": 1,
+  "last": "2026-10-05T02:32:47.396Z",
+  "reason": "tossicita_mancante → troppe_affermazioni_scartate,tossicita_mancante"
  }
 }

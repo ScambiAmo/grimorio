@@ -1,5 +1,50 @@
 [
  {
+  "slug": "betula-pendula",
+  "gbif_key": 5331916,
+  "name": "Betula pendula",
+  "family": "Betulaceae",
+  "common_names": {
+   "it": [
+    "Betulla verrucosa",
+    "betulla"
+   ],
+   "en": [
+    "Common Birch",
+    "East Asian White Birch",
+    "East Asian white birch",
+    "European White Birch",
+    "European weeping birch",
+    "European white birch",
+    "Silver Birch",
+    "Weeping Birch"
+   ]
+  },
+  "synonyms": [
+   "Betula alba arborescens",
+   "Betula alba pendula",
+   "Betula alba carelica",
+   "Betula alba microphylla",
+   "Betula alba urticifolia",
+   "Betula ethmensis",
+   "Betula laciniata",
+   "Betula lobulata",
+   "Betula pendula dalecarlica",
+   "Betula pendula pendula",
+   "Betula pendula purpurea",
+   "Betula pendula oycowiensis",
+   "Betula verrucosa",
+   "Betula verrucosa dalecarlica",
+   "Betula verrucosa elegans",
+   "Betula verrucosa bircalensis",
+   "Betula verrusosa serrata"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-05T02:33:34.039Z"
+ },
+ {
   "slug": "fragaria-vesca",
   "gbif_key": 3029817,
   "name": "Fragaria vesca",
