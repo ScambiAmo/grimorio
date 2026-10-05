@@ -1,0 +1,217 @@
+{
+ "gbif_key": 3084719,
+ "accepted_name": "Portulaca oleracea",
+ "family": "Portulacaceae",
+ "common_names": {
+  "it": [
+   "Erba dei porci",
+   "Erba porcellana",
+   "Porcellana Comune",
+   "Porcellana comune",
+   "Portulaca",
+   "Purciddana"
+  ],
+  "en": [
+   "Akulikuli-kula",
+   "Common Purslane",
+   "Duckweed",
+   "Garden Purslane",
+   "Little Hogweed",
+   "Little hogweed",
+   "Munyeroo",
+   "Pigweed"
+  ]
+ },
+ "synonyms": [
+  "Portulaca aurea",
+  "Portulaca consanguinea",
+  "Portulaca cryptopetala poellnitziana",
+  "Portulaca dichotoma",
+  "Portulaca fosbergii",
+  "Portulaca fosbergii fosbergii",
+  "Portulaca fosbergii major",
+  "Portulaca hortensis",
+  "Portulaca intermedia",
+  "Portulaca laevis",
+  "Portulaca latifolia",
+  "Portulaca marginata",
+  "Portulaca maritima",
+  "Portulaca neglecta",
+  "Portulaca officinarum",
+  "Portulaca oleracea alba",
+  "Portulaca oleracea aurantia",
+  "Portulaca oleracea aurea",
+  "Portulaca oleracea caryophyllina",
+  "Portulaca oleracea gillesii",
+  "Portulaca oleracea haageana",
+  "Portulaca oleracea parvifolia",
+  "Portulaca oleracea rosea",
+  "Portulaca oleracea sativa",
+  "Portulaca oleracea striata",
+  "Portulaca oleracea sulfurea",
+  "Portulaca oleracea violacea",
+  "Portulaca oleracea stellata",
+  "Portulaca oleracea sylvestris",
+  "Portulaca oleracea apiculata"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-05T18:54:29.996Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Portulaca_oleracea",
+   "title": "Portulaca oleracea",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42607874",
+   "pmid": "42607874",
+   "title": "Progress in extraction, purification, chemical structure, bioactivities, and food preservation applications of polysaccharides from Portulaca oleracea L.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S5",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/40658280",
+   "pmid": "40658280",
+   "title": "Nitrate and nitrite acute poisoning in feedlot cattle caused by ingestion of Portulaca oleracea.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q158015",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Portulaca_oleracea.JPG/960px-Portulaca_oleracea.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "ZooFari",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Portulaca_oleracea.JPG"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.habitat",
+    "err": "citazione_non_trovata",
+    "t": "Cresce in orti, campi e suoli sciolti e permeabili."
+   },
+   {
+    "path": "identification.distribution",
+    "err": "citazione_non_trovata",
+    "t": "Ha un'estesa distribuzione, probabilmente di origine asiatica, e si trova in diverse regioni del mondo."
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La Portulaca oleracea è una pianta commestibile utilizzata in cucina fin dall'antichità.",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "La pianta ha foglie e fusti carnosi, fiori gialli che si aprono solo quando c'è il sole e chiudono di notte.",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": null,
+   "distribution": null,
+   "season": {
+    "flowering": {
+     "t": "I fiori si aprono solo quando c'è il sole e chiudono di notte.",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "La pianta può contenere livelli elevati di nitrati, che possono essere tossici se consumati in grandi quantità.",
+     "s": [
+      "S5"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "Evitare l'uso interno terapeutico senza parere medico, specialmente in gravidanza o allattamento.",
+    "s": [
+     "S6"
+    ]
+   },
+   {
+    "t": "Evitare l'uso di estratti concentrati fai-da-te, poiché la sicurezza può cambiare con dosi e preparazione.",
+    "s": [
+     "S6"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Polisaccaridi",
+     "s": [
+      "S3"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "Gravidanza o allattamento senza parere medico.",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [
+    {
+     "t": "Interazioni con farmaci o condizioni metaboliche/renali/epatiche.",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

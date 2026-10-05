@@ -1,0 +1,222 @@
+{
+ "gbif_key": 3034807,
+ "accepted_name": "Conium maculatum",
+ "family": "Apiaceae",
+ "common_names": {
+  "it": [
+   "Cicuta maggiore"
+  ],
+  "en": [
+   "Carrot-fern",
+   "Deadly Hemlock",
+   "Fool's-parsley",
+   "Hemlock",
+   "Poison Hemlock",
+   "Poison Parsley",
+   "Poison hemlock",
+   "Spotted-hemlock"
+  ]
+ },
+ "synonyms": [
+  "Cicuta maculata",
+  "Cicuta major",
+  "Cicuta officinalis",
+  "Cicuta vulgaris",
+  "Conium ceretanicum",
+  "Conium ceretanum",
+  "Conium cicuta",
+  "Conium croaticum",
+  "Conium leiocarpum",
+  "Conium maculatum aromaticum",
+  "Conium maculatum strictum",
+  "Conium maculatum croaticum",
+  "Conium maculatum leiocarpum",
+  "Conium maculatum viride",
+  "Conium maculatum barceloi",
+  "Conium maculatum immaculatum",
+  "Conium maculatum sibiricum",
+  "Conium maculatum striatum",
+  "Conium maculosum",
+  "Conium nodosum",
+  "Conium pyrenaicum",
+  "Conium sibiricum",
+  "Conium strictum",
+  "Conium tenuifolium",
+  "Coriandrum maculatum",
+  "Selinum conium",
+  "Sium conium"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-05T18:55:01.938Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Conium_maculatum",
+   "title": "Conium maculatum",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Conium_maculatum",
+   "title": "Conium maculatum",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q218041",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Conium_maculatum_Cresswell_01.jpg/960px-Conium_maculatum_Cresswell_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "MPF",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Conium_maculatum_Cresswell_01.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La Conium maculatum è una pianta erbacea della famiglia delle Apiacee, diffusa in Europa, Asia e Africa.",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "La pianta ha un odore sgradevole e nauseabondo, simile all'urina di gatto o di topo.",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Cresce spontanea nelle campagne italiane, dove preferisce i luoghi ben freschi ai bordi delle siepi, nei pressi dei rigagnoli.",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "La pianta è nativa di Europa, Asia e Africa, ma è stata naturalizzata in altre parti del mondo.",
+    "s": [
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "La pianta fiorisce tra aprile e agosto.",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Tutta la pianta è molto velenosa e può portare alla morte.",
+     "s": [
+      "S1"
+     ]
+    },
+    {
+     "t": "La dose mortale per un essere umano è di qualche grammo di frutti verdi.",
+     "s": [
+      "S1"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "La pianta è tossica sia per il bestiame sia per le persone.",
+    "s": [
+     "S1"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "La coniina è l'alcaloide più attivo.",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "L'uso interno della pianta è sconsigliato.",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Prezzemolo selvatico",
+    "danger": "mortale",
+    "claim": {
+     "t": "La Conium maculatum può essere confusa con il prezzemolo selvatico.",
+     "s": [
+      "S1"
+     ]
+    },
+    "distinguishing_features": [
+     {
+      "t": "La Conium maculatum ha un odore sgradevole e nauseabondo.",
+      "s": [
+       "S1"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Cerfoglio",
+    "danger": "mortale",
+    "claim": {
+     "t": "La Conium maculatum può essere confusa con il cerfoglio.",
+     "s": [
+      "S1"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

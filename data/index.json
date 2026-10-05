@@ -1,5 +1,40 @@
 [
  {
+  "slug": "berberis-vulgaris",
+  "gbif_key": 3033894,
+  "name": "Berberis vulgaris",
+  "family": "Berberidaceae",
+  "common_names": {
+   "it": [
+    "Crespino comune"
+   ],
+   "en": [
+    "Barberry",
+    "Common barberry",
+    "European Berbery",
+    "European barberry",
+    "barberry",
+    "berbéris vulgaire",
+    "common barberry",
+    "jaundice-berry"
+   ]
+  },
+  "synonyms": [
+   "Berberis angulizans",
+   "Berberis bigelowii",
+   "Berberis calliobotrys",
+   "Berberis lycium",
+   "Berberis vulgaris vulgaris",
+   "Berberis vulgaris asperma",
+   "Berberis vulgaris purpurea",
+   "Berberis vulgaris sulcata"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-05T18:56:17.410Z"
+ },
+ {
   "slug": "betula-pendula",
   "gbif_key": 5331916,
   "name": "Betula pendula",
@@ -99,6 +134,60 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-05T09:19:26.069Z"
+ },
+ {
+  "slug": "conium-maculatum",
+  "gbif_key": 3034807,
+  "name": "Conium maculatum",
+  "family": "Apiaceae",
+  "common_names": {
+   "it": [
+    "Cicuta maggiore"
+   ],
+   "en": [
+    "Carrot-fern",
+    "Deadly Hemlock",
+    "Fool's-parsley",
+    "Hemlock",
+    "Poison Hemlock",
+    "Poison Parsley",
+    "Poison hemlock",
+    "Spotted-hemlock"
+   ]
+  },
+  "synonyms": [
+   "Cicuta maculata",
+   "Cicuta major",
+   "Cicuta officinalis",
+   "Cicuta vulgaris",
+   "Conium ceretanicum",
+   "Conium ceretanum",
+   "Conium cicuta",
+   "Conium croaticum",
+   "Conium leiocarpum",
+   "Conium maculatum aromaticum",
+   "Conium maculatum strictum",
+   "Conium maculatum croaticum",
+   "Conium maculatum leiocarpum",
+   "Conium maculatum viride",
+   "Conium maculatum barceloi",
+   "Conium maculatum immaculatum",
+   "Conium maculatum sibiricum",
+   "Conium maculatum striatum",
+   "Conium maculosum",
+   "Conium nodosum",
+   "Conium pyrenaicum",
+   "Conium sibiricum",
+   "Conium strictum",
+   "Conium tenuifolium",
+   "Coriandrum maculatum",
+   "Selinum conium",
+   "Sium conium"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-05T18:55:01.938Z"
  },
  {
   "slug": "fragaria-vesca",
@@ -359,6 +448,68 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-05T09:42:16.011Z"
+ },
+ {
+  "slug": "portulaca-oleracea",
+  "gbif_key": 3084719,
+  "name": "Portulaca oleracea",
+  "family": "Portulacaceae",
+  "common_names": {
+   "it": [
+    "Erba dei porci",
+    "Erba porcellana",
+    "Porcellana Comune",
+    "Porcellana comune",
+    "Portulaca",
+    "Purciddana"
+   ],
+   "en": [
+    "Akulikuli-kula",
+    "Common Purslane",
+    "Duckweed",
+    "Garden Purslane",
+    "Little Hogweed",
+    "Little hogweed",
+    "Munyeroo",
+    "Pigweed"
+   ]
+  },
+  "synonyms": [
+   "Portulaca aurea",
+   "Portulaca consanguinea",
+   "Portulaca cryptopetala poellnitziana",
+   "Portulaca dichotoma",
+   "Portulaca fosbergii",
+   "Portulaca fosbergii fosbergii",
+   "Portulaca fosbergii major",
+   "Portulaca hortensis",
+   "Portulaca intermedia",
+   "Portulaca laevis",
+   "Portulaca latifolia",
+   "Portulaca marginata",
+   "Portulaca maritima",
+   "Portulaca neglecta",
+   "Portulaca officinarum",
+   "Portulaca oleracea alba",
+   "Portulaca oleracea aurantia",
+   "Portulaca oleracea aurea",
+   "Portulaca oleracea caryophyllina",
+   "Portulaca oleracea gillesii",
+   "Portulaca oleracea haageana",
+   "Portulaca oleracea parvifolia",
+   "Portulaca oleracea rosea",
+   "Portulaca oleracea sativa",
+   "Portulaca oleracea striata",
+   "Portulaca oleracea sulfurea",
+   "Portulaca oleracea violacea",
+   "Portulaca oleracea stellata",
+   "Portulaca oleracea sylvestris",
+   "Portulaca oleracea apiculata"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-05T18:54:29.996Z"
  },
  {
   "slug": "taraxacum-officinale",

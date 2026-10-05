@@ -1,0 +1,195 @@
+{
+ "gbif_key": 3033894,
+ "accepted_name": "Berberis vulgaris",
+ "family": "Berberidaceae",
+ "common_names": {
+  "it": [
+   "Crespino comune"
+  ],
+  "en": [
+   "Barberry",
+   "Common barberry",
+   "European Berbery",
+   "European barberry",
+   "barberry",
+   "berbéris vulgaire",
+   "common barberry",
+   "jaundice-berry"
+  ]
+ },
+ "synonyms": [
+  "Berberis angulizans",
+  "Berberis bigelowii",
+  "Berberis calliobotrys",
+  "Berberis lycium",
+  "Berberis vulgaris vulgaris",
+  "Berberis vulgaris asperma",
+  "Berberis vulgaris purpurea",
+  "Berberis vulgaris sulcata"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-05T18:56:17.410Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Berberis_vulgaris",
+   "title": "Berberis vulgaris",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Berberis_vulgaris",
+   "title": "Berberis vulgaris",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q158563",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Berberis_vulgaris_sl5.jpg/960px-Berberis_vulgaris_sl5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Stefan.lefnaer",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Berberis_vulgaris_sl5.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "legal.protection",
+    "err": "citazione_non_trovata",
+    "t": "Proibizione di coltivazione in Canada e alcuni stati USA"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Berberis vulgaris",
+   "s": [
+    "S1",
+    "S2",
+    "S6"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Arbusto spinoso con rami a spine",
+     "s": [
+      "S1",
+      "S6"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Zone aride montane, ai margini dei boschi, nelle siepi, nei pascoli",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa continentale, Medio Oriente, Nord Africa e Asia occidentale",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Aprile-maggio",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": {
+     "t": "Luglio",
+     "s": [
+      "S1"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Effetti avversi degli alcaloidi concentrati",
+     "s": [
+      "S6"
+     ]
+    },
+    {
+     "t": "Interazioni con farmaci per pressione e diabete",
+     "s": [
+      "S6"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "Prudenza in gravidanza e allattamento",
+    "s": [
+     "S6"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Berberina",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "Gravidanza e allattamento",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [
+    {
+     "t": "Interazioni con farmaci per pressione e diabete",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}
