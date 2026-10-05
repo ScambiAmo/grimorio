@@ -1,0 +1,198 @@
+{
+ "gbif_key": 3131614,
+ "accepted_name": "Helichrysum italicum",
+ "family": "Asteraceae",
+ "common_names": {
+  "it": [
+   "Elicriso",
+   "Elicriso d'Italia"
+  ],
+  "en": [
+   "Curry-plant",
+   "Italian Strawflower",
+   "curryplant",
+   "Curry plant"
+  ]
+ },
+ "synonyms": [
+  "Gnaphalium glutinosum glutinosum",
+  "Helichrysum italicum ericoaedeum",
+  "Helichrysum italicum italicum",
+  "Helichrysum italicum numidicum"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-05T09:41:17.129Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Helichrysum_italicum",
+   "title": "Helichrysum italicum",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Helichrysum_italicum",
+   "title": "Helichrysum italicum",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/41977766",
+   "pmid": "41977766",
+   "title": "The Green Treasure from Appennine Flora for Colon and Liver Health: Characterization and Evaluation of the Protective Effects from Aerial Parts of &lt;i&gt;Helichrysum italicum&lt;/i&gt;.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q1587861",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Helichrysum_italicum_%28immortelle%29.JPG/960px-Helichrysum_italicum_%28immortelle%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "(c) 2005 Zubro",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Helichrysum_italicum_(immortelle).JPG"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "med.traditional_uses[0]",
+    "err": "citazione_non_trovata",
+    "t": "Trattamento di allergie, raffreddore, tosse e disturbi respiratori"
+   },
+   {
+    "path": "med.contraindications[0]",
+    "err": "senza_fonte",
+    "t": "Non ci sono informazioni sulle controindicazioni"
+   },
+   {
+    "path": "culinary.preparation_effects[0]",
+    "err": "senza_fonte",
+    "t": "Non ci sono informazioni sugli effetti della preparazione"
+   },
+   {
+    "path": "culinary.pairings[0]",
+    "err": "senza_fonte",
+    "t": "Non ci sono informazioni sugli abbinamenti"
+   },
+   {
+    "path": "lookalikes[0].claim",
+    "err": "senza_fonte",
+    "t": "Non ci sono informazioni sui look-alike per Helichrysum italicum"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Helichrysum italicum, conosciuta anche come elicriso o curry plant, è una pianta aromatica mediterranea",
+   "s": [
+    "S1",
+    "S2",
+    "S6"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Pianta aromatica mediterranea con fiori gialli e foglie lanose",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Garighe, prati aridi, brecciai, fiumare e colate laviche",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Sud Europa, Italia, Pirenei, Monti Balcani, Portogallo, Anatolia e Africa settentrionale occidentale",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Maggio-novembre",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Parti tossiche: non specificate",
+     "s": [
+      "S6"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "Prudenza se sei in gravidanza/allattamento",
+    "s": [
+     "S6"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Fenoli e flavonoidi",
+     "s": [
+      "S3"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [
+    {
+     "t": "Possibili interazioni con farmaci",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

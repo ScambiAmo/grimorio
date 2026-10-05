@@ -1,0 +1,195 @@
+{
+ "gbif_key": 3189767,
+ "accepted_name": "Plantago major",
+ "family": "Plantaginaceae",
+ "common_names": {
+  "it": [
+   "Piantaggine maggiore"
+  ],
+  "en": [
+   "Broadleaf Plantain",
+   "Buckhorn Plantain",
+   "Common Plantain",
+   "Common plantain",
+   "Great Plantain",
+   "Greater Plantain",
+   "Large Plantain",
+   "Plantain"
+  ]
+ },
+ "synonyms": [
+  "Plantago adriatica",
+  "Plantago altissima",
+  "Plantago angustata",
+  "Plantago borysthenica",
+  "Plantago bracteata",
+  "Plantago compressiscapa",
+  "Plantago crenata",
+  "Plantago dentata",
+  "Plantago dilatata",
+  "Plantago dostalii",
+  "Plantago dregeana",
+  "Plantago exaltata",
+  "Plantago fonticola",
+  "Plantago gigas",
+  "Plantago gouanii",
+  "Plantago gracilis",
+  "Plantago humifusa",
+  "Plantago jehohlensis",
+  "Plantago jepohlensis",
+  "Plantago laciniosa",
+  "Plantago latifolia",
+  "Plantago limosa",
+  "Plantago longiscapa",
+  "Plantago loureiroi",
+  "Plantago majo fma",
+  "Plantago major",
+  "Plantago major bifida",
+  "Plantago major bracteata",
+  "Plantago major brevipedicellata",
+  "Plantago major crispa"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-05T09:42:16.011Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Plantago_major",
+   "title": "Plantago major",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Plantago_major",
+   "title": "Plantago major",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q157154",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Llanten02.jpg/960px-Llanten02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Alepistoia",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Llanten02.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La piantaggine maggiore è una pianta erbacea perenne della famiglia delle Plantaginacee.",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Rosetta basale di foglie ovali/allungate con nervature molto evidenti; margine poco dentato o quasi intero.",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Cresce nei prati, negli orti e ai lati dei sentieri; è considerata pianta infestante.",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "La specie è presente in tutta Europa centrale e settentrionale e in Asia, mentre in altre parti del mondo (America) si è facilmente naturalizzata.",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "La fioritura avviene da maggio a ottobre nell'emisfero nord.",
+     "s": [
+      "S2"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Possibili interazioni farmacologiche con warfarin e altri farmaci.",
+     "s": [
+      "S6"
+     ]
+    },
+    {
+     "t": "Possibili effetti collaterali come disturbi gastrointestinali e allergie in soggetti sensibili.",
+     "s": [
+      "S6"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Glicosidi fenolici, saponine triterpenoidi, flavonoidi e altre sostanze.",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "Evitare l'uso interno se si assumono anticoagulanti o farmaci a stretto controllo.",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [
+    {
+     "t": "Interazioni farmacologiche con warfarin e altri farmaci.",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

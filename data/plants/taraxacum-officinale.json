@@ -40,8 +40,8 @@
  "status": "auto",
  "is_protected": false,
  "content_license": "CC BY-SA 4.0",
- "version": 1,
- "generated_at": "2026-10-04T21:47:16.228Z",
+ "version": 2,
+ "generated_at": "2026-10-05T09:40:42.332Z",
  "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
  "sources": [
   {
@@ -67,23 +67,14 @@
    "license": "abstract usato come input, non riprodotto"
   },
   {
-   "key": "S4",
-   "kind": "europepmc",
-   "url": "https://europepmc.org/article/MED/42513226",
-   "pmid": "42513226",
-   "title": "Phytochemical Dynamics and Antimicrobial Efficacy of Dandelion (&lt;i&gt;Taraxacum officinale&lt;/i&gt; L.) from Central Plateau of Moldova, Romania.",
-   "license": "abstract usato come input, non riprodotto"
-  },
-  {
-   "key": "S5",
-   "kind": "europepmc",
-   "url": "https://europepmc.org/article/MED/42005319",
-   "pmid": "42005319",
-   "title": "A Herbal Pair of &lt;i&gt;Taraxacum officinale&lt;/i&gt; F.H.Wigg. and &lt;i&gt;Lonicera japonica&lt;/i&gt; Thunb. Ameliorates Obesity and Modulates AMPK Signaling.",
-   "license": "abstract usato come input, non riprodotto"
-  },
-  {
    "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
    "kind": "wikidata",
    "url": "https://www.wikidata.org/wiki/Q131219",
    "title": "Wikidata",
@@ -100,45 +91,57 @@
   }
  ],
  "auto_checks": {
-  "dropped": [],
+  "dropped": [
+   {
+    "path": "season.harvest",
+    "err": "citazione_non_trovata",
+    "t": "Le foglie e le radici possono essere raccolte in vari periodi dell'anno, mentre i fiori sono disponibili durante la fior"
+   },
+   {
+    "path": "med.interactions[0]",
+    "err": "senza_fonte",
+    "t": "Non specificate."
+   },
+   {
+    "path": "legal.protection",
+    "err": "senza_fonte",
+    "t": "Non specificata"
+   },
+   {
+    "path": "lookalikes[0].claim",
+    "err": "vuota",
+    "t": ""
+   }
+  ],
   "red_flag": false
  },
  "content": {
   "schema_version": 4,
   "summary": {
-   "t": "Taraxacum officinale",
+   "t": "Taraxacum officinale, conosciuto come dente di leone o tarassaco comune, è una pianta erbacea perenne appartenente alla famiglia delle Asteracee.",
    "s": [
     "S1",
-    "S2",
-    "S3",
-    "S4",
-    "S5",
-    "S6"
+    "S2"
    ]
   },
   "identification": {
    "keys": [
     {
-     "t": "Taraxacum officinale",
+     "t": "Pianta erbacea perenne con rosetta basale di foglie lanceolate/seghettate e capolino giallo che produce semi 'a pappo' (soffione).",
      "s": [
       "S1",
-      "S2",
-      "S3",
-      "S4",
-      "S5",
       "S6"
      ]
     }
    ],
    "habitat": {
-    "t": "aree con terreni umidi",
+    "t": "Cresce spontaneamente in pianura e fino a un'altitudine di 2000 m, in terreni sciolti e spazi aperti, soleggiati o a mezzombra.",
     "s": [
-     "S1",
-     "S2"
+     "S1"
     ]
    },
    "distribution": {
-    "t": "Eurasia, America, Africa, Australia e Nuova Zelanda",
+    "t": "Originario dell'Eurasia, si è diffuso in tutti i continenti.",
     "s": [
      "S1",
      "S2"
@@ -146,36 +149,36 @@
    },
    "season": {
     "flowering": {
-     "t": "primavera",
+     "t": "La fioritura avviene in primavera, principalmente in aprile-maggio, ma può prolungarsi fino all'autunno.",
      "s": [
       "S1"
      ]
     },
-    "harvest": {
-     "t": "autunno e primavera",
-     "s": [
-      "S4"
-     ]
-    }
+    "harvest": null
    }
   },
   "toxicity": {
    "claims": [
     {
-     "t": "nessuna tossicità segnalata",
+     "t": "Le parti tossiche della pianta non sono specificate, ma è consigliabile evitare preparazioni non filtrate o contaminate.",
      "s": [
-      "S3",
-      "S4",
-      "S5"
+      "S6"
      ]
     }
    ]
   },
-  "warnings": [],
+  "warnings": [
+   {
+    "t": "Prudenza nell'uso interno, specialmente in caso di disidratazione, diarrea frequente, problemi renali o gravidanza.",
+    "s": [
+     "S6"
+    ]
+   }
+  ],
   "therapeutic_and_medicinal": {
    "active_principles": [
     {
-     "t": "taraxasterol, acido clorogenico, acido chicorico, acido taraxinico",
+     "t": "Flavonoidi, terpenoidi, acidi fenolici, polisaccaridi e steroli.",
      "s": [
       "S3"
      ]
@@ -183,22 +186,29 @@
    ],
    "traditional_uses": [
     {
-     "t": "uso tradizionale nella medicina popolare",
+     "t": "Diuretico e lassativo/drenante.",
      "s": [
-      "S1"
+      "S6"
      ]
     }
    ],
-   "contraindications": [],
+   "contraindications": [
+    {
+     "t": "Gravidanza, allattamento, disidratazione, diarrea frequente, problemi renali.",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
    "interactions": [],
    "preparations": [
     {
-     "name": "sciroppo di tarassaco",
-     "part": "fiori",
+     "name": "Infuso di foglie o radice",
+     "part": "Foglie o radice",
      "claim": {
-      "t": "preparato con i fiori",
+      "t": "Uso interno prudente, specialmente per cicli brevi e con moderazione.",
       "s": [
-       "S1"
+       "S6"
       ]
      }
     }
@@ -207,19 +217,41 @@
   "culinary_uses": {
    "edible_parts": [
     {
-     "part": "foglie, fiori, radici",
-     "season": "primavera",
+     "part": "Foglie giovani e radice",
+     "season": "Primavera",
      "claim": {
-      "t": "usati in insalate",
+      "t": "Le foglie giovani possono essere utilizzate in insalate, mentre la radice tostata può essere usata come surrogato del caffè.",
       "s": [
-       "S1"
+       "S1",
+       "S6"
       ]
      }
     }
    ],
-   "flavor_profile": [],
-   "preparation_effects": [],
-   "pairings": []
+   "flavor_profile": [
+    {
+     "t": "Amaro",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "preparation_effects": [
+    {
+     "t": "Le foglie possono essere cotte come spinaci, mentre la radice può essere tostata e utilizzata come caffè.",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "pairings": [
+    {
+     "t": "Olio, sale, limone, aglio",
+     "s": [
+      "S6"
+     ]
+    }
+   ]
   },
   "legal": {
    "protection": null

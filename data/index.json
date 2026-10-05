@@ -132,6 +132,34 @@
   "at": "2026-10-04T23:40:17.465Z"
  },
  {
+  "slug": "helichrysum-italicum",
+  "gbif_key": 3131614,
+  "name": "Helichrysum italicum",
+  "family": "Asteraceae",
+  "common_names": {
+   "it": [
+    "Elicriso",
+    "Elicriso d'Italia"
+   ],
+   "en": [
+    "Curry-plant",
+    "Italian Strawflower",
+    "curryplant",
+    "Curry plant"
+   ]
+  },
+  "synonyms": [
+   "Gnaphalium glutinosum glutinosum",
+   "Helichrysum italicum ericoaedeum",
+   "Helichrysum italicum italicum",
+   "Helichrysum italicum numidicum"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-05T09:41:17.129Z"
+ },
+ {
   "slug": "hypericum-perforatum",
   "gbif_key": 3189486,
   "name": "Hypericum perforatum",
@@ -276,6 +304,63 @@
   "at": "2026-10-04T21:44:01.547Z"
  },
  {
+  "slug": "plantago-major",
+  "gbif_key": 3189767,
+  "name": "Plantago major",
+  "family": "Plantaginaceae",
+  "common_names": {
+   "it": [
+    "Piantaggine maggiore"
+   ],
+   "en": [
+    "Broadleaf Plantain",
+    "Buckhorn Plantain",
+    "Common Plantain",
+    "Common plantain",
+    "Great Plantain",
+    "Greater Plantain",
+    "Large Plantain",
+    "Plantain"
+   ]
+  },
+  "synonyms": [
+   "Plantago adriatica",
+   "Plantago altissima",
+   "Plantago angustata",
+   "Plantago borysthenica",
+   "Plantago bracteata",
+   "Plantago compressiscapa",
+   "Plantago crenata",
+   "Plantago dentata",
+   "Plantago dilatata",
+   "Plantago dostalii",
+   "Plantago dregeana",
+   "Plantago exaltata",
+   "Plantago fonticola",
+   "Plantago gigas",
+   "Plantago gouanii",
+   "Plantago gracilis",
+   "Plantago humifusa",
+   "Plantago jehohlensis",
+   "Plantago jepohlensis",
+   "Plantago laciniosa",
+   "Plantago latifolia",
+   "Plantago limosa",
+   "Plantago longiscapa",
+   "Plantago loureiroi",
+   "Plantago majo fma",
+   "Plantago major",
+   "Plantago major bifida",
+   "Plantago major bracteata",
+   "Plantago major brevipedicellata",
+   "Plantago major crispa"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-05T09:42:16.011Z"
+ },
+ {
   "slug": "taraxacum-officinale",
   "gbif_key": 5394163,
   "name": "Taraxacum officinale",
@@ -317,7 +402,7 @@
   "tier": "basso",
   "status": "auto",
   "protected": false,
-  "at": "2026-10-04T21:47:16.228Z"
+  "at": "2026-10-05T09:40:42.332Z"
  },
  {
   "slug": "urtica-dioica",
