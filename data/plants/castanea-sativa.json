@@ -1,0 +1,190 @@
+{
+ "gbif_key": 5333294,
+ "accepted_name": "Castanea sativa",
+ "family": "Fagaceae",
+ "common_names": {
+  "it": [
+   "Castagno comune",
+   "Castagno europeo",
+   "castagno"
+  ],
+  "en": [
+   "European chestnut",
+   "Spanish Chestnut",
+   "Spanish chestnut",
+   "Sweet Chestnut",
+   "sweet chestnut"
+  ]
+ },
+ "synonyms": [
+  "Castanea castanea",
+  "Castanea fastigiata",
+  "Castanea prolifera",
+  "Castanea sativa asplenifolia",
+  "Castanea sativa aureovariegata",
+  "Castanea sativa discolor",
+  "Castanea sativa fastigiata",
+  "Castanea sativa prolifera",
+  "Castanea sativa purpurea",
+  "Castanea sativa pyramidalis",
+  "Castanea sativa variegata",
+  "Castanea sativa hamulata",
+  "Castanea sativa microcarpa",
+  "Castanea sativa spicata",
+  "Castanea sativa typica",
+  "Castanea vesca",
+  "Castanea vesca affinis",
+  "Castanea vesca albida",
+  "Castanea vesca argentata",
+  "Castanea vesca aurata",
+  "Castanea vesca aureovirgata",
+  "Castanea vesca christ",
+  "Castanea vesca computensis",
+  "Castanea vesca corticata",
+  "Castanea vesca delserei",
+  "Castanea vesca domestica",
+  "Castanea vesca dubia",
+  "Castanea vesca echinata",
+  "Castanea vesca elongata",
+  "Castanea vesca fauraut"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-05T09:19:26.069Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Castanea_sativa",
+   "title": "Castanea sativa",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Sweet_chestnut",
+   "title": "Sweet chestnut",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q22699",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Casta%C3%B1o_centenario_%28Castanea_sativa%29_%2845032673662%29.jpg/960px-Casta%C3%B1o_centenario_%28Castanea_sativa%29_%2845032673662%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Miguel Angel Masegosa Martínez",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Casta%C3%B1o_centenario_(Castanea_sativa)_(45032673662).jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "med.active_principles[0]",
+    "err": "vuota",
+    "t": ""
+   },
+   {
+    "path": "med.traditional_uses[0]",
+    "err": "vuota",
+    "t": ""
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Il castagno europeo è una pianta arborea appartenente alla famiglia Fagaceae",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Albero con chioma espansa e rotondeggiante, altezza variabile dai 10 ai 30 metri",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Ambienti boschivi collinari e montani di bassa quota",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa, Asia Minore e Nord Africa",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Giugno",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    },
+    "harvest": {
+     "t": "Settembre-ottobre",
+     "s": [
+      "S1"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [],
+   "not_found_note": "Nessuna informazione sulla tossicità trovata nelle fonti consultate: questo NON significa che la pianta sia sicura."
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Castanea crenata",
+    "danger": "bassa",
+    "claim": {
+     "t": "Il castagno giapponese è una specie simile al castagno europeo",
+     "s": [
+      "S1"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": [
+   {
+    "name": "Aesculus hippocastanum",
+    "danger": "alta",
+    "note": "I semi di ippocastano sono tossici."
+   }
+  ]
+ }
+}

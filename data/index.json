@@ -45,6 +45,62 @@
   "at": "2026-10-05T02:33:34.039Z"
  },
  {
+  "slug": "castanea-sativa",
+  "gbif_key": 5333294,
+  "name": "Castanea sativa",
+  "family": "Fagaceae",
+  "common_names": {
+   "it": [
+    "Castagno comune",
+    "Castagno europeo",
+    "castagno"
+   ],
+   "en": [
+    "European chestnut",
+    "Spanish Chestnut",
+    "Spanish chestnut",
+    "Sweet Chestnut",
+    "sweet chestnut"
+   ]
+  },
+  "synonyms": [
+   "Castanea castanea",
+   "Castanea fastigiata",
+   "Castanea prolifera",
+   "Castanea sativa asplenifolia",
+   "Castanea sativa aureovariegata",
+   "Castanea sativa discolor",
+   "Castanea sativa fastigiata",
+   "Castanea sativa prolifera",
+   "Castanea sativa purpurea",
+   "Castanea sativa pyramidalis",
+   "Castanea sativa variegata",
+   "Castanea sativa hamulata",
+   "Castanea sativa microcarpa",
+   "Castanea sativa spicata",
+   "Castanea sativa typica",
+   "Castanea vesca",
+   "Castanea vesca affinis",
+   "Castanea vesca albida",
+   "Castanea vesca argentata",
+   "Castanea vesca aurata",
+   "Castanea vesca aureovirgata",
+   "Castanea vesca christ",
+   "Castanea vesca computensis",
+   "Castanea vesca corticata",
+   "Castanea vesca delserei",
+   "Castanea vesca domestica",
+   "Castanea vesca dubia",
+   "Castanea vesca echinata",
+   "Castanea vesca elongata",
+   "Castanea vesca fauraut"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-05T09:19:26.069Z"
+ },
+ {
   "slug": "fragaria-vesca",
   "gbif_key": 3029817,
   "name": "Fragaria vesca",
@@ -103,6 +159,63 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-04T21:42:58.768Z"
+ },
+ {
+  "slug": "malva-sylvestris",
+  "gbif_key": 3152374,
+  "name": "Malva sylvestris",
+  "family": "Malvaceae",
+  "common_names": {
+   "it": [
+    "Malva selvatica"
+   ],
+   "en": [
+    "Common Mallow",
+    "Common mallow, Mallow flowers, Tree mallow",
+    "High Malva",
+    "High mallow",
+    "Large flowered mallow",
+    "blue mallow",
+    "cheeses",
+    "common mallow"
+   ]
+  },
+  "synonyms": [
+   "Althaea godronii",
+   "Althaea vulgaris",
+   "Malva acutiloba",
+   "Malva albiflora",
+   "Malva altissima",
+   "Malva ambigua",
+   "Malva ambigua microphylla",
+   "Malva aragonensis",
+   "Malva ciliata",
+   "Malva elata",
+   "Malva equina",
+   "Malva erecta",
+   "Malva erevaniana",
+   "Malva glabra",
+   "Malva grossheimii",
+   "Malva gymnocarpa",
+   "Malva hirsuta",
+   "Malva longelobata",
+   "Malva longepedunculata",
+   "Malva longilobata",
+   "Malva lucida",
+   "Malva major",
+   "Malva martrinii",
+   "Malva mauritanica",
+   "Malva orientalis",
+   "Malva plebeia",
+   "Malva polymorpha",
+   "Malva pumila",
+   "Malva racemosa",
+   "Malva recta"
+  ],
+  "tier": "basso",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-05T09:20:57.605Z"
  },
  {
   "slug": "matricaria-chamomilla",
@@ -205,6 +318,37 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-04T21:47:16.228Z"
+ },
+ {
+  "slug": "urtica-dioica",
+  "gbif_key": 7960979,
+  "name": "Urtica dioica",
+  "family": "Urticaceae",
+  "common_names": {
+   "it": [
+    "Ortica comune"
+   ],
+   "en": [
+    "California Nettle",
+    "California nettle",
+    "Common Nettle",
+    "European Nettle",
+    "European nettle",
+    "Giant Nettle",
+    "Nettle",
+    "Slender Nettle"
+   ]
+  },
+  "synonyms": [
+   "Urtica dioica eudioica",
+   "Urtica dioica intermediate",
+   "Urtica dioica narrow-leaved",
+   "Urtica eckloniana flavovirens"
+  ],
+  "tier": "basso",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-05T09:20:00.359Z"
  },
  {
   "slug": "vaccinium-myrtillus",

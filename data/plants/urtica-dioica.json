@@ -1,0 +1,229 @@
+{
+ "gbif_key": 7960979,
+ "accepted_name": "Urtica dioica",
+ "family": "Urticaceae",
+ "common_names": {
+  "it": [
+   "Ortica comune"
+  ],
+  "en": [
+   "California Nettle",
+   "California nettle",
+   "Common Nettle",
+   "European Nettle",
+   "European nettle",
+   "Giant Nettle",
+   "Nettle",
+   "Slender Nettle"
+  ]
+ },
+ "synonyms": [
+  "Urtica dioica eudioica",
+  "Urtica dioica intermediate",
+  "Urtica dioica narrow-leaved",
+  "Urtica eckloniana flavovirens"
+ ],
+ "safety_tier": "basso",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-05T09:20:00.359Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Urtica_dioica",
+   "title": "Urtica dioica",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S5",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42650192",
+   "pmid": "42650192",
+   "title": "&lt;i&gt;Urtica dioica&lt;/i&gt; L. Phytochemistry, Green Extraction Techniques, Molecular Mechanisms, and Gene Expression Modulation: A Comprehensive Review.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.distribution",
+    "err": "citazione_non_trovata",
+    "t": "Diffusa in Europa, Asia e Nord Africa"
+   },
+   {
+    "path": "season.flowering",
+    "err": "citazione_non_trovata",
+    "t": "Fioritura in estate"
+   },
+   {
+    "path": "med.traditional_uses[1]",
+    "err": "citazione_non_trovata",
+    "t": "Trattamento di ipertrofia prostatica benigna"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "L'ortica comune è una pianta erbacea perenne dioica",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Pianta erbacea perenne, con fusti e foglie coperte da peli urticanti",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Cresce in luoghi umidi e ricchi di azoto",
+    "s": [
+     "S1",
+     "S6"
+    ]
+   },
+   "distribution": null,
+   "season": {
+    "flowering": null,
+    "harvest": {
+     "t": "Raccolta in primavera",
+     "s": [
+      "S1"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "I peli urticanti possono causare bruciore e prurito",
+     "s": [
+      "S1"
+     ]
+    },
+    {
+     "t": "Le tossine presenti nel fluido sono serotonina, istamina, acetilcolina, acido acetico, acido butirrico, leucotrieni e acido formico",
+     "s": [
+      "S1"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Polyfenoli, steroli, vitamine, carotenoidi e lectine",
+     "s": [
+      "S5"
+     ]
+    }
+   ],
+   "traditional_uses": [
+    {
+     "t": "Trattamento di artriti, reumatismi, eczemi, asma, infezioni della pelle",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "contraindications": [
+    {
+     "t": "Pazienti diabetici, donne in gravidanza o durante l'allattamento",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "interactions": [],
+   "preparations": [
+    {
+     "name": "Tisana d'ortica",
+     "part": "Foglie",
+     "claim": {
+      "t": "Preparazione tradizionale",
+      "s": [
+       "S6"
+      ]
+     }
+    },
+    {
+     "name": "Decotto leggero",
+     "part": "Parte aerea tenera",
+     "claim": {
+      "t": "Preparazione tradizionale",
+      "s": [
+       "S6"
+      ]
+     }
+    }
+   ]
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "Foglie giovani",
+     "season": "Primavera",
+     "claim": {
+      "t": "Comestibili",
+      "s": [
+       "S1",
+       "S6"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [],
+   "preparation_effects": [
+    {
+     "t": "La cottura distrugge i peli urticanti",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "pairings": []
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Artemisia, Malva, Sambuco e Parietaria",
+    "danger": "bassa",
+    "claim": {
+     "t": "Condivide lo stesso habitat con altre erbe",
+     "s": [
+      "S1"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

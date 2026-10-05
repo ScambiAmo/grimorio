@@ -1,0 +1,232 @@
+{
+ "gbif_key": 3152374,
+ "accepted_name": "Malva sylvestris",
+ "family": "Malvaceae",
+ "common_names": {
+  "it": [
+   "Malva selvatica"
+  ],
+  "en": [
+   "Common Mallow",
+   "Common mallow, Mallow flowers, Tree mallow",
+   "High Malva",
+   "High mallow",
+   "Large flowered mallow",
+   "blue mallow",
+   "cheeses",
+   "common mallow"
+  ]
+ },
+ "synonyms": [
+  "Althaea godronii",
+  "Althaea vulgaris",
+  "Malva acutiloba",
+  "Malva albiflora",
+  "Malva altissima",
+  "Malva ambigua",
+  "Malva ambigua microphylla",
+  "Malva aragonensis",
+  "Malva ciliata",
+  "Malva elata",
+  "Malva equina",
+  "Malva erecta",
+  "Malva erevaniana",
+  "Malva glabra",
+  "Malva grossheimii",
+  "Malva gymnocarpa",
+  "Malva hirsuta",
+  "Malva longelobata",
+  "Malva longepedunculata",
+  "Malva longilobata",
+  "Malva lucida",
+  "Malva major",
+  "Malva martrinii",
+  "Malva mauritanica",
+  "Malva orientalis",
+  "Malva plebeia",
+  "Malva polymorpha",
+  "Malva pumila",
+  "Malva racemosa",
+  "Malva recta"
+ ],
+ "safety_tier": "basso",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-05T09:20:57.605Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Malva_sylvestris",
+   "title": "Malva sylvestris",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Malva_sylvestris",
+   "title": "Malva sylvestris",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q156835",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Mallow_January_2008-1.jpg/960px-Mallow_January_2008-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Alvesgaspar",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Mallow_January_2008-1.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La Malva sylvestris è una pianta erbacea annuale, biennale o perenne",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "fiori rosacei con striature scure",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "prati e luoghi incolti di pianura",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa e Asia temperata",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "da aprile a ottobre",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "evitare eccessi e evitare l'uso interno se hai condizioni specifiche/terapie complesse senza confronto medico",
+     "s": [
+      "S6"
+     ]
+    },
+    {
+     "t": "persone vulnerabili: gravidanza/allattamento → usare solo con cautela e con moderazione",
+     "s": [
+      "S6"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "mucillagini",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [
+    {
+     "t": "antiinfiammatorie ed emollienti",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "contraindications": [
+    {
+     "t": "evitare l'uso interno se hai condizioni specifiche/terapie complesse senza confronto medico",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [],
+   "preparations": [
+    {
+     "name": "infuso",
+     "part": "foglie e fiori",
+     "claim": {
+      "t": "per uso emolliente/benessere",
+      "s": [
+       "S6"
+      ]
+     }
+    }
+   ]
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "foglie giovani e fiori",
+     "season": null,
+     "claim": {
+      "t": "usati in cucina",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [],
+   "preparation_effects": [],
+   "pairings": []
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Glechoma hederacea",
+    "danger": "bassa",
+    "claim": {
+     "t": "a volte chiamata Creeping Charlie",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}
