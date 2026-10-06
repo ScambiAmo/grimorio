@@ -1,0 +1,256 @@
+{
+ "gbif_key": 3120060,
+ "accepted_name": "Achillea millefolium",
+ "family": "Asteraceae",
+ "common_names": {
+  "it": [
+   "Millefoglio montano",
+   "achillea millefoglie",
+   "millefoglio"
+  ],
+  "en": [
+   "Bloodwort",
+   "Carpenter's Weed",
+   "Common Yarrow",
+   "Common yarrow",
+   "Milenrama",
+   "Milfoil",
+   "Western Yarrow",
+   "Yarrow"
+  ]
+ },
+ "synonyms": [
+  "Achillea borealis arenicola",
+  "Achillea ceretanica",
+  "Achillea intermedia",
+  "Achillea lanulosa alpicola",
+  "Achillea lanulosa arachnoidea",
+  "Achillea lanulosa eradiata",
+  "Achillea lanulosa peroutkyi",
+  "Achillea lanulosa rubicunda",
+  "Achillea laxiflora",
+  "Achillea millefolium millefolium",
+  "Achillea millefolium albiflora",
+  "Achillea millefolium alpicola",
+  "Achillea millefolium asplenifolia",
+  "Achillea millefolium borealis",
+  "Achillea millefolium colliniformis",
+  "Achillea millefolium dipetala",
+  "Achillea millefolium discolor",
+  "Achillea millefolium dissecta",
+  "Achillea millefolium fulva",
+  "Achillea millefolium iserana",
+  "Achillea millefolium litoralis",
+  "Achillea millefolium lobata",
+  "Achillea millefolium maritima",
+  "Achillea millefolium megacephala",
+  "Achillea millefolium nigrescens",
+  "Achillea millefolium pacifica",
+  "Achillea millefolium parviligula",
+  "Achillea millefolium parvula",
+  "Achillea millefolium puberula",
+  "Achillea millefolium rhodantha"
+ ],
+ "safety_tier": "medio",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-06T06:35:53.040Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Achillea_millefolium",
+   "title": "Achillea millefolium",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Achillea_millefolium",
+   "title": "Achillea millefolium",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42195649",
+   "pmid": "42195649",
+   "title": "Polyphenol-Driven Interfacial Control: How &lt;i&gt;Achillea millefolium&lt;/i&gt; Extract Modulates Mild Carbon Steel Corrosion in Acid and Neutral Media.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S4",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42282446",
+   "pmid": "42282446",
+   "title": "Exploring the Nutraceutical Potential of &lt;i&gt;Achillea millefolium&lt;/i&gt; L.: Phytochemical Composition, Biological Activities, and Industrial Applications.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S5",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/41688514",
+   "pmid": "41688514",
+   "title": "Effect of the biologically synthesized rGO NPs and Fe&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;3&lt;/sub&gt;/rGO NCs on phytochemical assay, toxicity, and metabolism of Achillea millefolium plant.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q25408",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Achillea_millefolium_vallee-de-grace-amiens_80_22062007_1.jpg/960px-Achillea_millefolium_vallee-de-grace-amiens_80_22062007_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "O. Pichard",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Achillea_millefolium_vallee-de-grace-amiens_80_22062007_1.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.keys[0]",
+    "err": "citazione_non_trovata",
+    "t": "foglie finemente frastagliate, infiorescenze a corimbo con piccoli fiori bianchi"
+   },
+   {
+    "path": "lookalikes[0]",
+    "err": "nome_non_nel_testo_citato",
+    "t": "Conium maculatum (Cicuta)"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Achillea millefolium",
+   "s": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ]
+  },
+  "identification": {
+   "keys": [],
+   "habitat": {
+    "t": "prati, bordi, incolti",
+    "s": [
+     "S1",
+     "S2",
+     "S6"
+    ]
+   },
+   "distribution": {
+    "t": "Italia settentrionale, Eurasia, America settentrionale",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "primavera-autunno",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "può causare allergie e reazioni avverse",
+     "s": [
+      "S2",
+      "S6"
+     ]
+    },
+    {
+     "t": "tossico per cani, gatti e cavalli",
+     "s": [
+      "S2"
+     ]
+    },
+    {
+     "t": "evitare l'uso in gravidanza",
+     "s": [
+      "S6"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [
+    {
+     "t": "uso tradizionale come digestivo amaro e antinfiammatorio",
+     "s": [
+      "S4",
+      "S6"
+     ]
+    }
+   ],
+   "contraindications": [
+    {
+     "t": "evitare l'uso in gravidanza",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [
+    {
+     "t": "possibili interazioni con farmaci",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "foglie e sommità",
+     "season": null,
+     "claim": {
+      "t": "uso come erba aromatica in piccole quantità",
+      "s": [
+       "S6"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [],
+   "preparation_effects": [],
+   "pairings": []
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

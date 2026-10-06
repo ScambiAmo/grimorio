@@ -1,0 +1,204 @@
+{
+ "gbif_key": 5384604,
+ "accepted_name": "Stellaria media",
+ "family": "Caryophyllaceae",
+ "common_names": {
+  "it": [
+   "Bellichina",
+   "Centocchio comune",
+   "Centonchio",
+   "Erba paperina"
+  ],
+  "en": [
+   "Chickweed",
+   "Common Chickweed",
+   "Common chickweed",
+   "Nodding Chickweed",
+   "chickweed",
+   "common chickweed",
+   "lesser chickweed",
+   "little mouse-ear chickweed"
+  ]
+ },
+ "synonyms": [
+  "Alsine avicularum",
+  "Alsine aviculorum",
+  "Alsine barbata",
+  "Alsine bipartita",
+  "Alsine brachypetala",
+  "Alsine elongata",
+  "Alsine gussonii",
+  "Alsine media",
+  "Alsine media grandiflora",
+  "Alsine media holosteiformis",
+  "Alsine media major",
+  "Alsine media maxima",
+  "Alsine media microphylla",
+  "Alsine media pentastemon",
+  "Alsine media transiens",
+  "Alsine media triandra",
+  "Alsine microphylla",
+  "Alsine repens",
+  "Alsine vulgaris",
+  "Alsinella wallichiana",
+  "Alsinella wallichianum",
+  "Alsinula media",
+  "Arenaria vulgaris",
+  "Buda media",
+  "Holosteum alsine",
+  "Malachia aquatica calycina",
+  "Spergularia salina",
+  "Stellaria alpicola",
+  "Stellaria alsine",
+  "Stellaria alsinoides"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-06T06:37:11.841Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Stellaria_media",
+   "title": "Stellaria media",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Stellaria_media",
+   "title": "Stellaria media",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q158711",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Kaldari_Stellaria_media_01.jpg/960px-Kaldari_Stellaria_media_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Kaldari",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kaldari_Stellaria_media_01.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "med.active_principles[0]",
+    "err": "vuota",
+    "t": ""
+   },
+   {
+    "path": "med.traditional_uses[0]",
+    "err": "vuota",
+    "t": ""
+   },
+   {
+    "path": "med.contraindications[0]",
+    "err": "vuota",
+    "t": ""
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Stellaria media è una pianta erbacea bienne della famiglia delle Caryophyllaceae",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "La pianta ha fusti striscianti o sdraiati, foglie opposte e ovate, e fiori piccoli bianchi a 5 petali",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "La pianta si trova in campi coltivati, zone frequentate dal bestiame, giardini, zone ruderali e margini di strade e sentieri",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "La specie è diffusa in tutto il mondo e in Italia è comunissima",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "La fioritura avviene normalmente da aprile a giugno",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "La pianta contiene saponine, che possono essere tossiche per alcune specie",
+     "s": [
+      "S2"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Stellaria neglecta",
+    "danger": "bassa",
+    "claim": {
+     "t": "La Stellaria neglecta ha petali più grandi dei sepali e stami più numerosi",
+     "s": [
+      "S1"
+     ]
+    },
+    "distinguishing_features": []
+   },
+   {
+    "name": "Stellaria pallida",
+    "danger": "bassa",
+    "claim": {
+     "t": "La Stellaria pallida ha petali quasi nulli o assenti e sepali piccoli",
+     "s": [
+      "S1"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

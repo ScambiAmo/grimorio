@@ -1,0 +1,201 @@
+{
+ "gbif_key": 3117424,
+ "accepted_name": "Bellis perennis",
+ "family": "Asteraceae",
+ "common_names": {
+  "it": [
+   "Margheritina",
+   "Pratolina",
+   "Pratolina comune"
+  ],
+  "en": [
+   "Daisy",
+   "English daisy",
+   "Lawndaisy",
+   "common daisy",
+   "daisy",
+   "lawn daisy",
+   "lawndaisy",
+   "perennial daisy"
+  ]
+ },
+ "synonyms": [
+  "Aster bellis",
+  "Bellis alpina",
+  "Bellis armena",
+  "Bellis croatica",
+  "Bellis hortensis",
+  "Bellis hybrida",
+  "Bellis integrifolia",
+  "Bellis minor",
+  "Bellis perennis disciformis",
+  "Bellis perennis discoidea",
+  "Bellis perennis fistulosa",
+  "Bellis perennis hortensis",
+  "Bellis perennis perennis",
+  "Bellis perennis plena",
+  "Bellis perennis prolifera",
+  "Bellis perennis pumila",
+  "Bellis perennis rhodoglossa",
+  "Bellis perennis tubulosa",
+  "Bellis perennis caulescens",
+  "Bellis perennis fagetorum",
+  "Bellis perennis hybrida",
+  "Bellis perennis microcephala",
+  "Bellis perennis pusilla",
+  "Bellis perennis strobliana",
+  "Bellis perennis subcaulescens",
+  "Bellis perennis acutiuscula",
+  "Bellis perennis hirsuta",
+  "Bellis perennis integrifolia",
+  "Bellis perennis meridionalis"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-06T06:36:29.332Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Bellis_perennis",
+   "title": "Bellis perennis",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Bellis_perennis",
+   "title": "Bellis perennis",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q26158",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Belis_peremnis_-_panoramio.jpg/960px-Belis_peremnis_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "m.dolores paderne sa…",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Belis_peremnis_-_panoramio.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.keys[0]",
+    "err": "citazione_non_trovata",
+    "t": "Rosetta basale con foglie obovato-spatolate"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Bellis perennis è una pianta erbacea perenne della famiglia delle Asteracee",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [],
+   "habitat": {
+    "t": "Prati e bordi",
+    "s": [
+     "S6"
+    ]
+   },
+   "distribution": {
+    "t": "Europa occidentale, centrale e settentrionale",
+    "s": [
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Da gennaio a dicembre",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Parti tossiche: evitare estratti concentrati/dosi elevate fai-da-te",
+     "s": [
+      "S6"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "Gravidanza/allattamento: evitare uso terapeutico interno senza supervisione medica",
+    "s": [
+     "S6"
+    ]
+   },
+   {
+    "t": "Interazioni/farmaci: evitare terapie complesse e usare solo come bevanda occasionale",
+    "s": [
+     "S6"
+    ]
+   },
+   {
+    "t": "Attenzione a possibile sensibilità individuale (Asteraceae)",
+    "s": [
+     "S6"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "Gravidanza/allattamento",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [
+    {
+     "t": "Interazioni con farmaci",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}
