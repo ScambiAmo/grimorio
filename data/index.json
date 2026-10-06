@@ -59,6 +59,52 @@
   "at": "2026-10-06T06:35:53.040Z"
  },
  {
+  "slug": "artemisia-absinthium",
+  "gbif_key": 3121319,
+  "name": "Artemisia absinthium",
+  "family": "Asteraceae",
+  "common_names": {
+   "it": [
+    "Assenzio vero"
+   ],
+   "en": [
+    "Absinth Sagewort",
+    "Absinth Wormwood",
+    "Absinthe",
+    "Absinthe Wormwood",
+    "Absinthium",
+    "Common Sagewort",
+    "Common Wormwood",
+    "Wormwood"
+   ]
+  },
+  "synonyms": [
+   "Absinthium bipedale",
+   "Absinthium majus",
+   "Absinthium officinale",
+   "Absinthium vulgare",
+   "Artemisia absinthia",
+   "Artemisia absinthium argentea",
+   "Artemisia absinthium contracta",
+   "Artemisia absinthium absinthium",
+   "Artemisia absinthium insipida",
+   "Artemisia absinthium inspida",
+   "Artemisia arborescens rehan",
+   "Artemisia arborescens cupaniana",
+   "Artemisia baldaccii",
+   "Artemisia doonense",
+   "Artemisia inodora",
+   "Artemisia kulbadica",
+   "Artemisia pendula",
+   "Artemisia rehan",
+   "Artemisia rhaetica"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-06T13:42:44.448Z"
+ },
+ {
   "slug": "bellis-perennis",
   "gbif_key": 3117424,
   "name": "Bellis perennis",
@@ -195,6 +241,37 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-05T02:33:34.039Z"
+ },
+ {
+  "slug": "cannabis-sativa",
+  "gbif_key": 5361880,
+  "name": "Cannabis sativa",
+  "family": "Cannabaceae",
+  "common_names": {
+   "it": [
+    "Canapa",
+    "canapa"
+   ],
+   "en": [
+    "Hashish",
+    "Hemp",
+    "Hemp, Marijuana, Hashish, Hash",
+    "Marijuana",
+    "Mary Jane",
+    "devil's lettuce",
+    "grass",
+    "hashish"
+   ]
+  },
+  "synonyms": [
+   "Cannabis indica afghanica",
+   "Cannabis sativa pedemontana",
+   "Cannabis sativa vulgaris"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-06T13:44:48.933Z"
  },
  {
   "slug": "capsella-bursa-pastoris",
@@ -751,6 +828,34 @@
   "at": "2026-10-06T00:27:48.255Z"
  },
  {
+  "slug": "pulmonaria-officinalis",
+  "gbif_key": 5341204,
+  "name": "Pulmonaria officinalis",
+  "family": "Boraginaceae",
+  "common_names": {
+   "it": [
+    "Polmonaria maggiore"
+   ],
+   "en": [
+    "Common Lungwort",
+    "Common lungwort",
+    "Jerusalem cowslip",
+    "Jerusalem-sage",
+    "Joseph-and-Mary",
+    "Lungwort",
+    "Mary-spilt-the-milk",
+    "bloody-butcher"
+   ]
+  },
+  "synonyms": [
+   "Pulmonaria maculosa"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-06T13:43:48.186Z"
+ },
+ {
   "slug": "salvia-officinalis",
   "gbif_key": 2927004,
   "name": "Salvia officinalis",
@@ -778,6 +883,40 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-06T00:25:33.675Z"
+ },
+ {
+  "slug": "silene-vulgaris",
+  "gbif_key": 9172281,
+  "name": "Silene vulgaris",
+  "family": "Caryophyllaceae",
+  "common_names": {
+   "it": [
+    "Bubbolini",
+    "Silene comune",
+    "Silene rigonfia",
+    "Strigoli"
+   ],
+   "en": [
+    "Bladder Campion",
+    "Bladder Silene",
+    "Cowbell",
+    "Maiden's Tears",
+    "Maidenstears",
+    "Rattleweed",
+    "Sculpit",
+    "Stridolo"
+   ]
+  },
+  "synonyms": [
+   "Silene alpina",
+   "Silene cucubalus cucubalus",
+   "Silene willdenowii",
+   "Viscago behen"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-06T13:43:15.633Z"
  },
  {
   "slug": "stellaria-media",

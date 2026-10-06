@@ -1,0 +1,206 @@
+{
+ "gbif_key": 5341204,
+ "accepted_name": "Pulmonaria officinalis",
+ "family": "Boraginaceae",
+ "common_names": {
+  "it": [
+   "Polmonaria maggiore"
+  ],
+  "en": [
+   "Common Lungwort",
+   "Common lungwort",
+   "Jerusalem cowslip",
+   "Jerusalem-sage",
+   "Joseph-and-Mary",
+   "Lungwort",
+   "Mary-spilt-the-milk",
+   "bloody-butcher"
+  ]
+ },
+ "synonyms": [
+  "Pulmonaria maculosa"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-06T13:43:48.186Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Pulmonaria_officinalis",
+   "title": "Pulmonaria officinalis",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pulmonaria_officinalis",
+   "title": "Pulmonaria officinalis",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/41012471",
+   "pmid": "41012471",
+   "title": "Assessment of Antioxidant Activity and Dose-Dependent Effect on Genotoxicity/Antigenotoxicity of &lt;i&gt;Pulmonaria officinalis&lt;/i&gt; Ethanolic Extract.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S5",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/30200600",
+   "pmid": "30200600",
+   "title": "Novel Phenolic Constituents of <i>Pulmonaria officinalis</i> L. LC-MS/MS Comparison of Spring and Autumn Metabolite Profiles.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q324331",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Pulmonaria_officinalis_800.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "author": "autore non indicato",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Pulmonaria_officinalis_800.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "med.active_principles[1]",
+    "err": "citazione_non_trovata",
+    "t": "Polifenoli, flavonoidi e proantocianidine"
+   },
+   {
+    "path": "med.traditional_uses[0]",
+    "err": "citazione_non_trovata",
+    "t": "Disturbi respiratori"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Pulmonaria officinalis",
+   "s": [
+    "S1",
+    "S2",
+    "S3",
+    "S5",
+    "S6",
+    "S7"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Pulmonaria officinalis",
+     "s": [
+      "S1",
+      "S2",
+      "S3",
+      "S5",
+      "S6",
+      "S7"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Boschi e zone fresche",
+    "s": [
+     "S1",
+     "S2",
+     "S6"
+    ]
+   },
+   "distribution": {
+    "t": "Europa",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Marzo-maggio",
+     "s": [
+      "S2"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Parti tossiche",
+     "s": [
+      "S6"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "Uso interno",
+    "s": [
+     "S6"
+    ]
+   },
+   {
+    "t": "Uso esterno",
+    "s": [
+     "S6"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Mucillagini e saponine",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "Uso interno terapeutico prolungato o dosi alte",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

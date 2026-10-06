@@ -1,0 +1,215 @@
+{
+ "gbif_key": 3121319,
+ "accepted_name": "Artemisia absinthium",
+ "family": "Asteraceae",
+ "common_names": {
+  "it": [
+   "Assenzio vero"
+  ],
+  "en": [
+   "Absinth Sagewort",
+   "Absinth Wormwood",
+   "Absinthe",
+   "Absinthe Wormwood",
+   "Absinthium",
+   "Common Sagewort",
+   "Common Wormwood",
+   "Wormwood"
+  ]
+ },
+ "synonyms": [
+  "Absinthium bipedale",
+  "Absinthium majus",
+  "Absinthium officinale",
+  "Absinthium vulgare",
+  "Artemisia absinthia",
+  "Artemisia absinthium argentea",
+  "Artemisia absinthium contracta",
+  "Artemisia absinthium absinthium",
+  "Artemisia absinthium insipida",
+  "Artemisia absinthium inspida",
+  "Artemisia arborescens rehan",
+  "Artemisia arborescens cupaniana",
+  "Artemisia baldaccii",
+  "Artemisia doonense",
+  "Artemisia inodora",
+  "Artemisia kulbadica",
+  "Artemisia pendula",
+  "Artemisia rehan",
+  "Artemisia rhaetica"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-06T13:42:44.448Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Artemisia_absinthium",
+   "title": "Artemisia absinthium",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Artemisia_absinthium",
+   "title": "Artemisia absinthium",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/41684177",
+   "pmid": "41684177",
+   "title": "In-silico evaluation of the efficacy of essential oils from Artemisia absinthium, Artemisia herba-alba, and Artemisia annua against SARS-CoV-2.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S4",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/41644687",
+   "pmid": "41644687",
+   "title": "Differential effects of biologically and chemically synthesized copper oxide nanoparticles on artemisinin biosynthesis gene expression in Artemisia absinthium.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S5",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/41220926",
+   "pmid": "41220926",
+   "title": "&lt;i&gt;Artemisia absinthium&lt;/i&gt; L. ethanol extract inhibits the growth of gastrointestinal cancer cells by inducing apoptosis and mitochondria-dependent pathway.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q25686",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Artemisia_absinthium_P1210748.jpg/960px-Artemisia_absinthium_P1210748.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "David Monniaux",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Artemisia_absinthium_P1210748.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Artemisia absinthium",
+   "s": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Pianta erbacea perenne",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Arid ground, rocky slopes, and at the edge of footpaths and fields",
+    "s": [
+     "S2"
+    ]
+   },
+   "distribution": {
+    "t": "North Africa and temperate regions of Eurasia, and widely naturalized in Canada and the northern United States",
+    "s": [
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Da agosto a settembre",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Tossicità",
+     "s": [
+      "S2"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "Evitare l'uso di olio essenziale o estratti concentrati",
+    "s": [
+     "S6"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Luteolinidin",
+     "s": [
+      "S5"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "Gravidanza",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [
+    {
+     "t": "Potenziali interazioni con terapie multiple",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

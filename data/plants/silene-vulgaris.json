@@ -1,0 +1,193 @@
+{
+ "gbif_key": 9172281,
+ "accepted_name": "Silene vulgaris",
+ "family": "Caryophyllaceae",
+ "common_names": {
+  "it": [
+   "Bubbolini",
+   "Silene comune",
+   "Silene rigonfia",
+   "Strigoli"
+  ],
+  "en": [
+   "Bladder Campion",
+   "Bladder Silene",
+   "Cowbell",
+   "Maiden's Tears",
+   "Maidenstears",
+   "Rattleweed",
+   "Sculpit",
+   "Stridolo"
+  ]
+ },
+ "synonyms": [
+  "Silene alpina",
+  "Silene cucubalus cucubalus",
+  "Silene willdenowii",
+  "Viscago behen"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-06T13:43:15.633Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Silene_vulgaris",
+   "title": "Silene vulgaris",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Silene_vulgaris",
+   "title": "Silene vulgaris",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q511103",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/SileneVulgaris-bloem.jpg/960px-SileneVulgaris-bloem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "autore non indicato",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "source_page": "https://commons.wikimedia.org/wiki/File:SileneVulgaris-bloem.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "culinary.edible_parts[0].claim",
+    "err": "citazione_non_trovata",
+    "t": "Foglie e germogli commestibili"
+   },
+   {
+    "path": "lookalikes[1].claim",
+    "err": "citazione_non_trovata",
+    "t": "Specie simile"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La Silene vulgaris è una pianta perenne della famiglia delle Caryophyllaceae",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Pianta erbacea con aspetto ramificato e foglie opposte",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Prati, arbusteti, boschi radi e margini dei sentieri",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa, Asia, Africa settentrionale, America meridionale",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Maggio-settembre",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": {
+     "t": "Prima della fioritura",
+     "s": [
+      "S1"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Parti tossiche non specificate",
+     "s": [
+      "S6"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "Evitare l'uso interno medicinale",
+    "s": [
+     "S6"
+    ]
+   },
+   {
+    "t": "Evitare l'uso durante la gravidanza e l'allattamento",
+    "s": [
+     "S6"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "Uso interno non raccomandato",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Silene noctiflora",
+    "danger": "bassa",
+    "claim": {
+     "t": "Specie simile",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}
