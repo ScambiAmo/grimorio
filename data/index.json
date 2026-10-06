@@ -688,6 +688,64 @@
   "at": "2026-10-04T21:44:01.547Z"
  },
  {
+  "slug": "plantago-lanceolata",
+  "gbif_key": 8208358,
+  "name": "Plantago lanceolata",
+  "family": "Plantaginaceae",
+  "common_names": {
+   "it": [
+    "Cinquenervi",
+    "Piantaggine lanciuola"
+   ],
+   "en": [
+    "Buckhorn",
+    "Buckhorn Plantain",
+    "English Plantai",
+    "English Plantain",
+    "English plantai",
+    "English plantain",
+    "German Psyllium",
+    "Lamb's Tongue"
+   ]
+  },
+  "synonyms": [
+   "Arnoglossum lanceolatum",
+   "Arnoglossum lanceolatum ramosum",
+   "Arnoglossum lanceolatum roseum",
+   "Arnoglossum lanceolatum trinervium",
+   "Lagopus lanceolatus",
+   "Lagopus timbali",
+   "Plantago abyssinica",
+   "Plantago ambigua",
+   "Plantago argentea",
+   "Plantago attenuata",
+   "Plantago azorica",
+   "Plantago byzantina",
+   "Plantago capensis",
+   "Plantago capitata",
+   "Plantago contorta",
+   "Plantago dalmatica",
+   "Plantago decumbens",
+   "Plantago dubia",
+   "Plantago elata",
+   "Plantago eriophora",
+   "Plantago eriopoda",
+   "Plantago flexuosa",
+   "Plantago fontis-curvae",
+   "Plantago fontiscurva",
+   "Plantago glabriflora",
+   "Plantago glareosa",
+   "Plantago glauca",
+   "Plantago hirsuta",
+   "Plantago hungarica",
+   "Plantago intermedia"
+  ],
+  "tier": "basso",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-06T19:10:55.626Z"
+ },
+ {
   "slug": "plantago-major",
   "gbif_key": 3189767,
   "name": "Plantago major",

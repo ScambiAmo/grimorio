@@ -1,0 +1,196 @@
+{
+ "gbif_key": 8208358,
+ "accepted_name": "Plantago lanceolata",
+ "family": "Plantaginaceae",
+ "common_names": {
+  "it": [
+   "Cinquenervi",
+   "Piantaggine lanciuola"
+  ],
+  "en": [
+   "Buckhorn",
+   "Buckhorn Plantain",
+   "English Plantai",
+   "English Plantain",
+   "English plantai",
+   "English plantain",
+   "German Psyllium",
+   "Lamb's Tongue"
+  ]
+ },
+ "synonyms": [
+  "Arnoglossum lanceolatum",
+  "Arnoglossum lanceolatum ramosum",
+  "Arnoglossum lanceolatum roseum",
+  "Arnoglossum lanceolatum trinervium",
+  "Lagopus lanceolatus",
+  "Lagopus timbali",
+  "Plantago abyssinica",
+  "Plantago ambigua",
+  "Plantago argentea",
+  "Plantago attenuata",
+  "Plantago azorica",
+  "Plantago byzantina",
+  "Plantago capensis",
+  "Plantago capitata",
+  "Plantago contorta",
+  "Plantago dalmatica",
+  "Plantago decumbens",
+  "Plantago dubia",
+  "Plantago elata",
+  "Plantago eriophora",
+  "Plantago eriopoda",
+  "Plantago flexuosa",
+  "Plantago fontis-curvae",
+  "Plantago fontiscurva",
+  "Plantago glabriflora",
+  "Plantago glareosa",
+  "Plantago glauca",
+  "Plantago hirsuta",
+  "Plantago hungarica",
+  "Plantago intermedia"
+ ],
+ "safety_tier": "basso",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-06T19:10:55.626Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Plantago_lanceolata",
+   "title": "Plantago lanceolata",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Plantago_lanceolata",
+   "title": "Plantago lanceolata",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q157408",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ribwort_600.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "author": "sannse",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Ribwort_600.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La piantaggine lanciuola è una pianta erbacea officinale perenne della famiglia delle Plantaginacee.",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "La pianta è una rosetta-forming perenne erbacea, con steli fiorali senza foglie, che cresce fino a 45 centimetri di altezza.",
+     "s": [
+      "S2"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Gli habitat tipici sono gli incolti, le aree lungo le vie, i campi, le vigne, gli ambienti ruderali e altre zone sinantropiche.",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "La specie ha un ampio areale che si estende dal Nord Africa all'Eurasia.",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": null,
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "La pianta non è generalmente tossica per il bestiame, ma può essere poco palatabile e ridurre la qualità del pascolo per gli animali da pascolo.",
+     "s": [
+      "S2"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "La pianta contiene feniletanoidi come acteoside, cistanoside F, lavandulifolioside, plantamajoside e isoacteoside.",
+     "s": [
+      "S2"
+     ]
+    }
+   ],
+   "traditional_uses": [
+    {
+     "t": "La pianta è usata frequentemente in tisane e altri rimedi erboristici.",
+     "s": [
+      "S2"
+     ]
+    }
+   ],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": [
+    {
+     "name": "Tisana",
+     "part": "foglie",
+     "claim": {
+      "t": "Una tisana dalle foglie è usata come medicina per la tosse.",
+      "s": [
+       "S2"
+      ]
+     }
+    }
+   ]
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "foglie",
+     "season": "tutto l'anno",
+     "claim": {
+      "t": "Le foglie sono disponibili tutto l'anno e sono usate come radicchio, crude in insalata, oppure cotte come gli spinaci.",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [],
+   "preparation_effects": [],
+   "pairings": []
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}
