@@ -943,6 +943,64 @@
   "at": "2026-10-06T00:25:33.675Z"
  },
  {
+  "slug": "sambucus-nigra",
+  "gbif_key": 2888728,
+  "name": "Sambucus nigra",
+  "family": "Viburnaceae",
+  "common_names": {
+   "it": [
+    "Sambuco comune",
+    "Sambuco nero"
+   ],
+   "en": [
+    "Elder",
+    "Elderberry",
+    "European black elder",
+    "European black elderberry",
+    "European elderberry",
+    "Europen elder",
+    "black elderberry",
+    "common elderberry"
+   ]
+  },
+  "synonyms": [
+   "Sambucus alba",
+   "Sambucus arborescens",
+   "Sambucus aurea",
+   "Sambucus columnaris",
+   "Sambucus dissecta",
+   "Sambucus elegans",
+   "Sambucus floribunda",
+   "Sambucus florida",
+   "Sambucus graveolens",
+   "Sambucus hirta",
+   "Sambucus leucocarpa",
+   "Sambucus linearis",
+   "Sambucus lucida",
+   "Sambucus medullosa",
+   "Sambucus mexicana",
+   "Sambucus monstrosa",
+   "Sambucus nigra alba",
+   "Sambucus nigra albomarmorata",
+   "Sambucus nigra albovariegata",
+   "Sambucus nigra aurea",
+   "Sambucus nigra chlorocarpa",
+   "Sambucus nigra dissecta",
+   "Sambucus nigra heterophylla",
+   "Sambucus nigra leucocarpa",
+   "Sambucus nigra linearis",
+   "Sambucus nigra luteomarmorata",
+   "Sambucus nigra luteovariegata",
+   "Sambucus nigra pendula",
+   "Sambucus nigra porphyrophylla",
+   "Sambucus nigra pyramidalis"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-06T23:08:39.661Z"
+ },
+ {
   "slug": "silene-vulgaris",
   "gbif_key": 9172281,
   "name": "Silene vulgaris",

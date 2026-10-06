@@ -1,0 +1,212 @@
+{
+ "gbif_key": 2888728,
+ "accepted_name": "Sambucus nigra",
+ "family": "Viburnaceae",
+ "common_names": {
+  "it": [
+   "Sambuco comune",
+   "Sambuco nero"
+  ],
+  "en": [
+   "Elder",
+   "Elderberry",
+   "European black elder",
+   "European black elderberry",
+   "European elderberry",
+   "Europen elder",
+   "black elderberry",
+   "common elderberry"
+  ]
+ },
+ "synonyms": [
+  "Sambucus alba",
+  "Sambucus arborescens",
+  "Sambucus aurea",
+  "Sambucus columnaris",
+  "Sambucus dissecta",
+  "Sambucus elegans",
+  "Sambucus floribunda",
+  "Sambucus florida",
+  "Sambucus graveolens",
+  "Sambucus hirta",
+  "Sambucus leucocarpa",
+  "Sambucus linearis",
+  "Sambucus lucida",
+  "Sambucus medullosa",
+  "Sambucus mexicana",
+  "Sambucus monstrosa",
+  "Sambucus nigra alba",
+  "Sambucus nigra albomarmorata",
+  "Sambucus nigra albovariegata",
+  "Sambucus nigra aurea",
+  "Sambucus nigra chlorocarpa",
+  "Sambucus nigra dissecta",
+  "Sambucus nigra heterophylla",
+  "Sambucus nigra leucocarpa",
+  "Sambucus nigra linearis",
+  "Sambucus nigra luteomarmorata",
+  "Sambucus nigra luteovariegata",
+  "Sambucus nigra pendula",
+  "Sambucus nigra porphyrophylla",
+  "Sambucus nigra pyramidalis"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-06T23:08:39.661Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Sambucus_nigra",
+   "title": "Sambucus nigra",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Sambucus_nigra",
+   "title": "Sambucus nigra",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/41665742",
+   "pmid": "41665742",
+   "title": "Elderberry (Sambucus nigra L.): an ethnopharmacological, phytochemical and biological review for a prospective nutraceutical plant.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q22701",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Sambucus_nigra_004.jpg/960px-Sambucus_nigra_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Willow",
+   "license": "CC BY 2.5",
+   "license_url": "https://creativecommons.org/licenses/by/2.5",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Sambucus_nigra_004.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.keys[0]",
+    "err": "citazione_non_trovata",
+    "t": "Sambucus nigra"
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Il sambuco nero è una pianta angiosperma dicotiledone",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [],
+   "habitat": {
+    "t": "ambienti ruderali, boschi umidi e rive dei corsi d'acqua",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa, Nord Africa, Caucaso e Asia",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "aprile-maggio",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": {
+     "t": "luglio-agosto",
+     "s": [
+      "S1"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "tossicità dei semi e delle parti verdi",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "non consumare durante la gravidanza o con allergie",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "fenolici",
+     "s": [
+      "S3"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "interazione con farmaci immunosoppressori",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "interactions": [
+    {
+     "t": "effetti avversi con farmaci soggetti a prescrizione",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": [
+   {
+    "name": "Sambucus ebulus",
+    "danger": "alta",
+    "note": "L'ebbio è tossico; infiorescenze e frutti eretti, pianta erbacea."
+   }
+  ]
+ }
+}
