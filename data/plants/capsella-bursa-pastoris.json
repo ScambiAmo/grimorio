@@ -1,0 +1,199 @@
+{
+ "gbif_key": 5375388,
+ "accepted_name": "Capsella bursa-pastoris",
+ "family": "Brassicaceae",
+ "common_names": {
+  "it": [
+   "Borsa del pastore",
+   "Borsa di pastore",
+   "Borsapastore comune"
+  ],
+  "en": [
+   "Case Weed",
+   "Common Shepherd's-purse",
+   "Naengi (Shepherd’s purse)",
+   "Naengi (shepherd’s Purse)",
+   "Pepper Plant",
+   "Shepher's Tree",
+   "Shepherd's Purse",
+   "Shepherd's purse"
+  ]
+ },
+ "synonyms": [
+  "Bursa abscissa",
+  "Bursa alandica",
+  "Bursa anglica",
+  "Bursa astoris",
+  "Bursa batavorum",
+  "Bursa belgica",
+  "Bursa bremensis",
+  "Bursa brittonii",
+  "Bursa bursa-pastoris",
+  "Bursa bursa-pastoris bifida",
+  "Bursa bursa-pastoris heteris",
+  "Bursa bursa-pastoris integrifolia",
+  "Bursa bursa-pastoris minor",
+  "Bursa bursa-pastoris rhomboidea",
+  "Bursa bursa-pastoris simplex",
+  "Bursa bursa-pastoris tenuis",
+  "Bursa concava",
+  "Bursa divaricata",
+  "Bursa djurdjurae",
+  "Bursa djurjurae",
+  "Bursa druceana",
+  "Bursa fracticruris",
+  "Bursa gallica",
+  "Bursa germanica",
+  "Bursa gracilis",
+  "Bursa grandiflora",
+  "Bursa grossa",
+  "Bursa heegeri",
+  "Bursa hiatula",
+  "Bursa integrella"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-06T00:26:46.463Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Capsella_bursa-pastoris",
+   "title": "Capsella bursa-pastoris",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris",
+   "title": "Capsella bursa-pastoris",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q27264",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Capsella_bursa-pastoris.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "author": "Eike Wulfmeyer",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Capsella_bursa-pastoris.JPG"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.habitat",
+    "err": "citazione_non_trovata",
+    "t": "Si adatta a qualsiasi tipo di clima e di terreno; vegeta negli orti, sui prati incolti ma anche coltivati, ai margini de"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Capsella bursa-pastoris, conosciuta come borsa del pastore, è una pianta erbacea appartenente alla famiglia Brassicaceae.",
+   "s": [
+    "S1",
+    "S2"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "La pianta si riconosce facilmente per i caratteristici frutti a forma di cuore.",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": null,
+   "distribution": {
+    "t": "È diffusa in quasi tutto il mondo e spesso è considerata infestante. In Italia è presente su tutto il territorio.",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Fiorisce con continuità da gennaio a dicembre.",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "I semi, quando si inumidiscono, si ricoprono di una sostanza vischiosa in grado di catturare ed uccidere piccoli insetti.",
+     "s": [
+      "S1"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "Evita l’uso interno di estratti non tracciati/auto-preparati (dosi e concentrazioni non controllabili).",
+    "s": [
+     "S6"
+    ]
+   },
+   {
+    "t": "Gravidanza: prudenza elevata → non usare a scopo terapeutico senza supervisione medica.",
+    "s": [
+     "S6"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "Cautela se hai terapie o condizioni dove la coagulazione/il sanguinamento sono delicati.",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [
+    {
+     "t": "Se assumi farmaci (es. anticoagulanti/antiaggreganti, o altri per coagulazione/pressione): chiedi conferma al medico/farmacista.",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

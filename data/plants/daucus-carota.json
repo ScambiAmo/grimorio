@@ -1,0 +1,204 @@
+{
+ "gbif_key": 3034742,
+ "accepted_name": "Daucus carota",
+ "family": "Apiaceae",
+ "common_names": {
+  "it": [
+   "Carota selvatica",
+   "carota"
+  ],
+  "en": [
+   "Carrot",
+   "Queen Anne's Lace",
+   "Queen Anne's lace",
+   "Queen anne's lace",
+   "Wild Carrot",
+   "Wild carrot",
+   "bishop's lace",
+   "carrot"
+  ]
+ },
+ "synonyms": [
+  "Daucus carota carota",
+  "Daucus carota sativa",
+  "Daucus carota boissieri",
+  "Daucus ceretanus",
+  "Daucus federicii",
+  "Daucus glaber",
+  "Daucus gonzaloi",
+  "Daucus guttatus",
+  "Daucus laevis",
+  "Daucus mauritianus",
+  "Daucus muricaulis",
+  "Daucus parviflorus glabra",
+  "Daucus parviflorus pubescens",
+  "Daucus sylvestris"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-06T00:26:13.726Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Daucus_carota",
+   "title": "Daucus carota",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Daucus_carota",
+   "title": "Daucus carota",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q30056",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Daucus_carota.jpg/960px-Daucus_carota.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "User:Tigerente",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Daucus_carota.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "toxicity.claims[0]",
+    "err": "citazione_non_trovata",
+    "t": "La pianta può causare irritazione cutanea"
+   },
+   {
+    "path": "warnings[0]",
+    "err": "citazione_non_trovata",
+    "t": "Evitare l'uso della pianta in gravidanza"
+   },
+   {
+    "path": "med.active_principles[0]",
+    "err": "citazione_non_trovata",
+    "t": "Carotenoidi"
+   },
+   {
+    "path": "med.contraindications[0]",
+    "err": "citazione_non_trovata",
+    "t": "Gravidanza"
+   },
+   {
+    "path": "lookalikes[0]",
+    "err": "nome_non_nel_testo_citato",
+    "t": "Conium maculatum (Cicuta)"
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Daucus carota è una pianta erbacea della famiglia delle Apiacee",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Pianta erbacea con infiorescenze a ombrella",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Cresce in prati, incolti e bordi stradali",
+    "s": [
+     "S1",
+     "S6"
+    ]
+   },
+   "distribution": {
+    "t": "Originaria delle regioni temperate dell'Europa e dell'Asia sud-occidentale",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Fiorisce in primavera da maggio fino a dicembre inoltrato",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": {
+     "t": "Le carote precoci vengono raccolte dopo circa quattro mesi",
+     "s": [
+      "S1"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "I semi possono avere effetti anticoncezionali",
+     "s": [
+      "S6"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [
+    {
+     "t": "Interazione con il litio",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": [
+   {
+    "name": "Conium maculatum",
+    "danger": "mortale",
+    "note": "Ombrellifera molto simile da giovane; la cicuta è mortale."
+   },
+   {
+    "name": "Aethusa cynapium",
+    "danger": "alta",
+    "note": "Foglie simili al prezzemolo e alla carota selvatica."
+   }
+  ]
+ }
+}

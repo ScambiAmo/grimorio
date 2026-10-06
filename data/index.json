@@ -80,6 +80,65 @@
   "at": "2026-10-05T02:33:34.039Z"
  },
  {
+  "slug": "capsella-bursa-pastoris",
+  "gbif_key": 5375388,
+  "name": "Capsella bursa-pastoris",
+  "family": "Brassicaceae",
+  "common_names": {
+   "it": [
+    "Borsa del pastore",
+    "Borsa di pastore",
+    "Borsapastore comune"
+   ],
+   "en": [
+    "Case Weed",
+    "Common Shepherd's-purse",
+    "Naengi (Shepherd’s purse)",
+    "Naengi (shepherd’s Purse)",
+    "Pepper Plant",
+    "Shepher's Tree",
+    "Shepherd's Purse",
+    "Shepherd's purse"
+   ]
+  },
+  "synonyms": [
+   "Bursa abscissa",
+   "Bursa alandica",
+   "Bursa anglica",
+   "Bursa astoris",
+   "Bursa batavorum",
+   "Bursa belgica",
+   "Bursa bremensis",
+   "Bursa brittonii",
+   "Bursa bursa-pastoris",
+   "Bursa bursa-pastoris bifida",
+   "Bursa bursa-pastoris heteris",
+   "Bursa bursa-pastoris integrifolia",
+   "Bursa bursa-pastoris minor",
+   "Bursa bursa-pastoris rhomboidea",
+   "Bursa bursa-pastoris simplex",
+   "Bursa bursa-pastoris tenuis",
+   "Bursa concava",
+   "Bursa divaricata",
+   "Bursa djurdjurae",
+   "Bursa djurjurae",
+   "Bursa druceana",
+   "Bursa fracticruris",
+   "Bursa gallica",
+   "Bursa germanica",
+   "Bursa gracilis",
+   "Bursa grandiflora",
+   "Bursa grossa",
+   "Bursa heegeri",
+   "Bursa hiatula",
+   "Bursa integrella"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-06T00:26:46.463Z"
+ },
+ {
   "slug": "castanea-sativa",
   "gbif_key": 5333294,
   "name": "Castanea sativa",
@@ -188,6 +247,48 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-05T18:55:01.938Z"
+ },
+ {
+  "slug": "daucus-carota",
+  "gbif_key": 3034742,
+  "name": "Daucus carota",
+  "family": "Apiaceae",
+  "common_names": {
+   "it": [
+    "Carota selvatica",
+    "carota"
+   ],
+   "en": [
+    "Carrot",
+    "Queen Anne's Lace",
+    "Queen Anne's lace",
+    "Queen anne's lace",
+    "Wild Carrot",
+    "Wild carrot",
+    "bishop's lace",
+    "carrot"
+   ]
+  },
+  "synonyms": [
+   "Daucus carota carota",
+   "Daucus carota sativa",
+   "Daucus carota boissieri",
+   "Daucus ceretanus",
+   "Daucus federicii",
+   "Daucus glaber",
+   "Daucus gonzaloi",
+   "Daucus guttatus",
+   "Daucus laevis",
+   "Daucus mauritianus",
+   "Daucus muricaulis",
+   "Daucus parviflorus glabra",
+   "Daucus parviflorus pubescens",
+   "Daucus sylvestris"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-06T00:26:13.726Z"
  },
  {
   "slug": "fragaria-vesca",
@@ -510,6 +611,56 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-05T18:54:29.996Z"
+ },
+ {
+  "slug": "primula-vulgaris",
+  "gbif_key": 5414335,
+  "name": "Primula vulgaris",
+  "family": "Primulaceae",
+  "common_names": {
+   "it": [],
+   "en": [
+    "English primrose",
+    "Primrose",
+    "primrose"
+   ]
+  },
+  "synonyms": [
+   "Primula vulgaris"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-06T00:27:48.255Z"
+ },
+ {
+  "slug": "salvia-officinalis",
+  "gbif_key": 2927004,
+  "name": "Salvia officinalis",
+  "family": "Lamiaceae",
+  "common_names": {
+   "it": [
+    "Salvia domestica"
+   ],
+   "en": [
+    "Common Sage",
+    "Culinary Sage",
+    "Golden Sage",
+    "Kitchen sage",
+    "Sage",
+    "garden sage",
+    "kitchen sage",
+    "sage"
+   ]
+  },
+  "synonyms": [
+   "Betonica brachyodonta",
+   "Salvia officinalis lavandulifolia"
+  ],
+  "tier": "medio",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-06T00:25:33.675Z"
  },
  {
   "slug": "taraxacum-officinale",

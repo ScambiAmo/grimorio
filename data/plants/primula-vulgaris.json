@@ -1,0 +1,188 @@
+{
+ "gbif_key": 5414335,
+ "accepted_name": "Primula vulgaris",
+ "family": "Primulaceae",
+ "common_names": {
+  "it": [],
+  "en": [
+   "English primrose",
+   "Primrose",
+   "primrose"
+  ]
+ },
+ "synonyms": [
+  "Primula vulgaris"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-06T00:27:48.255Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Primula_vulgaris",
+   "title": "Primula vulgaris",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Primula_vulgaris",
+   "title": "Primula vulgaris",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/37583754",
+   "pmid": "37583754",
+   "title": "The ameliorative effect of <i>Primula vulgaris</i> on cisplatin-induced nephrotoxicity in rats and quantification of its phenolic components using LC-ESI-MS/MS.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q159537",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Chipping_Sodbury_MMB_02_primula_vulgaris.jpg/960px-Chipping_Sodbury_MMB_02_primula_vulgaris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "mattbuck (category)",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Chipping_Sodbury_MMB_02_primula_vulgaris.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "legal.protection",
+    "err": "citazione_non_trovata",
+    "t": "Protezione legale"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La Primula vulgaris è una pianta erbacea perenne",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Rosetta basale e fiori gialli",
+     "s": [
+      "S1",
+      "S6"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Boschi di latifoglie e prati magri",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Eurasia e Africa settentrionale",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Primavera",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Effetti avversi e interazioni",
+     "s": [
+      "S6"
+     ]
+    },
+    {
+     "t": "Interazioni con farmaci",
+     "s": [
+      "S6"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Rutin, gallic acid, p-coumaric acid e protocatechuic acid",
+     "s": [
+      "S3"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "Gravidanza e allattamento",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [
+    {
+     "t": "Interazioni con farmaci",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Altre specie di Primula",
+    "danger": "bassa",
+    "claim": {
+     "t": "Difficoltà di riconoscimento",
+     "s": [
+      "S6"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

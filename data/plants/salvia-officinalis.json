@@ -1,0 +1,204 @@
+{
+ "gbif_key": 2927004,
+ "accepted_name": "Salvia officinalis",
+ "family": "Lamiaceae",
+ "common_names": {
+  "it": [
+   "Salvia domestica"
+  ],
+  "en": [
+   "Common Sage",
+   "Culinary Sage",
+   "Golden Sage",
+   "Kitchen sage",
+   "Sage",
+   "garden sage",
+   "kitchen sage",
+   "sage"
+  ]
+ },
+ "synonyms": [
+  "Betonica brachyodonta",
+  "Salvia officinalis lavandulifolia"
+ ],
+ "safety_tier": "medio",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-06T00:25:33.675Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Salvia_officinalis",
+   "title": "Salvia officinalis",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Salvia_officinalis",
+   "title": "Salvia officinalis",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "libro",
+   "url": "https://github.com/ScambiAmo/grimorio/blob/main/seed/libro_erbe.json",
+   "title": "Appunti dal libro delle erbe",
+   "license": "CC BY-SA 4.0 (appunti dell'autrice)"
+  },
+  {
+   "key": "S7",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q1111359",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Salvia_officinalis0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "author": "Kurt Stüber [1]",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Salvia_officinalis0.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La salvia comune è una pianta perenne erbacea aromatica",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "altezza da 20 a 40 cm, forma biologica camefita suffruticosa",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "rupi aride, pietraie, ghiaioni, praterie rase, prati e pascoli del piano collinare",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "bacino del Mediterraneo, Italia, Alpi, Francia, Svizzera, Austria",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "tarda primavera o estate",
+     "s": [
+      "S2"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "il tujone può risultare tossico ad alte dosi",
+     "s": [
+      "S1"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "evitare l'uso interno terapeutico senza parere medico durante la gravidanza",
+    "s": [
+     "S6"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "tujone",
+     "s": [
+      "S1",
+      "S6"
+     ]
+    }
+   ],
+   "traditional_uses": [
+    {
+     "t": "disturbi digestivi e della gola",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "contraindications": [
+    {
+     "t": "evitare l'uso di olio essenziale e preparati molto concentrati",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "interactions": [
+    {
+     "t": "interazioni possibili con farmaci",
+     "s": [
+      "S6"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "foglie",
+     "season": null,
+     "claim": {
+      "t": "foglie commestibili",
+      "s": [
+       "S6"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [
+    {
+     "t": "saporito, leggermente pepato",
+     "s": [
+      "S2"
+     ]
+    }
+   ],
+   "preparation_effects": [],
+   "pairings": [
+    {
+     "t": "carne di vario genere, pasta, formaggi alle erbe, zuppe",
+     "s": [
+      "S1"
+     ]
+    }
+   ]
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}
