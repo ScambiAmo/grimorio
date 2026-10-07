@@ -1,0 +1,219 @@
+{
+ "gbif_key": 3002461,
+ "accepted_name": "Rosa canina",
+ "family": "Rosaceae",
+ "common_names": {
+  "it": [
+   "Rosa selvatica comune",
+   "rosa canina"
+  ],
+  "en": [
+   "Dog rose",
+   "Dog-rose",
+   "canker rose",
+   "common-briar",
+   "dog briar",
+   "dog rose",
+   "dog-rose",
+   "dogbrier"
+  ]
+ },
+ "synonyms": [
+  "Crepinia aciphylla",
+  "Crepinia canina",
+  "Crepinia lemaitrei",
+  "Crepinia myrtilloides",
+  "Crepinia psilophylla",
+  "Crepinia subnitens",
+  "Crepinia surculosa",
+  "Crepinia venosa",
+  "Rosa achburensis",
+  "Rosa aciphylla",
+  "Rosa aciphylla macropetala",
+  "Rosa aciphylloides",
+  "Rosa actinodroma",
+  "Rosa adenocalyx",
+  "Rosa adenocalyx adenopoda",
+  "Rosa adenocalyx gymnopoda",
+  "Rosa adscita",
+  "Rosa adscita orthacantha",
+  "Rosa adscita typica",
+  "Rosa afzeliana",
+  "Rosa afzeliana alba",
+  "Rosa agraria",
+  "Rosa agrestina",
+  "Rosa albolutescens",
+  "Rosa amansii",
+  "Rosa ambigua",
+  "Rosa analoga",
+  "Rosa ancarensis",
+  "Rosa arguta",
+  "Rosa armata"
+ ],
+ "safety_tier": "basso",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-07T21:40:34.449Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Rosa_canina",
+   "title": "Rosa canina",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Rosa_canina",
+   "title": "Rosa canina",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q146066",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Divlja_ruza_cvijet_270508.jpg/960px-Divlja_ruza_cvijet_270508.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Roberta F.",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Divlja_ruza_cvijet_270508.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.distribution",
+    "err": "citazione_non_trovata",
+    "t": "Europa, dal Mediterraneo alla Scandinavia; Africa del Nord e le isole Canarie e Madera; Asia occidentale"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Rosa canina è una pianta appartenente alla famiglia delle Rosacee",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Rosa canina è un arbusto latifoglie e caducifoglie, spinoso, alto 100–300 cm",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "boscaglie di faggio, abete, pino e querce a foglie caduche, gli arbusteti e le siepi",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": null,
+   "season": {
+    "flowering": {
+     "t": "maggio-luglio",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": {
+     "t": "ottobre-novembre",
+     "s": [
+      "S1"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "i frutti freschi possono essere aspri e non appetibili",
+     "s": [
+      "S1"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "vitamina C, tannini, acidi organici, pectine, carotenoidi e polifenoli",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [
+    {
+     "t": "astringente intestinale, antidiarroico, vasoprotettore e antinfiammatorio",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": [
+    {
+     "name": "infusi e decotti",
+     "part": "frutti",
+     "claim": {
+      "t": "i frutti, seccati e sminuzzati, si usano in erboristeria per la preparazione di infusi e decotti",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ]
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "frutti",
+     "season": "autunno",
+     "claim": {
+      "t": "i frutti possono essere raccolti e mangiati direttamente dall'albero in autunno",
+      "s": [
+       "S2"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [],
+   "preparation_effects": [],
+   "pairings": []
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Rosa agrestis",
+    "danger": "bassa",
+    "claim": {
+     "t": "le forme e i fiori possono essere confusi con Rosa agrestis e Rosa rubiginosa",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

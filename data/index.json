@@ -1025,6 +1025,64 @@
   "at": "2026-10-06T13:43:48.186Z"
  },
  {
+  "slug": "rosa-canina",
+  "gbif_key": 3002461,
+  "name": "Rosa canina",
+  "family": "Rosaceae",
+  "common_names": {
+   "it": [
+    "Rosa selvatica comune",
+    "rosa canina"
+   ],
+   "en": [
+    "Dog rose",
+    "Dog-rose",
+    "canker rose",
+    "common-briar",
+    "dog briar",
+    "dog rose",
+    "dog-rose",
+    "dogbrier"
+   ]
+  },
+  "synonyms": [
+   "Crepinia aciphylla",
+   "Crepinia canina",
+   "Crepinia lemaitrei",
+   "Crepinia myrtilloides",
+   "Crepinia psilophylla",
+   "Crepinia subnitens",
+   "Crepinia surculosa",
+   "Crepinia venosa",
+   "Rosa achburensis",
+   "Rosa aciphylla",
+   "Rosa aciphylla macropetala",
+   "Rosa aciphylloides",
+   "Rosa actinodroma",
+   "Rosa adenocalyx",
+   "Rosa adenocalyx adenopoda",
+   "Rosa adenocalyx gymnopoda",
+   "Rosa adscita",
+   "Rosa adscita orthacantha",
+   "Rosa adscita typica",
+   "Rosa afzeliana",
+   "Rosa afzeliana alba",
+   "Rosa agraria",
+   "Rosa agrestina",
+   "Rosa albolutescens",
+   "Rosa amansii",
+   "Rosa ambigua",
+   "Rosa analoga",
+   "Rosa ancarensis",
+   "Rosa arguta",
+   "Rosa armata"
+  ],
+  "tier": "basso",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-07T21:40:34.449Z"
+ },
+ {
   "slug": "salvia-officinalis",
   "gbif_key": 2927004,
   "name": "Salvia officinalis",
