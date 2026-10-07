@@ -1,0 +1,181 @@
+{
+ "gbif_key": 5341442,
+ "accepted_name": "Thymus vulgaris",
+ "family": "Lamiaceae",
+ "common_names": {
+  "it": [
+   "Timo maggiore",
+   "timo"
+  ],
+  "en": [
+   "Common Thyme",
+   "English Thyme",
+   "English thyme",
+   "Garden Thyme",
+   "Garden thyme",
+   "Thyme",
+   "common thyme",
+   "common-thyme"
+  ]
+ },
+ "synonyms": [
+  "Origanum thymus",
+  "Thymus collinus"
+ ],
+ "safety_tier": "basso",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-07T09:26:32.906Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Thymus_vulgaris",
+   "title": "Thymus vulgaris",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Thymus_vulgaris",
+   "title": "Thymus vulgaris",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42227392",
+   "pmid": "42227392",
+   "title": "Transcript-Level Modulation of Drug-Metabolizing Enzymes by Echinacea, Salvia, and Thymus in Adult Male Rats: Implications for Herb-Drug Interactions.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q148668",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/THYMUS_VULGARIS_-_AGUDA_-_IB-910_%28Tim%C3%B3%29.JPG/960px-THYMUS_VULGARIS_-_AGUDA_-_IB-910_%28Tim%C3%B3%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Isidre blanc",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:THYMUS_VULGARIS_-_AGUDA_-_IB-910_(Tim%C3%B3).JPG"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.keys[0]",
+    "err": "citazione_non_trovata",
+    "t": "Thymus vulgaris"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Thymus vulgaris è una pianta perenne aromatica appartenente alla famiglia delle Lamiacee.",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [],
+   "habitat": {
+    "t": "garighe e pendii aridi, praterie rase, prati e pascoli aridi",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa occidentale, Marocco, Italia (raro, Nord-Ovest e Centro)",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "inizio estate",
+     "s": [
+      "S2"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "possibili interazioni con farmaci",
+     "s": [
+      "S3"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [
+    {
+     "t": "uso tradizionale come aroma e tè",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "contraindications": [],
+   "interactions": [
+    {
+     "t": "possibili interazioni con farmaci",
+     "s": [
+      "S3"
+     ]
+    }
+   ],
+   "preparations": [
+    {
+     "name": "tè",
+     "part": "fiori e foglie",
+     "claim": {
+      "t": "uso tradizionale come tè",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ]
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "fiori e foglie",
+     "season": null,
+     "claim": {
+      "t": "uso in cucina come aroma",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [],
+   "preparation_effects": [],
+   "pairings": []
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

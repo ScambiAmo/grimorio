@@ -1,0 +1,203 @@
+{
+ "gbif_key": 10902460,
+ "accepted_name": "Salvia rosmarinus",
+ "family": "Lamiaceae",
+ "common_names": {
+  "it": [],
+  "en": [
+   "Rosemary"
+  ]
+ },
+ "synonyms": [
+  "Rosmarinus angustifolius",
+  "Rosmarinus aunieri",
+  "Rosmarinus communis",
+  "Rosmarinus cyanocalyx",
+  "Rosmarinus flexuosus",
+  "Rosmarinus latifolius",
+  "Rosmarinus lavandulaceus",
+  "Rosmarinus laxiflorus",
+  "Rosmarinus laxiflorus reptans",
+  "Rosmarinus ligusticus",
+  "Rosmarinus massiliensis",
+  "Rosmarinus officinalis",
+  "Rosmarinus officinalis laxiflorus",
+  "Rosmarinus officinalis palaui",
+  "Rosmarinus officinalis valentinus",
+  "Rosmarinus officinalis angustifolius",
+  "Rosmarinus officinalis angustissimus",
+  "Rosmarinus officinalis argentatus",
+  "Rosmarinus officinalis auratus",
+  "Rosmarinus officinalis flexuosus",
+  "Rosmarinus officinalis latifolius",
+  "Rosmarinus officinalis nutans",
+  "Rosmarinus officinalis prostratus",
+  "Rosmarinus officinalis rigidus",
+  "Rosmarinus officinalis serotinus",
+  "Rosmarinus officinalis trogloditarum",
+  "Rosmarinus officinalis vulgaris",
+  "Rosmarinus palaui",
+  "Rosmarinus perrietii",
+  "Rosmarinus platyphyllus"
+ ],
+ "safety_tier": "basso",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-07T09:27:21.641Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Salvia_rosmarinus",
+   "title": "Salvia rosmarinus",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Rosemary",
+   "title": "Rosemary",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q102240169",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/P1090247%284x3%29-Rosmarinus_officinalis_%2841960388224%29.jpg/960px-P1090247%284x3%29-Rosmarinus_officinalis_%2841960388224%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Miguel Angel Masegosa Martínez",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:P1090247(4x3)-Rosmarinus_officinalis_(41960388224).jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Il rosmarino è una pianta aromatica perenne appartenente alla famiglia delle Lamiaceae.",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Pianta arbustiva sempreverde che raggiunge altezze di 50–300 cm",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Area mediterranea",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "distribution": {
+    "t": "Italia, Portogallo, Spagna",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Marzo-ottobre",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": {
+     "t": "Maggio-luglio",
+     "s": [
+      "S1"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Effetti tossici sul SNC",
+     "s": [
+      "S1"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [
+    {
+     "t": "Stimolante dell'appetito e delle funzioni digestive",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": [
+    {
+     "name": "Infuso",
+     "part": "Foglie",
+     "claim": {
+      "t": "Uso esterno per gargarismi e lavaggi",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ]
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "Foglie",
+     "season": null,
+     "claim": {
+      "t": "Uso come condimento",
+      "s": [
+       "S2"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [],
+   "preparation_effects": [],
+   "pairings": []
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Salvia jordanii",
+    "danger": "bassa",
+    "claim": {
+     "t": "Specie simile",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

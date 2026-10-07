@@ -995,6 +995,54 @@
   "at": "2026-10-06T00:25:33.675Z"
  },
  {
+  "slug": "salvia-rosmarinus",
+  "gbif_key": 10902460,
+  "name": "Salvia rosmarinus",
+  "family": "Lamiaceae",
+  "common_names": {
+   "it": [],
+   "en": [
+    "Rosemary"
+   ]
+  },
+  "synonyms": [
+   "Rosmarinus angustifolius",
+   "Rosmarinus aunieri",
+   "Rosmarinus communis",
+   "Rosmarinus cyanocalyx",
+   "Rosmarinus flexuosus",
+   "Rosmarinus latifolius",
+   "Rosmarinus lavandulaceus",
+   "Rosmarinus laxiflorus",
+   "Rosmarinus laxiflorus reptans",
+   "Rosmarinus ligusticus",
+   "Rosmarinus massiliensis",
+   "Rosmarinus officinalis",
+   "Rosmarinus officinalis laxiflorus",
+   "Rosmarinus officinalis palaui",
+   "Rosmarinus officinalis valentinus",
+   "Rosmarinus officinalis angustifolius",
+   "Rosmarinus officinalis angustissimus",
+   "Rosmarinus officinalis argentatus",
+   "Rosmarinus officinalis auratus",
+   "Rosmarinus officinalis flexuosus",
+   "Rosmarinus officinalis latifolius",
+   "Rosmarinus officinalis nutans",
+   "Rosmarinus officinalis prostratus",
+   "Rosmarinus officinalis rigidus",
+   "Rosmarinus officinalis serotinus",
+   "Rosmarinus officinalis trogloditarum",
+   "Rosmarinus officinalis vulgaris",
+   "Rosmarinus palaui",
+   "Rosmarinus perrietii",
+   "Rosmarinus platyphyllus"
+  ],
+  "tier": "basso",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-07T09:27:21.641Z"
+ },
+ {
   "slug": "sambucus-nigra",
   "gbif_key": 2888728,
   "name": "Sambucus nigra",
@@ -1189,6 +1237,36 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-05T09:40:42.332Z"
+ },
+ {
+  "slug": "thymus-vulgaris",
+  "gbif_key": 5341442,
+  "name": "Thymus vulgaris",
+  "family": "Lamiaceae",
+  "common_names": {
+   "it": [
+    "Timo maggiore",
+    "timo"
+   ],
+   "en": [
+    "Common Thyme",
+    "English Thyme",
+    "English thyme",
+    "Garden Thyme",
+    "Garden thyme",
+    "Thyme",
+    "common thyme",
+    "common-thyme"
+   ]
+  },
+  "synonyms": [
+   "Origanum thymus",
+   "Thymus collinus"
+  ],
+  "tier": "basso",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-07T09:26:32.906Z"
  },
  {
   "slug": "urtica-dioica",
