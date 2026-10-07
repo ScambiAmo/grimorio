@@ -1,0 +1,230 @@
+{
+ "gbif_key": 5391480,
+ "accepted_name": "Calendula officinalis",
+ "family": "Asteraceae",
+ "common_names": {
+  "it": [
+   "Calendola o fiorrancio",
+   "Fiorrancio coltivato"
+  ],
+  "en": [
+   "Pot Marigold",
+   "Pot marigold",
+   "Scotch marigold",
+   "Scotch-marigold",
+   "Scottish-marigold",
+   "calendula",
+   "garden marigold",
+   "garden-marigold"
+  ]
+ },
+ "synonyms": [
+  "Calendula arvensis hydruntina",
+  "Calendula aurantiaca",
+  "Calendula eriocarpa",
+  "Calendula hydruntina",
+  "Calendula officinalis isabellina",
+  "Calendula officinalis ligulata",
+  "Calendula officinalis lingulata",
+  "Calendula officinalis pallida",
+  "Calendula officinalis pleniflora",
+  "Calendula officinalis ranunculodes",
+  "Calendula officinalis regalis",
+  "Calendula officinalis sulphurea",
+  "Calendula officinalis superba",
+  "Calendula officinalis officinalis",
+  "Calendula officinalis prolifera",
+  "Calendula officinalis hydruntina",
+  "Calendula officinalis parviflora",
+  "Calendula prolifera",
+  "Calendula ranunculodes",
+  "Calendula santamariae",
+  "Calendula santamarii",
+  "Calendula sinuata",
+  "Calendula sinuata aurantiaca",
+  "Caltha officinalis"
+ ],
+ "safety_tier": "basso",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-07T02:31:08.164Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Calendula_officinalis",
+   "title": "Calendula officinalis",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Calendula_officinalis",
+   "title": "Calendula officinalis",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42198463",
+   "pmid": "42198463",
+   "title": "Assessing the Safety of Carbon Dioxide Extracts of &lt;i&gt;Acorus calamus&lt;/i&gt; Rhizomes and &lt;i&gt;Calendula officinalis&lt;/i&gt; Flowers and the Antitussive Activity of the Tablet Dosage Form 'Exkair' and Granules 'Zerp-Ak-Broncho' Developed on Their Basis.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S4",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42156895",
+   "pmid": "42156895",
+   "title": "Green synthesis of copper oxide nanoparticles with Calendula officinalis plant extract and investigation of its toxicity.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S5",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42739366",
+   "pmid": "42739366",
+   "title": "Salicylic Acid Sustains Flower Performance Under Salinity in &lt;i&gt;Calendula officinalis&lt;/i&gt; L. Plants Associated with ABA Responses and Antioxidant Regulation.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q145930",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Calendula_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+   "license": "Public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Calendula_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-024.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Calendula officinalis è una pianta erbacea pubescente perenne",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Calendula officinalis",
+     "s": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "ambiente mediterraneo",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa meridionale",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "tutta l'estate",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "tossicità",
+     "s": [
+      "S3"
+     ]
+    },
+    {
+     "t": "citosotossicità",
+     "s": [
+      "S4"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "triterpenoidi",
+     "s": [
+      "S2"
+     ]
+    }
+   ],
+   "traditional_uses": [
+    {
+     "t": "uso fitoterapico",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": [
+    {
+     "name": "olio",
+     "part": "fiori",
+     "claim": {
+      "t": "olio di calendula",
+      "s": [
+       "S2"
+      ]
+     }
+    }
+   ]
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "fiori",
+     "season": null,
+     "claim": {
+      "t": "fiori commestibili",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [],
+   "preparation_effects": [],
+   "pairings": []
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

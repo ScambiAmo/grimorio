@@ -243,6 +243,58 @@
   "at": "2026-10-05T02:33:34.039Z"
  },
  {
+  "slug": "calendula-officinalis",
+  "gbif_key": 5391480,
+  "name": "Calendula officinalis",
+  "family": "Asteraceae",
+  "common_names": {
+   "it": [
+    "Calendola o fiorrancio",
+    "Fiorrancio coltivato"
+   ],
+   "en": [
+    "Pot Marigold",
+    "Pot marigold",
+    "Scotch marigold",
+    "Scotch-marigold",
+    "Scottish-marigold",
+    "calendula",
+    "garden marigold",
+    "garden-marigold"
+   ]
+  },
+  "synonyms": [
+   "Calendula arvensis hydruntina",
+   "Calendula aurantiaca",
+   "Calendula eriocarpa",
+   "Calendula hydruntina",
+   "Calendula officinalis isabellina",
+   "Calendula officinalis ligulata",
+   "Calendula officinalis lingulata",
+   "Calendula officinalis pallida",
+   "Calendula officinalis pleniflora",
+   "Calendula officinalis ranunculodes",
+   "Calendula officinalis regalis",
+   "Calendula officinalis sulphurea",
+   "Calendula officinalis superba",
+   "Calendula officinalis officinalis",
+   "Calendula officinalis prolifera",
+   "Calendula officinalis hydruntina",
+   "Calendula officinalis parviflora",
+   "Calendula prolifera",
+   "Calendula ranunculodes",
+   "Calendula santamariae",
+   "Calendula santamarii",
+   "Calendula sinuata",
+   "Calendula sinuata aurantiaca",
+   "Caltha officinalis"
+  ],
+  "tier": "basso",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-07T02:31:08.164Z"
+ },
+ {
   "slug": "cannabis-sativa",
   "gbif_key": 5361880,
   "name": "Cannabis sativa",
