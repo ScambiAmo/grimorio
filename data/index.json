@@ -740,6 +740,65 @@
   "at": "2026-10-04T21:44:01.547Z"
  },
  {
+  "slug": "melissa-officinalis",
+  "gbif_key": 5341501,
+  "name": "Melissa officinalis",
+  "family": "Lamiaceae",
+  "common_names": {
+   "it": [
+    "Melissa vera"
+   ],
+   "en": [
+    "Balm",
+    "Beebalm",
+    "Common Balm",
+    "Common balm",
+    "Lemonbalm",
+    "Melissa",
+    "balm",
+    "beebalm"
+   ]
+  },
+  "synonyms": [
+   "Faucibarba officinalis",
+   "Mutelia officinalis",
+   "Thymus melissa"
+  ],
+  "tier": "basso",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-07T16:44:41.463Z"
+ },
+ {
+  "slug": "origanum-vulgare",
+  "gbif_key": 2926612,
+  "name": "Origanum vulgare",
+  "family": "Lamiaceae",
+  "common_names": {
+   "it": [
+    "Origano comune"
+   ],
+   "en": [
+    "Oregano",
+    "Wild Marjoram",
+    "oregano",
+    "wild marjoram",
+    "winter sweet"
+   ]
+  },
+  "synonyms": [
+   "Origanum creticum",
+   "Origanum floridum",
+   "Origanum purpurascens",
+   "Origanum wallichianum",
+   "Thymus origanum"
+  ],
+  "tier": "basso",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-07T16:43:47.015Z"
+ },
+ {
   "slug": "plantago-lanceolata",
   "gbif_key": 8208358,
   "name": "Plantago lanceolata",

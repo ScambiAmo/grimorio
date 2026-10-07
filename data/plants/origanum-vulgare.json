@@ -1,0 +1,162 @@
+{
+ "gbif_key": 2926612,
+ "accepted_name": "Origanum vulgare",
+ "family": "Lamiaceae",
+ "common_names": {
+  "it": [
+   "Origano comune"
+  ],
+  "en": [
+   "Oregano",
+   "Wild Marjoram",
+   "oregano",
+   "wild marjoram",
+   "winter sweet"
+  ]
+ },
+ "synonyms": [
+  "Origanum creticum",
+  "Origanum floridum",
+  "Origanum purpurascens",
+  "Origanum wallichianum",
+  "Thymus origanum"
+ ],
+ "safety_tier": "basso",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-07T16:43:47.015Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Origanum_vulgare",
+   "title": "Origanum vulgare",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Oregano",
+   "title": "Oregano",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q134283",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Origanum_vulgare_inflorescence_-_Keila.jpg/960px-Origanum_vulgare_inflorescence_-_Keila.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Ivar Leidus",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Origanum_vulgare_inflorescence_-_Keila.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Origanum vulgare è una pianta perenne aromatica",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "altezza 30–50 cm, forma biologica emicriptofita scaposa",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "boscaglie rade, cespuglieti, rupi soleggiate",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Eurasia, Italia, Alpi, Europa",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": null,
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [],
+   "not_found_note": "Nessuna informazione sulla tossicità trovata nelle fonti consultate: questo NON significa che la pianta sia sicura."
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "foglie",
+     "season": null,
+     "claim": {
+      "t": "le foglie sono utilizzate come pianta aromatica in cucina",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [
+    {
+     "t": "terroso, caldo, leggermente amaro",
+     "s": [
+      "S2"
+     ]
+    }
+   ],
+   "preparation_effects": [],
+   "pairings": [
+    {
+     "t": "verdure, carne, pesce",
+     "s": [
+      "S2"
+     ]
+    }
+   ]
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Origanum majorana (sweet marjoram)",
+    "danger": "bassa",
+    "claim": {
+     "t": "pianta simile all'origano",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "gbif_key": 5341501,
+ "accepted_name": "Melissa officinalis",
+ "family": "Lamiaceae",
+ "common_names": {
+  "it": [
+   "Melissa vera"
+  ],
+  "en": [
+   "Balm",
+   "Beebalm",
+   "Common Balm",
+   "Common balm",
+   "Lemonbalm",
+   "Melissa",
+   "balm",
+   "beebalm"
+  ]
+ },
+ "synonyms": [
+  "Faucibarba officinalis",
+  "Mutelia officinalis",
+  "Thymus melissa"
+ ],
+ "safety_tier": "basso",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-07T16:44:41.463Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Melissa_officinalis",
+   "title": "Melissa officinalis",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Lemon_balm",
+   "title": "Lemon balm",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q148396",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Melissa_officinalis_Bee_Balm%2CLemon_Balm_%E1%83%91%E1%83%90%E1%83%A0%E1%83%90%E1%83%9B%E1%83%91%E1%83%9D.JPG/960px-Melissa_officinalis_Bee_Balm%2CLemon_Balm_%E1%83%91%E1%83%90%E1%83%A0%E1%83%90%E1%83%9B%E1%83%91%E1%83%9D.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Lazaregagnidze",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Melissa_officinalis_Bee_Balm,Lemon_Balm_%E1%83%91%E1%83%90%E1%83%A0%E1%83%90%E1%83%9B%E1%83%91%E1%83%9D.JPG"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "med.active_principles[0]",
+    "err": "vuota",
+    "t": ""
+   },
+   {
+    "path": "med.traditional_uses[0]",
+    "err": "vuota",
+    "t": ""
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La melissa officinale è una pianta perenne erbacea aromatica",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "altezza della pianta",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "incolti, ruderi e coltivazioni inselvatichite",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa meridionale, Nord Africa e Medio Oriente",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": null,
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [],
+   "not_found_note": "Nessuna informazione sulla tossicità trovata nelle fonti consultate: questo NON significa che la pianta sia sicura."
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": [
+    {
+     "name": "essenza di melissa",
+     "part": "foglie e fiori",
+     "claim": {
+      "t": "preparazione",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ]
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "foglie",
+     "season": null,
+     "claim": {
+      "t": "parti commestibili",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [],
+   "preparation_effects": [],
+   "pairings": []
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Monarda",
+    "danger": "bassa",
+    "claim": {
+     "t": "non confondere con bee balm",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}
