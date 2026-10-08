@@ -1,0 +1,213 @@
+{
+ "gbif_key": 2739622,
+ "accepted_name": "Colchicum autumnale",
+ "family": "Colchicaceae",
+ "common_names": {
+  "it": [
+   "Colchico d'autunno"
+  ],
+  "en": [
+   "Autumn Crocus",
+   "Autumn crocus",
+   "Meadow Saffron",
+   "Naked Ladies",
+   "autumn crocus",
+   "autumn-crocus",
+   "colchicum",
+   "meadow-saffron"
+  ]
+ },
+ "synonyms": [
+  "Bulbocodium antumnale",
+  "Bulbocodium autumnale",
+  "Colchicum autumnale bulgaricum",
+  "Colchicum autumnale macropetala",
+  "Colchicum autumnale milosi",
+  "Colchicum autumnale pannonicum",
+  "Colchicum autumnale radei",
+  "Colchicum autumnale transsilvanicum",
+  "Colchicum autumnale vernum",
+  "Colchicum autumnale album",
+  "Colchicum autumnale elatius",
+  "Colchicum autumnale major",
+  "Colchicum autumnale pictum",
+  "Colchicum autumnale serotinum",
+  "Colchicum autumnale speciosissimum",
+  "Colchicum autumnale vernale",
+  "Colchicum autumnale viridiflorum",
+  "Colchicum borisii",
+  "Colchicum bulgaricum",
+  "Colchicum commune",
+  "Colchicum crociflorum",
+  "Colchicum doerfleri orientale",
+  "Colchicum drenowskii",
+  "Colchicum orientale",
+  "Colchicum pannonicum",
+  "Colchicum polyanthon",
+  "Colchicum praecox",
+  "Colchicum rhodopaeum",
+  "Colchicum transsilvanicum",
+  "Colchicum turcicum pannonicum"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T07:37:46.248Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Colchicum_autumnale",
+   "title": "Colchicum autumnale",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Colchicum_autumnale",
+   "title": "Colchicum autumnale",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42043136",
+   "pmid": "42043136",
+   "title": "Successful Management of Accidental Colchicine Intoxication After Ingestion of &lt;i&gt;Colchicum autumnale&lt;/i&gt;: A Case Report.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q152553",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Colchicum_autumnale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "author": "Stemonitis",
+   "license": "Public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Colchicum_autumnale.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.keys[0]",
+    "err": "citazione_non_trovata",
+    "t": "Colchicum autumnale"
+   },
+   {
+    "path": "med.active_principles[0]",
+    "err": "vuota",
+    "t": ""
+   },
+   {
+    "path": "med.traditional_uses[0]",
+    "err": "vuota",
+    "t": ""
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Il colchico d'autunno è una pianta velenosa",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [],
+   "habitat": {
+    "t": "prati falciati, pascoli e schiarite boschive",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa centrale e meridionale, Africa settentrionale e Caucaso",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "autunno",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "tossicità letale",
+     "s": [
+      "S1"
+     ]
+    },
+    {
+     "t": "tossicità per i felini",
+     "s": [
+      "S2"
+     ]
+    },
+    {
+     "t": "intossicazione",
+     "s": [
+      "S3"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Crocus sativus",
+    "danger": "mortale",
+    "claim": {
+     "t": "confusione con il croco",
+     "s": [
+      "S1"
+     ]
+    },
+    "distinguishing_features": []
+   },
+   {
+    "name": "Allium ursinum",
+    "danger": "alta",
+    "claim": {
+     "t": "confusione con l'aglio selvatico",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

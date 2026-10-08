@@ -59,6 +59,34 @@
   "at": "2026-10-06T06:35:53.040Z"
  },
  {
+  "slug": "aethusa-cynapium",
+  "gbif_key": 5371825,
+  "name": "Aethusa cynapium",
+  "family": "Apiaceae",
+  "common_names": {
+   "it": [
+    "Cicuta aglina"
+   ],
+   "en": [
+    "Fool's Parsley",
+    "Fool's parsley",
+    "Fools Parsley",
+    "fool's parsley",
+    "fool's-parsley",
+    "fools parsley",
+    "poison parsley"
+   ]
+  },
+  "synonyms": [
+   "Coriandrum cynapium",
+   "Cynapium vulgare"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T07:36:27.044Z"
+ },
+ {
   "slug": "allium-ursinum",
   "gbif_key": 2857601,
   "name": "Allium ursinum",
@@ -484,6 +512,115 @@
   "at": "2026-10-05T09:19:26.069Z"
  },
  {
+  "slug": "cicuta-virosa",
+  "gbif_key": 5371864,
+  "name": "Cicuta virosa",
+  "family": "Apiaceae",
+  "common_names": {
+   "it": [
+    "Cicuta acquatica"
+   ],
+   "en": [
+    "Cowbane",
+    "European Waterhemlock",
+    "European water-hemlock",
+    "Mackenzie's water hemlock",
+    "Mackenzie's water-hemlock",
+    "Northern water hemlock",
+    "boreal water-hemlock",
+    "cowbane"
+   ]
+  },
+  "synonyms": [
+   "Cicuta angustifolia",
+   "Cicuta baldacciana",
+   "Cicuta cellulosa",
+   "Cicuta mackenzieana",
+   "Cicuta nipponica",
+   "Cicuta orientalis",
+   "Cicuta pumila",
+   "Cicuta sachalinensis",
+   "Cicuta tenuifolia",
+   "Cicuta virosa angustifolia",
+   "Cicuta virosa intermedia",
+   "Cicuta virosa latisecta",
+   "Cicuta virosa longiinvolucellata",
+   "Cicuta virosa submersa",
+   "Cicuta virosa tenuifolia",
+   "Cicuta virosa angustisecta",
+   "Cicuta virosa latifolia",
+   "Cicuta virosa nipponica",
+   "Cicuta virosa orientalis",
+   "Cicuta virosa stricta",
+   "Cicutaria aquatica",
+   "Cicutaria virosa",
+   "Coriandrum cicuta",
+   "Selinum virosum",
+   "Sium cicuta"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": true,
+  "at": "2026-10-08T07:35:56.423Z"
+ },
+ {
+  "slug": "colchicum-autumnale",
+  "gbif_key": 2739622,
+  "name": "Colchicum autumnale",
+  "family": "Colchicaceae",
+  "common_names": {
+   "it": [
+    "Colchico d'autunno"
+   ],
+   "en": [
+    "Autumn Crocus",
+    "Autumn crocus",
+    "Meadow Saffron",
+    "Naked Ladies",
+    "autumn crocus",
+    "autumn-crocus",
+    "colchicum",
+    "meadow-saffron"
+   ]
+  },
+  "synonyms": [
+   "Bulbocodium antumnale",
+   "Bulbocodium autumnale",
+   "Colchicum autumnale bulgaricum",
+   "Colchicum autumnale macropetala",
+   "Colchicum autumnale milosi",
+   "Colchicum autumnale pannonicum",
+   "Colchicum autumnale radei",
+   "Colchicum autumnale transsilvanicum",
+   "Colchicum autumnale vernum",
+   "Colchicum autumnale album",
+   "Colchicum autumnale elatius",
+   "Colchicum autumnale major",
+   "Colchicum autumnale pictum",
+   "Colchicum autumnale serotinum",
+   "Colchicum autumnale speciosissimum",
+   "Colchicum autumnale vernale",
+   "Colchicum autumnale viridiflorum",
+   "Colchicum borisii",
+   "Colchicum bulgaricum",
+   "Colchicum commune",
+   "Colchicum crociflorum",
+   "Colchicum doerfleri orientale",
+   "Colchicum drenowskii",
+   "Colchicum orientale",
+   "Colchicum pannonicum",
+   "Colchicum polyanthon",
+   "Colchicum praecox",
+   "Colchicum rhodopaeum",
+   "Colchicum transsilvanicum",
+   "Colchicum turcicum pannonicum"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T07:37:46.248Z"
+ },
+ {
   "slug": "conium-maculatum",
   "gbif_key": 3034807,
   "name": "Conium maculatum",
@@ -903,6 +1040,42 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-07T16:44:41.463Z"
+ },
+ {
+  "slug": "oenanthe-crocata",
+  "gbif_key": 6027319,
+  "name": "Oenanthe crocata",
+  "family": "Apiaceae",
+  "common_names": {
+   "it": [],
+   "en": [
+    "Hemlock Water Dropwort",
+    "Hemlock Water-Dropwort",
+    "Hemlock Water-dropwort",
+    "hemlock water-dropwort",
+    "water-dropwort",
+    "water-hemlock"
+   ]
+  },
+  "synonyms": [
+   "Oenanthe apiifolia",
+   "Oenanthe crocata macrosciadia",
+   "Oenanthe crocata apiifolia",
+   "Oenanthe crocata broteri",
+   "Oenanthe crocata crocata",
+   "Oenanthe crocata longissima",
+   "Oenanthe crocata oligactis",
+   "Oenanthe crocata tenuisecta",
+   "Oenanthe gallaecica",
+   "Oenanthe macrosciadia",
+   "Oenanthe oligactis",
+   "Oenanthe prolifera",
+   "Phellandrium plinii"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T07:36:50.939Z"
  },
  {
   "slug": "origanum-vulgare",

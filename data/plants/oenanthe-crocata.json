@@ -1,0 +1,164 @@
+{
+ "gbif_key": 6027319,
+ "accepted_name": "Oenanthe crocata",
+ "family": "Apiaceae",
+ "common_names": {
+  "it": [],
+  "en": [
+   "Hemlock Water Dropwort",
+   "Hemlock Water-Dropwort",
+   "Hemlock Water-dropwort",
+   "hemlock water-dropwort",
+   "water-dropwort",
+   "water-hemlock"
+  ]
+ },
+ "synonyms": [
+  "Oenanthe apiifolia",
+  "Oenanthe crocata macrosciadia",
+  "Oenanthe crocata apiifolia",
+  "Oenanthe crocata broteri",
+  "Oenanthe crocata crocata",
+  "Oenanthe crocata longissima",
+  "Oenanthe crocata oligactis",
+  "Oenanthe crocata tenuisecta",
+  "Oenanthe gallaecica",
+  "Oenanthe macrosciadia",
+  "Oenanthe oligactis",
+  "Oenanthe prolifera",
+  "Phellandrium plinii"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T07:36:50.939Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Oenanthe_crocata",
+   "title": "Oenanthe crocata",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Oenanthe_crocata",
+   "title": "Oenanthe crocata",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S5",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/32539046",
+   "pmid": "32539046",
+   "title": "Three poisonous plants (Oenanthe, Cicuta and Anamirta) that antagonise the effect of γ-aminobutyric acid in human brain.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q1818309",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Oenanthe_crocata1.jpg/960px-Oenanthe_crocata1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "No machine-readable author provided. Aroche assumed (based on copyright claims).",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Oenanthe_crocata1.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Oenanthe crocata è una pianta velenosa della famiglia delle Apiaceae",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "La pianta può raggiungere i 150 cm di altezza",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "La pianta cresce in ambienti umidi, come prati umidi e boschi umidi",
+    "s": [
+     "S2"
+    ]
+   },
+   "distribution": {
+    "t": "La pianta è diffusa in Europa occidentale, Marocco e Sardegna",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "La pianta fiorisce tra maggio e giugno",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "La pianta è altamente tossica",
+     "s": [
+      "S1",
+      "S2",
+      "S5"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Apiaceae (Umbelliferae)",
+    "danger": "mortale",
+    "claim": {
+     "t": "La pianta può essere confusa con altre piante della famiglia Apiaceae",
+     "s": [
+      "S5"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

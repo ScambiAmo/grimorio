@@ -1,0 +1,150 @@
+{
+ "gbif_key": 5371825,
+ "accepted_name": "Aethusa cynapium",
+ "family": "Apiaceae",
+ "common_names": {
+  "it": [
+   "Cicuta aglina"
+  ],
+  "en": [
+   "Fool's Parsley",
+   "Fool's parsley",
+   "Fools Parsley",
+   "fool's parsley",
+   "fool's-parsley",
+   "fools parsley",
+   "poison parsley"
+  ]
+ },
+ "synonyms": [
+  "Coriandrum cynapium",
+  "Cynapium vulgare"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T07:36:27.044Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Aethusa_cynapium",
+   "title": "Aethusa cynapium",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q627429",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Illustration_Aethusa_cynapium0.jpg/960px-Illustration_Aethusa_cynapium0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "autore non indicato",
+   "license": "Public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Illustration_Aethusa_cynapium0.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "med.active_principles[0]",
+    "err": "citazione_non_trovata",
+    "t": "Cynopina"
+   },
+   {
+    "path": "med.traditional_uses[1]",
+    "err": "citazione_non_trovata",
+    "t": "Trattamento di colera infantile"
+   },
+   {
+    "path": "lookalikes[0]",
+    "err": "nome_non_nel_testo_citato",
+    "t": "Conium maculatum (Cicuta)"
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Aethusa cynapium è una pianta velenosa",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Aethusa cynapium è una pianta annuale",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": null,
+   "distribution": {
+    "t": "Aethusa cynapium è originaria di Europa, Asia occidentale e Africa nord-occidentale",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": null,
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "La pianta fresca è velenosa",
+     "s": [
+      "S1"
+     ]
+    },
+    {
+     "t": "La pianta secca è sicura",
+     "s": [
+      "S1"
+     ]
+    },
+    {
+     "t": "I sintomi dell'avvelenamento includono calore in bocca e gola",
+     "s": [
+      "S1"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Acido trideca-7,9,11-trienoico",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

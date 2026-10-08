@@ -1,0 +1,185 @@
+{
+ "gbif_key": 5371864,
+ "accepted_name": "Cicuta virosa",
+ "family": "Apiaceae",
+ "common_names": {
+  "it": [
+   "Cicuta acquatica"
+  ],
+  "en": [
+   "Cowbane",
+   "European Waterhemlock",
+   "European water-hemlock",
+   "Mackenzie's water hemlock",
+   "Mackenzie's water-hemlock",
+   "Northern water hemlock",
+   "boreal water-hemlock",
+   "cowbane"
+  ]
+ },
+ "synonyms": [
+  "Cicuta angustifolia",
+  "Cicuta baldacciana",
+  "Cicuta cellulosa",
+  "Cicuta mackenzieana",
+  "Cicuta nipponica",
+  "Cicuta orientalis",
+  "Cicuta pumila",
+  "Cicuta sachalinensis",
+  "Cicuta tenuifolia",
+  "Cicuta virosa angustifolia",
+  "Cicuta virosa intermedia",
+  "Cicuta virosa latisecta",
+  "Cicuta virosa longiinvolucellata",
+  "Cicuta virosa submersa",
+  "Cicuta virosa tenuifolia",
+  "Cicuta virosa angustisecta",
+  "Cicuta virosa latifolia",
+  "Cicuta virosa nipponica",
+  "Cicuta virosa orientalis",
+  "Cicuta virosa stricta",
+  "Cicutaria aquatica",
+  "Cicutaria virosa",
+  "Coriandrum cicuta",
+  "Selinum virosum",
+  "Sium cicuta"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": true,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T07:35:56.423Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Cicuta_virosa",
+   "title": "Cicuta virosa",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/39942877",
+   "pmid": "39942877",
+   "title": "Content Analysis of Digital Archives Contributes to the Historical Distribution and Folk Knowledge of the Highly Toxic <i>Cicuta virosa</i> L. in Hungary.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S5",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q27609",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Cicuta_virosa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-038_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+   "license": "Public domain",
+   "license_url": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Cicuta_virosa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-038_cropped.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "lookalikes[0]",
+    "err": "nome_non_nel_testo_citato",
+    "t": "Pastinaca sativa (pastinaca)"
+   },
+   {
+    "path": "lookalikes[1]",
+    "err": "nome_non_nel_testo_citato",
+    "t": "Petroselinum crispum (prezzemolo)"
+   },
+   {
+    "path": "lookalikes[2]",
+    "err": "nome_non_nel_testo_citato",
+    "t": "Apium graveolens (sedano)"
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Cicuta virosa è una pianta velenosa",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "altezza della pianta",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "zone umide",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa settentrionale e centrale, Asia settentrionale e America del Nord nord-occidentale",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": null,
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "contiene cicutoxina",
+     "s": [
+      "S1"
+     ]
+    },
+    {
+     "t": "sintomi di avvelenamento",
+     "s": [
+      "S1"
+     ]
+    },
+    {
+     "t": "dose letale",
+     "s": [
+      "S1"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": {
+    "t": "specie in pericolo",
+    "s": [
+     "S2"
+    ]
+   }
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}
