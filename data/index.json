@@ -59,6 +59,42 @@
   "at": "2026-10-06T06:35:53.040Z"
  },
  {
+  "slug": "aconitum-napellus",
+  "gbif_key": 3033665,
+  "name": "Aconitum napellus",
+  "family": "Ranunculaceae",
+  "common_names": {
+   "it": [
+    "Aconito",
+    "Aconito napello",
+    "Napello",
+    "Strozzalupo"
+   ],
+   "en": [
+    "Monk's Hood",
+    "Monk's-Hood",
+    "Turk's-cap",
+    "Venus' chariot",
+    "aconite",
+    "bear's-foot",
+    "blue rocket",
+    "friar's-cap"
+   ]
+  },
+  "synonyms": [
+   "Aconitum funkianum",
+   "Aconitum napellus eminens",
+   "Aconitum nutans",
+   "Aconitum occidentale",
+   "Aconitum occidentale splendens",
+   "Aconitum willdenowii"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T15:00:51.918Z"
+ },
+ {
   "slug": "aethusa-cynapium",
   "gbif_key": 5371825,
   "name": "Aethusa cynapium",
@@ -174,6 +210,63 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-06T13:42:44.448Z"
+ },
+ {
+  "slug": "arum-maculatum",
+  "gbif_key": 5330580,
+  "name": "Arum maculatum",
+  "family": "Araceae",
+  "common_names": {
+   "it": [
+    "Gigaro scuro"
+   ],
+   "en": [
+    "Adam-and-Eve",
+    "Cuckoo Pint",
+    "Cuckoo-pint",
+    "Jack-in-the-pulpit",
+    "Lords-And-Ladies",
+    "Lords-and-Ladies [Arum maculatum]",
+    "Wake Robin",
+    "Wild Arum"
+   ]
+  },
+  "synonyms": [
+   "Arisarum maculatum",
+   "Arum alpinum pyrenaeum",
+   "Arum byzantinum",
+   "Arum gracile",
+   "Arum heldreichii",
+   "Arum immaculatum",
+   "Arum italicum byzantinum",
+   "Arum italicum amoenum",
+   "Arum maculatum flavescens",
+   "Arum maculatum immaculatum",
+   "Arum maculatum roseum",
+   "Arum maculatum scolopendriforme",
+   "Arum maculatum spathulatum",
+   "Arum maculatum tetrelii",
+   "Arum maculatum pyrenaeum",
+   "Arum maculatum heldreichii",
+   "Arum maculatum karpatii",
+   "Arum maculatum malyi",
+   "Arum maculatum tetrellii",
+   "Arum maculatum vulgare",
+   "Arum maculatum zelebori",
+   "Arum maculatum zeleborii",
+   "Arum malyi",
+   "Arum orientale amoenum",
+   "Arum pyrenaeum",
+   "Arum trapezuntinum",
+   "Arum vernale",
+   "Arum vulgare",
+   "Arum vulgare albovenosum",
+   "Arum vulgare immaculatum"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T14:59:38.919Z"
  },
  {
   "slug": "bellis-perennis",
@@ -675,6 +768,63 @@
   "at": "2026-10-05T18:55:01.938Z"
  },
  {
+  "slug": "convallaria-majalis",
+  "gbif_key": 7459480,
+  "name": "Convallaria majalis",
+  "family": "Asparagaceae",
+  "common_names": {
+   "it": [
+    "Giglio delle convalli",
+    "Mughetto"
+   ],
+   "en": [
+    "European Lily Of The Valley",
+    "European lily of the valley",
+    "European lily-of-the-valley",
+    "Lily of The Valley",
+    "Lily-of-the-valley",
+    "May Lily",
+    "lily-of-the-valley"
+   ]
+  },
+  "synonyms": [
+   "Convallaria bracteata",
+   "Convallaria fragrans",
+   "Convallaria latifolia",
+   "Convallaria linnaei",
+   "Convallaria majalis abchasica",
+   "Convallaria majalis angustifolia",
+   "Convallaria majalis laminaris",
+   "Convallaria majalis latifrons",
+   "Convallaria majalis latior",
+   "Convallaria majalis mappii",
+   "Convallaria majalis picta",
+   "Convallaria majalis prolificans",
+   "Convallaria majalis tetraploidiae",
+   "Convallaria majalis transcaucasica",
+   "Convallaria majalis bracteosa",
+   "Convallaria majalis flore-pleno",
+   "Convallaria majalis flore-purpurascente",
+   "Convallaria majalis latifolia",
+   "Convallaria majalis rosea",
+   "Convallaria majalis rubra",
+   "Convallaria majalis variegata",
+   "Convallaria mappii",
+   "Convallaria maxima",
+   "Convallaria scaposa",
+   "Convallaria transcaucasica",
+   "Lilium convallium",
+   "Lilium-convallium majale",
+   "Majanthemum majale",
+   "Polygonatum majale",
+   "Polygonatum multiflorum latifolium"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T15:00:16.888Z"
+ },
+ {
   "slug": "crataegus-monogyna",
   "gbif_key": 9220780,
   "name": "Crataegus monogyna",
@@ -774,6 +924,36 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-06T00:26:13.726Z"
+ },
+ {
+  "slug": "digitalis-purpurea",
+  "gbif_key": 5414995,
+  "name": "Digitalis purpurea",
+  "family": "Plantaginaceae",
+  "common_names": {
+   "it": [
+    "Digitale rossa"
+   ],
+   "en": [
+    "Common Foxglove",
+    "Common foxglove",
+    "Digitalis",
+    "Foxglove",
+    "Purple Foxglove",
+    "Purple foxglove",
+    "digitalis",
+    "foxglove"
+   ]
+  },
+  "synonyms": [
+   "Digitalis purpurea alba",
+   "Digitalis purpurea gloxiniiflora",
+   "Digitalis purpurea toletana"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T15:01:26.987Z"
  },
  {
   "slug": "foeniculum-vulgare",

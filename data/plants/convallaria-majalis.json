@@ -1,0 +1,226 @@
+{
+ "gbif_key": 7459480,
+ "accepted_name": "Convallaria majalis",
+ "family": "Asparagaceae",
+ "common_names": {
+  "it": [
+   "Giglio delle convalli",
+   "Mughetto"
+  ],
+  "en": [
+   "European Lily Of The Valley",
+   "European lily of the valley",
+   "European lily-of-the-valley",
+   "Lily of The Valley",
+   "Lily-of-the-valley",
+   "May Lily",
+   "lily-of-the-valley"
+  ]
+ },
+ "synonyms": [
+  "Convallaria bracteata",
+  "Convallaria fragrans",
+  "Convallaria latifolia",
+  "Convallaria linnaei",
+  "Convallaria majalis abchasica",
+  "Convallaria majalis angustifolia",
+  "Convallaria majalis laminaris",
+  "Convallaria majalis latifrons",
+  "Convallaria majalis latior",
+  "Convallaria majalis mappii",
+  "Convallaria majalis picta",
+  "Convallaria majalis prolificans",
+  "Convallaria majalis tetraploidiae",
+  "Convallaria majalis transcaucasica",
+  "Convallaria majalis bracteosa",
+  "Convallaria majalis flore-pleno",
+  "Convallaria majalis flore-purpurascente",
+  "Convallaria majalis latifolia",
+  "Convallaria majalis rosea",
+  "Convallaria majalis rubra",
+  "Convallaria majalis variegata",
+  "Convallaria mappii",
+  "Convallaria maxima",
+  "Convallaria scaposa",
+  "Convallaria transcaucasica",
+  "Lilium convallium",
+  "Lilium-convallium majale",
+  "Majanthemum majale",
+  "Polygonatum majale",
+  "Polygonatum multiflorum latifolium"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T15:00:16.888Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Convallaria_majalis",
+   "title": "Convallaria majalis",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/40805725",
+   "pmid": "40805725",
+   "title": "Histological Features Detected for Separation of the Edible Leaves of &lt;i&gt;Allium ursinum&lt;/i&gt; L. from the Poisonous Leaves of &lt;i&gt;Convallaria majalis&lt;/i&gt; L. and &lt;i&gt;Colchicum autumnale&lt;/i&gt; L.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q101711",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Convallaria_majalis_inflorescence_-_Keila.jpg/960px-Convallaria_majalis_inflorescence_-_Keila.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Ivar Leidus",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Convallaria_majalis_inflorescence_-_Keila.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "season.flowering",
+    "err": "citazione_non_trovata",
+    "t": "Primavera"
+   },
+   {
+    "path": "med.traditional_uses[0]",
+    "err": "claim_sanitario",
+    "t": "La pianta è stata utilizzata in passato per la cura dello scompenso cardiaco"
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Convallaria majalis è una pianta erbacea perenne, rizomatosa, appartenente alla famiglia delle Asparagaceae",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Pianta erbacea perenne, rizomatosa, con foglie basali ovali-lanceolate e fiori bianchi a forma di campana",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Boschi delle prealpi, luoghi boscoso-cespugliosi e sassosi, specialmente su suoli calcarei",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa, Caucaso",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": null,
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Tutta la pianta è tossica e contiene sostanze irritanti quali le saponine e numerosi glicosidi cardioattivi",
+     "s": [
+      "S1"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "La pianta è tossica e può causare disturbi digestivi, bradicardia, ipertensione arteriosa e aritmie cardiache se ingerita",
+    "s": [
+     "S1"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Glicosidi cardioattivi, come la convallatossina",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "La pianta è tossica e può causare disturbi digestivi, bradicardia, ipertensione arteriosa e aritmie cardiache se ingerita",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Colchicum autumnale",
+    "danger": "mortale",
+    "claim": {
+     "t": "Le foglie di Colchicum autumnale sono simili a quelle di Convallaria majalis e possono essere confuse",
+     "s": [
+      "S3"
+     ]
+    },
+    "distinguishing_features": [
+     {
+      "t": "Le foglie di Colchicum autumnale hanno una forma e una struttura diverse rispetto a quelle di Convallaria majalis",
+      "s": [
+       "S3"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Allium ursinum",
+    "danger": "bassa",
+    "claim": {
+     "t": "Le foglie di Allium ursinum possono essere confuse con quelle di Convallaria majalis",
+     "s": [
+      "S3"
+     ]
+    },
+    "distinguishing_features": [
+     {
+      "t": "Le foglie di Allium ursinum hanno una forma e una struttura diverse rispetto a quelle di Convallaria majalis",
+      "s": [
+       "S3"
+      ]
+     }
+    ]
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

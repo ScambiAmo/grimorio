@@ -1,0 +1,167 @@
+{
+ "gbif_key": 5414995,
+ "accepted_name": "Digitalis purpurea",
+ "family": "Plantaginaceae",
+ "common_names": {
+  "it": [
+   "Digitale rossa"
+  ],
+  "en": [
+   "Common Foxglove",
+   "Common foxglove",
+   "Digitalis",
+   "Foxglove",
+   "Purple Foxglove",
+   "Purple foxglove",
+   "digitalis",
+   "foxglove"
+  ]
+ },
+ "synonyms": [
+  "Digitalis purpurea alba",
+  "Digitalis purpurea gloxiniiflora",
+  "Digitalis purpurea toletana"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T15:01:26.987Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Digitalis_purpurea",
+   "title": "Digitalis purpurea",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Digitalis_purpurea",
+   "title": "Digitalis purpurea",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S5",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/37521578",
+   "pmid": "37521578",
+   "title": "Of mixed vegetables and cardiac arrhythmias - <i>Digitalis purpurea</i> confused with <i>Borago officinalis</i>: A case series of accidental digitoxin intoxications.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q157555",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Digitalis_purpurea_220605.jpg/960px-Digitalis_purpurea_220605.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Bernd Haynold",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Digitalis_purpurea_220605.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "La Digitalis purpurea è una pianta erbacea e perenne",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Habitat tipico: radure boschive, pascoli montani",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Radure boschive, pascoli montani, tagli rasi forestali",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "In Italia si trova principalmente in Sardegna",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Early summer",
+     "s": [
+      "S2"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Tutte le parti della pianta sono velenose",
+     "s": [
+      "S2"
+     ]
+    },
+    {
+     "t": "I sintomi dell'avvelenamento includono nausea, vomito e aritmie",
+     "s": [
+      "S2"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Digitossina e digossina",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Borago officinalis",
+    "danger": "mortale",
+    "claim": {
+     "t": "La Borago officinalis può essere confusa con la Digitalis purpurea",
+     "s": [
+      "S5"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

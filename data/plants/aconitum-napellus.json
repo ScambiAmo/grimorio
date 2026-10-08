@@ -1,0 +1,166 @@
+{
+ "gbif_key": 3033665,
+ "accepted_name": "Aconitum napellus",
+ "family": "Ranunculaceae",
+ "common_names": {
+  "it": [
+   "Aconito",
+   "Aconito napello",
+   "Napello",
+   "Strozzalupo"
+  ],
+  "en": [
+   "Monk's Hood",
+   "Monk's-Hood",
+   "Turk's-cap",
+   "Venus' chariot",
+   "aconite",
+   "bear's-foot",
+   "blue rocket",
+   "friar's-cap"
+  ]
+ },
+ "synonyms": [
+  "Aconitum funkianum",
+  "Aconitum napellus eminens",
+  "Aconitum nutans",
+  "Aconitum occidentale",
+  "Aconitum occidentale splendens",
+  "Aconitum willdenowii"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T15:00:51.918Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Aconitum_napellus",
+   "title": "Aconitum napellus",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/39728810",
+   "pmid": "39728810",
+   "title": "Food Confusion Between Edible and Poisonous Plants: A 22-Year Retrospective of the Southeastern France Poison Control Center.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S5",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/34251482",
+   "pmid": "34251482",
+   "title": "[Aconitine poisoning due to confusion of aconite leaves with lovage].",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q159218",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Aconitum_napellus_230705.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "author": "Bernd Haynold",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Aconitum_napellus_230705.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Aconitum napellus è una pianta erbacea appartenente alla famiglia delle Ranunculaceae",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "altezza della pianta",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "zone montagnose delle Alpi",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa centrale e occidentale",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": null,
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "tossicità della pianta",
+     "s": [
+      "S1",
+      "S5"
+     ]
+    },
+    {
+     "t": "quantità letale",
+     "s": [
+      "S1"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "pericolo di confusione con altre piante",
+    "s": [
+     "S3"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "aconitina",
+     "s": [
+      "S1",
+      "S5"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}
