@@ -269,6 +269,36 @@
   "at": "2026-10-08T14:59:38.919Z"
  },
  {
+  "slug": "atropa-belladonna",
+  "gbif_key": 3802655,
+  "name": "Atropa belladonna",
+  "family": "Solanaceae",
+  "common_names": {
+   "it": [
+    "Belladonna"
+   ],
+   "en": [
+    "Belladonna",
+    "Deadly Nightshade",
+    "Dwale",
+    "Naughty-man's Cherries",
+    "belladonna",
+    "deadly nightshade",
+    "deadly-nightshade"
+   ]
+  },
+  "synonyms": [
+   "Atropa acuminata",
+   "Atropa paschkewiczii",
+   "Belladonna baccifera",
+   "Belladonna trichotoma"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T20:30:05.515Z"
+ },
+ {
   "slug": "bellis-perennis",
   "gbif_key": 3117424,
   "name": "Bellis perennis",
@@ -1222,6 +1252,53 @@
   "at": "2026-10-07T16:44:41.463Z"
  },
  {
+  "slug": "nerium-oleander",
+  "gbif_key": 3169756,
+  "name": "Nerium oleander",
+  "family": "Apocynaceae",
+  "common_names": {
+   "it": [],
+   "en": [
+    "Ceylone Rose",
+    "Ceylonrose",
+    "Ceylons Rose",
+    "Dog-Bane",
+    "Double Oleander",
+    "Oleander",
+    "Rose Laurel",
+    "Rosebay"
+   ]
+  },
+  "synonyms": [
+   "Nerion oleandrum",
+   "Nerium atropurpureum",
+   "Nerium coccineum",
+   "Nerium haquevillei",
+   "Nerium indicum aurantiacum",
+   "Nerium indicum luteum",
+   "Nerium indicum ochroleucum",
+   "Nerium indicum oxiacantholens",
+   "Nerium indicum plenum",
+   "Nerium indicum ragonotii",
+   "Nerium indicum splendens",
+   "Nerium madonii",
+   "Nerium odorum",
+   "Nerium oleander atropurpureum-plenum",
+   "Nerium oleander album",
+   "Nerium oleander atropurpureum",
+   "Nerium oleander flore-variegato",
+   "Nerium oleander luteomarginatum",
+   "Nerium oleander madonii-grandiflorum",
+   "Nerium oleander oleander",
+   "Nerium oleander pictum-argenteum",
+   "Nerium oleander radicans"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T20:31:28.875Z"
+ },
+ {
   "slug": "oenanthe-crocata",
   "gbif_key": 6027319,
   "name": "Oenanthe crocata",
@@ -1648,6 +1725,51 @@
   "at": "2026-10-07T09:27:21.641Z"
  },
  {
+  "slug": "sambucus-ebulus",
+  "gbif_key": 2888722,
+  "name": "Sambucus ebulus",
+  "family": "Viburnaceae",
+  "common_names": {
+   "it": [
+    "Sambuco ebbio",
+    "Sambuco lebbio"
+   ],
+   "en": [
+    "Danewort",
+    "Dwarf Elder",
+    "Dwarf elderberry",
+    "danewort",
+    "danewort, dwarf elder",
+    "dwarf elder",
+    "dwarf elderberry"
+   ]
+  },
+  "synonyms": [
+   "Ebulum humile",
+   "Ebulus humile",
+   "Sambucus cochinchinensis",
+   "Sambucus deborensis",
+   "Sambucus ebulus laciniata",
+   "Sambucus ebulus xerophila",
+   "Sambucus ebulus citrina",
+   "Sambucus ebulus deborensis",
+   "Sambucus ebulus humilis",
+   "Sambucus ebulus incarnata",
+   "Sambucus ebulus viridis",
+   "Sambucus herbacea",
+   "Sambucus humilis",
+   "Sambucus integerrima",
+   "Sambucus loureiroana",
+   "Sambucus nigra",
+   "Sambucus paucijuga",
+   "Viburnum ebulus"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T20:31:01.767Z"
+ },
+ {
   "slug": "sambucus-nigra",
   "gbif_key": 2888728,
   "name": "Sambucus nigra",
@@ -1934,5 +2056,67 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-04T23:39:23.329Z"
+ },
+ {
+  "slug": "veratrum-album",
+  "gbif_key": 2742119,
+  "name": "Veratrum album",
+  "family": "Melanthiaceae",
+  "common_names": {
+   "it": [
+    "Veratro",
+    "Veratro bianco",
+    "Veratro comune",
+    "elleboro bianco",
+    "veratro bianco",
+    "veratro comune"
+   ],
+   "en": [
+    "European white-hellebore",
+    "Giant False-helleborine",
+    "White False Helleborine",
+    "White False-helleborine",
+    "White Hellebore",
+    "white false hellebore",
+    "white veratrum",
+    "white-hellebore"
+   ]
+  },
+  "synonyms": [
+   "Helleborus albus",
+   "Melanthium album",
+   "Melanthium bracteolare",
+   "Melanthium virens",
+   "Veratrum album",
+   "Veratrum album glabrescens",
+   "Veratrum album podolicum",
+   "Veratrum album viridiflorum",
+   "Veratrum album albicans",
+   "Veratrum album misae",
+   "Veratrum album virescens",
+   "Veratrum album albiflorum",
+   "Veratrum album bosniacum",
+   "Veratrum album croaticum",
+   "Veratrum album flavum",
+   "Veratrum album spathulatum",
+   "Veratrum album viride",
+   "Veratrum bosniacum",
+   "Veratrum bosniacum albanicum",
+   "Veratrum croaticum",
+   "Veratrum flavum",
+   "Veratrum lobelianum oppositifolium",
+   "Veratrum lobelianum misae",
+   "Veratrum lobelianum glabrescens",
+   "Veratrum lobelianum obovatum",
+   "Veratrum lobelianum podolicum",
+   "Veratrum misae",
+   "Veratrum parviflorum",
+   "Veratrum polygamum",
+   "Veratrum viride"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T20:30:32.912Z"
  }
 ]

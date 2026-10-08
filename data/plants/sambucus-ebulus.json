@@ -1,0 +1,164 @@
+{
+ "gbif_key": 2888722,
+ "accepted_name": "Sambucus ebulus",
+ "family": "Viburnaceae",
+ "common_names": {
+  "it": [
+   "Sambuco ebbio",
+   "Sambuco lebbio"
+  ],
+  "en": [
+   "Danewort",
+   "Dwarf Elder",
+   "Dwarf elderberry",
+   "danewort",
+   "danewort, dwarf elder",
+   "dwarf elder",
+   "dwarf elderberry"
+  ]
+ },
+ "synonyms": [
+  "Ebulum humile",
+  "Ebulus humile",
+  "Sambucus cochinchinensis",
+  "Sambucus deborensis",
+  "Sambucus ebulus laciniata",
+  "Sambucus ebulus xerophila",
+  "Sambucus ebulus citrina",
+  "Sambucus ebulus deborensis",
+  "Sambucus ebulus humilis",
+  "Sambucus ebulus incarnata",
+  "Sambucus ebulus viridis",
+  "Sambucus herbacea",
+  "Sambucus humilis",
+  "Sambucus integerrima",
+  "Sambucus loureiroana",
+  "Sambucus nigra",
+  "Sambucus paucijuga",
+  "Viburnum ebulus"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T20:31:01.767Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Sambucus_ebulus",
+   "title": "Sambucus ebulus",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Sambucus_ebulus",
+   "title": "Sambucus ebulus",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q158515",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Sambucus_ebulus_bgiu.jpg/960px-Sambucus_ebulus_bgiu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "No machine-readable author provided. Bogdan assumed (based on copyright claims).",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Sambucus_ebulus_bgiu.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "med.active_principles[0]",
+    "err": "vuota",
+    "t": ""
+   },
+   {
+    "path": "med.traditional_uses[0]",
+    "err": "vuota",
+    "t": ""
+   },
+   {
+    "path": "med.traditional_uses[1]",
+    "err": "vuota",
+    "t": ""
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Sambucus ebulus",
+   "s": [
+    "S1",
+    "S2"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "altezza 1-2 m, fusto eretto, non ramificato, foglie opposte, pennate, lunghe 15-30 cm",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "bacino del Mediterraneo, Europa, Asia occidentale, Nord America",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "distribution": {
+    "t": "isola di Madera, Nord Africa, Europa, Asia occidentale",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": null,
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "tutta la pianta è tossica, specialmente le bacche e i semi",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

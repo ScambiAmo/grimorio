@@ -1,0 +1,181 @@
+{
+ "gbif_key": 3802655,
+ "accepted_name": "Atropa belladonna",
+ "family": "Solanaceae",
+ "common_names": {
+  "it": [
+   "Belladonna"
+  ],
+  "en": [
+   "Belladonna",
+   "Deadly Nightshade",
+   "Dwale",
+   "Naughty-man's Cherries",
+   "belladonna",
+   "deadly nightshade",
+   "deadly-nightshade"
+  ]
+ },
+ "synonyms": [
+  "Atropa acuminata",
+  "Atropa paschkewiczii",
+  "Belladonna baccifera",
+  "Belladonna trichotoma"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T20:30:05.515Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Atropa_belladonna",
+   "title": "Atropa belladonna",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Atropa_bella-donna",
+   "title": "Atropa bella-donna",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q156091",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Atropa_belladonna_003.JPG/960px-Atropa_belladonna_003.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "H. Zell",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Atropa_belladonna_003.JPG"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Atropa belladonna è una pianta angiosperma dicotiledone della famiglia delle Solanacee.",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Pianta erbacea e perenne, dotata di un grosso rizoma dal quale si sviluppa un fusto robusto, eretto e ramificato, di altezza compresa tra i 70–150 cm.",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "La belladonna cresce sporadica nelle zone montane e submontane fino ad una altitudine di 1400 metri.",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Allo stato selvatico è presente in Europa, Nord Africa (Marocco e Algeria) e Medio Oriente, fino al Iran.",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "La belladonna fiorisce nel periodo estivo",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Le bacche sono velenose per l'uomo e l'ingestione può provocare una diminuzione della sensibilità, forme di delirio, sete, vomito, seguiti, nei casi più gravi, da convulsioni e morte.",
+     "s": [
+      "S1"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "La pianta può causare avvelenamento se ingerita o toccata.",
+    "s": [
+     "S2"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Atropina",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [
+    {
+     "t": "Disturbi di ritmo tachicardiaco, iperplasia prostatica, glaucoma, edemi polmonari acuti e stenosi meccaniche nel tratto gastrointestinale.",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "interactions": [
+    {
+     "t": "Amplificazione degli effetti anticolinergici di antidepressivi triciclici, amantadina e chinidina.",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Solanum nigrum",
+    "danger": "alta",
+    "claim": {
+     "t": "La belladonna può essere confusa con la Solanum nigrum, una pianta meno velenosa.",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": [
+     {
+      "t": "Le bacche di A. bella-donna sono più grandi e più lucide di quelle di S. nigrum.",
+      "s": [
+       "S2"
+      ]
+     }
+    ]
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

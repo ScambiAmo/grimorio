@@ -1,0 +1,190 @@
+{
+ "gbif_key": 2742119,
+ "accepted_name": "Veratrum album",
+ "family": "Melanthiaceae",
+ "common_names": {
+  "it": [
+   "Veratro",
+   "Veratro bianco",
+   "Veratro comune",
+   "elleboro bianco",
+   "veratro bianco",
+   "veratro comune"
+  ],
+  "en": [
+   "European white-hellebore",
+   "Giant False-helleborine",
+   "White False Helleborine",
+   "White False-helleborine",
+   "White Hellebore",
+   "white false hellebore",
+   "white veratrum",
+   "white-hellebore"
+  ]
+ },
+ "synonyms": [
+  "Helleborus albus",
+  "Melanthium album",
+  "Melanthium bracteolare",
+  "Melanthium virens",
+  "Veratrum album",
+  "Veratrum album glabrescens",
+  "Veratrum album podolicum",
+  "Veratrum album viridiflorum",
+  "Veratrum album albicans",
+  "Veratrum album misae",
+  "Veratrum album virescens",
+  "Veratrum album albiflorum",
+  "Veratrum album bosniacum",
+  "Veratrum album croaticum",
+  "Veratrum album flavum",
+  "Veratrum album spathulatum",
+  "Veratrum album viride",
+  "Veratrum bosniacum",
+  "Veratrum bosniacum albanicum",
+  "Veratrum croaticum",
+  "Veratrum flavum",
+  "Veratrum lobelianum oppositifolium",
+  "Veratrum lobelianum misae",
+  "Veratrum lobelianum glabrescens",
+  "Veratrum lobelianum obovatum",
+  "Veratrum lobelianum podolicum",
+  "Veratrum misae",
+  "Veratrum parviflorum",
+  "Veratrum polygamum",
+  "Veratrum viride"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T20:30:32.912Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Veratrum_album",
+   "title": "Veratrum album",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Veratrum_album",
+   "title": "Veratrum album",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q157547",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Veratrum_album_en_Chartreuse.jpg/960px-Veratrum_album_en_Chartreuse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Patrice78500",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Veratrum_album_en_Chartreuse.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.keys[0]",
+    "err": "citazione_non_trovata",
+    "t": "Veratrum album"
+   },
+   {
+    "path": "lookalikes[2].claim",
+    "err": "citazione_non_trovata",
+    "t": "Il veratro bianco può essere scambiato per l'aglio selvatico (ramps, wild leek)"
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Il veratro bianco è una pianta rizomatosa tossica",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [],
+   "habitat": null,
+   "distribution": {
+    "t": "Europa e parte dell'Asia occidentale",
+    "s": [
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": null,
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Tutte le parti della pianta sono tossiche",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    },
+    {
+     "t": "L'ingestione può causare nausea, vomito, ipotensione, bradicardia",
+     "s": [
+      "S2"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Gentiana lutea",
+    "danger": "alta",
+    "claim": {
+     "t": "Il veratro bianco può essere scambiato per la gentiana lutea",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": []
+   },
+   {
+    "name": "Allium ursinum",
+    "danger": "alta",
+    "claim": {
+     "t": "Il veratro bianco può essere scambiato per l'aglio selvatico",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}
