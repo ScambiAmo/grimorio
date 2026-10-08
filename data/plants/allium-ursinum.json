@@ -1,0 +1,232 @@
+{
+ "gbif_key": 2857601,
+ "accepted_name": "Allium ursinum",
+ "family": "Amaryllidaceae",
+ "common_names": {
+  "it": [
+   "Aglio orsino"
+  ],
+  "en": [
+   "Ramsons",
+   "Wild garlic",
+   "bear garlic",
+   "buckrams",
+   "gypsy onion",
+   "hog garlic",
+   "ramp",
+   "ramps"
+  ]
+ },
+ "synonyms": [
+  "Aglitheis ursina",
+  "Allium latifolium",
+  "Allium longipetiolatum",
+  "Allium nemorale",
+  "Allium petiolatum",
+  "Allium ucrainicum",
+  "Allium ursinoides",
+  "Allium ursinum latifolium",
+  "Allium ursinum ucrainicum",
+  "Allium vincetoxicum",
+  "Cepa ursina",
+  "Geboscon ursinum",
+  "Hylogeton ursinum",
+  "Moly latifolium",
+  "Nectaroscordum ursinum",
+  "Ophioscorodon ursinum"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T01:24:44.592Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Allium_ursinum",
+   "title": "Allium ursinum",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Allium_ursinum",
+   "title": "Allium ursinum",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42792183",
+   "pmid": "42792183",
+   "title": "&lt;i&gt;Allium ursinum&lt;/i&gt; L. as a Source of Natural Antioxidants: Phytochemical Diversity, Biological Effects, and Functional Food Applications.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S5",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42043136",
+   "pmid": "42043136",
+   "title": "Successful Management of Accidental Colchicine Intoxication After Ingestion of &lt;i&gt;Colchicum autumnale&lt;/i&gt;: A Case Report.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q130882",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Daslook_%28Allium_ursinum%29_07-04-2020._%28actm.%29_04.jpg/960px-Daslook_%28Allium_ursinum%29_07-04-2020._%28actm.%29_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Agnes Monkelbaan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Daslook_(Allium_ursinum)_07-04-2020._(actm.)_04.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.keys[0]",
+    "err": "citazione_non_trovata",
+    "t": "La forma biologica appartiene alla geofita bulbosa, piante il cui organo perennante (organo di riserva che vive per più "
+   },
+   {
+    "path": "med.traditional_uses[0]",
+    "err": "claim_sanitario",
+    "t": "Cura depurativa contro eruzioni cutanee."
+   },
+   {
+    "path": "lookalikes[1].features[0]",
+    "err": "citazione_non_trovata",
+    "t": "Le foglie di A. ursinum hanno un odore di aglio."
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Allium ursinum è una pianta bulbosa, erbacea, perenne, appartiene alla famiglia delle Amaryllidaceae.",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [],
+   "habitat": {
+    "t": "I boschi umidi di latifoglie e non in pieno sole, oppure lungo i ruscelli ombreggiati.",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Tutta Europa e nell'Asia settentrionale.",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Aprile - giugno",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Parti tossiche: non specificate",
+     "s": [
+      "S5"
+     ]
+    }
+   ]
+  },
+  "warnings": [
+   {
+    "t": "Non confondere A. ursinum con piante velenose.",
+    "s": [
+     "S2"
+    ]
+   }
+  ],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "Sostanze sulfuriche, polifenoli, vitamine, minerali e pigmenti.",
+     "s": [
+      "S3"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Convallaria majalis",
+    "danger": "mortale",
+    "claim": {
+     "t": "Le foglie di A. ursinum e Arum maculatum possono essere confuse con quelle di Convallaria majalis.",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": [
+     {
+      "t": "Le foglie di A. ursinum sono convex con un solo vena principale.",
+      "s": [
+       "S2"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Colchicum autumnale",
+    "danger": "mortale",
+    "claim": {
+     "t": "Le foglie di A. ursinum possono essere confuse con quelle di Colchicum autumnale.",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": [
+   {
+    "name": "Convallaria majalis",
+    "danger": "mortale",
+    "note": "Le foglie giovani sono confondibili con l'aglio orsino; il mughetto è cardiotossico."
+   },
+   {
+    "name": "Colchicum autumnale",
+    "danger": "mortale",
+    "note": "Le foglie primaverili sono state scambiate per aglio orsino; contiene colchicina."
+   },
+   {
+    "name": "Arum maculatum",
+    "danger": "alta",
+    "note": "Foglie simili; manca l'odore di aglio quando si sfregano."
+   }
+  ]
+ }
+}

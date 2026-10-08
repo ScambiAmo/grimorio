@@ -1,0 +1,160 @@
+{
+ "gbif_key": 3034922,
+ "accepted_name": "Foeniculum vulgare",
+ "family": "Apiaceae",
+ "common_names": {
+  "it": [
+   "Finocchio comune",
+   "finocchio"
+  ],
+  "en": [
+   "Fennel",
+   "Sweet fennel",
+   "aniseed-weed",
+   "fennel",
+   "sweet fennel",
+   "Venkel"
+  ]
+ },
+ "synonyms": [
+  "Anethum panmorium",
+  "Anethum pannorium",
+  "Foeniculum luteum",
+  "Foeniculum sativum",
+  "Meum piperatum",
+  "Meum piperinum",
+  "Tenoria romana"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T01:25:36.826Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Foeniculum_vulgare",
+   "title": "Foeniculum vulgare",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S4",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42112244",
+   "pmid": "42112244",
+   "title": "Anise (&lt;i&gt;Pimpinella anisum&lt;/i&gt;) and fennel (&lt;i&gt;Foeniculum vulgare&lt;/i&gt;) essential oils and their combination as natural and safe housefly (&lt;i&gt;Musca domestica&lt;/i&gt;) ovicides.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q43511",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Foeniculum_vulgare_in_2025.jpg/960px-Foeniculum_vulgare_in_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Elekes Andor",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Foeniculum_vulgare_in_2025.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.keys[0]",
+    "err": "citazione_non_trovata",
+    "t": "Foeniculum vulgare"
+   },
+   {
+    "path": "identification.distribution",
+    "err": "citazione_non_trovata",
+    "t": "Mediterraneo, Etiopia, Nepal occidentale"
+   },
+   {
+    "path": "season.flowering",
+    "err": "citazione_non_trovata",
+    "t": "estate"
+   },
+   {
+    "path": "lookalikes[0]",
+    "err": "nome_non_nel_testo_citato",
+    "t": "anice"
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Il finocchio è una pianta erbacea mediterranea",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [],
+   "habitat": {
+    "t": "bioma temperato",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": null,
+   "season": {
+    "flowering": null,
+    "harvest": {
+     "t": "tutte le stagioni",
+     "s": [
+      "S1"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "tossicità dei semi",
+     "s": [
+      "S4"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "anetolo",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [],
+  "lookalikes_curated": [
+   {
+    "name": "Conium maculatum",
+    "danger": "mortale",
+    "note": "Le ombrellifere giovani si somigliano; la cicuta è mortale."
+   }
+  ]
+ }
+}

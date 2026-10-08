@@ -1,0 +1,232 @@
+{
+ "gbif_key": 9220780,
+ "accepted_name": "Crataegus monogyna",
+ "family": "Rosaceae",
+ "common_names": {
+  "it": [
+   "Biancospino",
+   "Biancospino comune",
+   "biancospino"
+  ],
+  "en": [
+   "English Hawthorn",
+   "English hawthorn",
+   "Hawthorn",
+   "Neapolitan medlar",
+   "Oneseed Hawthorn",
+   "Oneseed hawthorn",
+   "Red Hawthorn",
+   "Singleseed Hawthorn"
+  ]
+ },
+ "synonyms": [
+  "Crataegus aegeica",
+  "Crataegus aguilaris",
+  "Crataegus alemanniensis",
+  "Crataegus alemanniensis microalemanniensis",
+  "Crataegus alemanniensis heterodonta",
+  "Crataegus alemanniensis orientobaltica",
+  "Crataegus alemanniensis subborealis",
+  "Crataegus apiifolia",
+  "Crataegus azarella",
+  "Crataegus azarolus triloba",
+  "Crataegus azarolus glabra",
+  "Crataegus bracteolaris",
+  "Crataegus brevispina",
+  "Crataegus brevispina subinermis",
+  "Crataegus brevispina contracta",
+  "Crataegus brevispina javorkae",
+  "Crataegus brevispina microphylla",
+  "Crataegus bruantii",
+  "Crataegus calycina cuneata",
+  "Crataegus chlorocarpa",
+  "Crataegus cuneata",
+  "Crataegus curvisepala colorata",
+  "Crataegus debeauxii",
+  "Crataegus dissecta",
+  "Crataegus diversifolia",
+  "Crataegus elegans",
+  "Crataegus fissa",
+  "Crataegus floribunda",
+  "Crataegus hirsuta",
+  "Crataegus inermis"
+ ],
+ "safety_tier": "medio",
+ "status": "auto",
+ "is_protected": true,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-08T01:24:04.481Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Crataegus_monogyna",
+   "title": "Crataegus monogyna",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Crataegus_monogyna",
+   "title": "Crataegus monogyna",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S5",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42025193",
+   "pmid": "42025193",
+   "title": "Protective effects of &lt;i&gt;Crataegus monogyna&lt;/i&gt; against cisplatin-induced liver and kidney toxicity in rats.",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q161511",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/%28MHNT%29_Crataegus_monogyna_-_flowers_and_buds.jpg/960px-%28MHNT%29_Crataegus_monogyna_-_flowers_and_buds.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Didier Descouens",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:(MHNT)_Crataegus_monogyna_-_flowers_and_buds.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "identification.keys[0]",
+    "err": "citazione_non_trovata",
+    "t": "Crataegus monogyna"
+   }
+  ],
+  "red_flag": false
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Il biancospino è una pianta officinale",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [],
+   "habitat": {
+    "t": "aree di boscaglia e tra i cespugli, in terreni prevalentemente calcarei",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "Europa, Nordafrica, Asia occidentale",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "aprile-maggio",
+     "s": [
+      "S1"
+     ]
+    },
+    "harvest": {
+     "t": "settembre-ottobre",
+     "s": [
+      "S1"
+     ]
+    }
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Cisplatin può causare danni al fegato e ai reni",
+     "s": [
+      "S5"
+     ]
+    },
+    {
+     "t": "Il trattamento con Crataegus monogyna può alleviare i danni causati dal cisplatin",
+     "s": [
+      "S5"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [
+    {
+     "t": "flavonoidi",
+     "s": [
+      "S1"
+     ]
+    },
+    {
+     "t": "composti triterpenici",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "traditional_uses": [
+    {
+     "t": "antispasmodico e sedativo",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "edible_parts": [
+    {
+     "part": "frutti",
+     "season": "settembre-ottobre",
+     "claim": {
+      "t": "I frutti del biancospino sono edibili e possono essere raccolti tra settembre e ottobre",
+      "s": [
+       "S1"
+      ]
+     }
+    }
+   ],
+   "flavor_profile": [],
+   "preparation_effects": [],
+   "pairings": []
+  },
+  "legal": {
+   "protection": {
+    "t": "In alcune regioni del nord Italia, è stata vietata la commercializzazione e messa a dimora di nuove piante di Biancospino",
+    "s": [
+     "S1"
+    ]
+   }
+  },
+  "lookalikes": [
+   {
+    "name": "Crataegus laevigata",
+    "danger": "bassa",
+    "claim": {
+     "t": "Il biancospino comune si distingue dal Crataegus laevigata per la crescita più eretta e le foglie profondamente lobate",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

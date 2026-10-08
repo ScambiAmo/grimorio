@@ -59,6 +59,49 @@
   "at": "2026-10-06T06:35:53.040Z"
  },
  {
+  "slug": "allium-ursinum",
+  "gbif_key": 2857601,
+  "name": "Allium ursinum",
+  "family": "Amaryllidaceae",
+  "common_names": {
+   "it": [
+    "Aglio orsino"
+   ],
+   "en": [
+    "Ramsons",
+    "Wild garlic",
+    "bear garlic",
+    "buckrams",
+    "gypsy onion",
+    "hog garlic",
+    "ramp",
+    "ramps"
+   ]
+  },
+  "synonyms": [
+   "Aglitheis ursina",
+   "Allium latifolium",
+   "Allium longipetiolatum",
+   "Allium nemorale",
+   "Allium petiolatum",
+   "Allium ucrainicum",
+   "Allium ursinoides",
+   "Allium ursinum latifolium",
+   "Allium ursinum ucrainicum",
+   "Allium vincetoxicum",
+   "Cepa ursina",
+   "Geboscon ursinum",
+   "Hylogeton ursinum",
+   "Moly latifolium",
+   "Nectaroscordum ursinum",
+   "Ophioscorodon ursinum"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T01:24:44.592Z"
+ },
+ {
   "slug": "artemisia-absinthium",
   "gbif_key": 3121319,
   "name": "Artemisia absinthium",
@@ -495,6 +538,65 @@
   "at": "2026-10-05T18:55:01.938Z"
  },
  {
+  "slug": "crataegus-monogyna",
+  "gbif_key": 9220780,
+  "name": "Crataegus monogyna",
+  "family": "Rosaceae",
+  "common_names": {
+   "it": [
+    "Biancospino",
+    "Biancospino comune",
+    "biancospino"
+   ],
+   "en": [
+    "English Hawthorn",
+    "English hawthorn",
+    "Hawthorn",
+    "Neapolitan medlar",
+    "Oneseed Hawthorn",
+    "Oneseed hawthorn",
+    "Red Hawthorn",
+    "Singleseed Hawthorn"
+   ]
+  },
+  "synonyms": [
+   "Crataegus aegeica",
+   "Crataegus aguilaris",
+   "Crataegus alemanniensis",
+   "Crataegus alemanniensis microalemanniensis",
+   "Crataegus alemanniensis heterodonta",
+   "Crataegus alemanniensis orientobaltica",
+   "Crataegus alemanniensis subborealis",
+   "Crataegus apiifolia",
+   "Crataegus azarella",
+   "Crataegus azarolus triloba",
+   "Crataegus azarolus glabra",
+   "Crataegus bracteolaris",
+   "Crataegus brevispina",
+   "Crataegus brevispina subinermis",
+   "Crataegus brevispina contracta",
+   "Crataegus brevispina javorkae",
+   "Crataegus brevispina microphylla",
+   "Crataegus bruantii",
+   "Crataegus calycina cuneata",
+   "Crataegus chlorocarpa",
+   "Crataegus cuneata",
+   "Crataegus curvisepala colorata",
+   "Crataegus debeauxii",
+   "Crataegus dissecta",
+   "Crataegus diversifolia",
+   "Crataegus elegans",
+   "Crataegus fissa",
+   "Crataegus floribunda",
+   "Crataegus hirsuta",
+   "Crataegus inermis"
+  ],
+  "tier": "medio",
+  "status": "auto",
+  "protected": true,
+  "at": "2026-10-08T01:24:04.481Z"
+ },
+ {
   "slug": "daucus-carota",
   "gbif_key": 3034742,
   "name": "Daucus carota",
@@ -535,6 +637,39 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-06T00:26:13.726Z"
+ },
+ {
+  "slug": "foeniculum-vulgare",
+  "gbif_key": 3034922,
+  "name": "Foeniculum vulgare",
+  "family": "Apiaceae",
+  "common_names": {
+   "it": [
+    "Finocchio comune",
+    "finocchio"
+   ],
+   "en": [
+    "Fennel",
+    "Sweet fennel",
+    "aniseed-weed",
+    "fennel",
+    "sweet fennel",
+    "Venkel"
+   ]
+  },
+  "synonyms": [
+   "Anethum panmorium",
+   "Anethum pannorium",
+   "Foeniculum luteum",
+   "Foeniculum sativum",
+   "Meum piperatum",
+   "Meum piperinum",
+   "Tenoria romana"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-08T01:25:36.826Z"
  },
  {
   "slug": "fragaria-vesca",
