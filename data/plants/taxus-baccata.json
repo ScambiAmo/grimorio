@@ -1,0 +1,177 @@
+{
+ "gbif_key": 5284517,
+ "accepted_name": "Taxus baccata",
+ "family": "Taxaceae",
+ "common_names": {
+  "it": [
+   "Tasso comune",
+   "tasso"
+  ],
+  "en": [
+   "Canada yew",
+   "Common Yew",
+   "English yew",
+   "European Yew",
+   "European yew",
+   "Irish Yew",
+   "Yew",
+   "yew"
+  ]
+ },
+ "synonyms": [
+  "? pyramidalis",
+  "Cephalotaxus adpressa",
+  "Cephalotaxus brevifolia",
+  "Cephalotaxus tardiva",
+  "Taxus adpressa",
+  "Taxus adpressa adpressa-stricta",
+  "Taxus aurea",
+  "Taxus baccata aurea",
+  "Taxus baccata dovastoniana",
+  "Taxus baccata elegantissima",
+  "Taxus baccata erecta",
+  "Taxus baccata ericoides",
+  "Taxus baccata expansa",
+  "Taxus baccata glauca",
+  "Taxus baccata linearis",
+  "Taxus baccata lutea",
+  "Taxus baccata pendula",
+  "Taxus baccata pendula-graciosa",
+  "Taxus baccata pyramidalis",
+  "Taxus baccata repandens",
+  "Taxus baccata semperaurea",
+  "Taxus baccata stricta",
+  "Taxus baccata variegata",
+  "Taxus baccata xanthocarpa",
+  "Taxus baccata adpressa-pendula",
+  "Taxus baccata baccata",
+  "Taxus baccata dovastonii",
+  "Taxus baccata elvastonensis",
+  "Taxus baccata eubaccata",
+  "Taxus baccata fasciculata"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": true,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-09T00:33:42.486Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Taxus_baccata",
+   "title": "Taxus baccata",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Taxus_baccata",
+   "title": "Taxus baccata",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S3",
+   "kind": "europepmc",
+   "url": "https://europepmc.org/article/MED/42544073",
+   "pmid": "42544073",
+   "title": "[Volontary poisoning with yew ( Taxus baccata) : a fatal case].",
+   "license": "abstract usato come input, non riprodotto"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q179729",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Taxus_baccata_tree.jpg/960px-Taxus_baccata_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Sitomon",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Taxus_baccata_tree.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Il tasso (Taxus baccata) è un albero velenoso",
+   "s": [
+    "S1",
+    "S2"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Albero o arbusto di color verde scuro",
+     "s": [
+      "S1"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Preferisce i luoghi umidi e freschi, ombrosi, con terreno calcareo",
+    "s": [
+     "S1"
+    ]
+   },
+   "distribution": {
+    "t": "L'areale di questa specie comprende le zone dall'Europa settentrionale al Nordafrica e al Caucaso",
+    "s": [
+     "S1"
+    ]
+   },
+   "season": {
+    "flowering": null,
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "Tutte le parti della pianta tranne l'arillo sono velenose",
+     "s": [
+      "S2"
+     ]
+    },
+    {
+     "t": "La pianta contiene taxine che bloccano i canali del sodio cardiaci",
+     "s": [
+      "S3"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": {
+    "t": "Il tasso è una specie protetta in natura",
+    "s": [
+     "S1"
+    ]
+   }
+  },
+  "lookalikes": [],
+  "lookalikes_curated": []
+ }
+}

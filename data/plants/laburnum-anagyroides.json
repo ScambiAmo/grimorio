@@ -1,0 +1,186 @@
+{
+ "gbif_key": 5356345,
+ "accepted_name": "Laburnum anagyroides",
+ "family": "Fabaceae",
+ "common_names": {
+  "it": [
+   "Avorniello",
+   "Maggiociondolo comune",
+   "maggiociondolo"
+  ],
+  "en": [
+   "Common Laburnum",
+   "Golden Chain",
+   "Golden Rain",
+   "Golden chain tree",
+   "Golden rain tree",
+   "Laburnham",
+   "Laburnum",
+   "common laburnum"
+  ]
+ },
+ "synonyms": [
+  "Cytisus alschingeri",
+  "Cytisus insubricus",
+  "Cytisus jacquinianus",
+  "Cytisus laburnum",
+  "Cytisus laburnum aureum",
+  "Cytisus laburnum alschingeri",
+  "Cytisus laburnum jacquinianus",
+  "Cytisus laburnum linnaeanus",
+  "Cytisus laburnum bullatum",
+  "Cytisus laburnum pendulus",
+  "Cytisus laburnum quercifolium",
+  "Cytisus laburnum serotinus",
+  "Cytisus laburnum sessilifolium",
+  "Cytisus linneanus",
+  "Cytisus penduliflorus",
+  "Cytisus penduliformis",
+  "Cytisus pendulus",
+  "Cytisus weissmannii",
+  "Genista laburnum",
+  "Laburnum alschingeri",
+  "Laburnum anagyroides aureum",
+  "Laburnum anagyroides bullatum",
+  "Laburnum anagyroides chrysophyllum",
+  "Laburnum anagyroides jacquinianum",
+  "Laburnum anagyroides linnaeanum",
+  "Laburnum anagyroides pendulum",
+  "Laburnum anagyroides quercifolium",
+  "Laburnum anagyroides serotinum",
+  "Laburnum anagyroides sessilifolium",
+  "Laburnum anagyroides alschingeri"
+ ],
+ "safety_tier": "alto",
+ "status": "auto",
+ "is_protected": false,
+ "content_license": "CC BY-SA 4.0",
+ "version": 1,
+ "generated_at": "2026-10-09T00:34:09.015Z",
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "sources": [
+  {
+   "key": "S1",
+   "kind": "wikipedia",
+   "url": "https://it.wikipedia.org/wiki/Laburnum_anagyroides",
+   "title": "Laburnum anagyroides",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S2",
+   "kind": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Laburnum_anagyroides",
+   "title": "Laburnum anagyroides",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "key": "S6",
+   "kind": "wikidata",
+   "url": "https://www.wikidata.org/wiki/Q147939",
+   "title": "Wikidata",
+   "license": "CC0"
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Laburnum_anagyroides_ENBLA03.jpg/960px-Laburnum_anagyroides_ENBLA03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "author": "Enrico Blasutto",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Laburnum_anagyroides_ENBLA03.jpg"
+  }
+ ],
+ "auto_checks": {
+  "dropped": [
+   {
+    "path": "med.active_principles[0]",
+    "err": "vuota",
+    "t": ""
+   }
+  ],
+  "red_flag": true
+ },
+ "content": {
+  "schema_version": 4,
+  "summary": {
+   "t": "Il maggiociondolo è un piccolo albero caducifoglio",
+   "s": [
+    "S1"
+   ]
+  },
+  "identification": {
+   "keys": [
+    {
+     "t": "Albero con fiori giallo oro",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    }
+   ],
+   "habitat": {
+    "t": "Terreni calcarei",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "distribution": {
+    "t": "Europa meridionale",
+    "s": [
+     "S1",
+     "S2"
+    ]
+   },
+   "season": {
+    "flowering": {
+     "t": "Maggio",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    },
+    "harvest": null
+   }
+  },
+  "toxicity": {
+   "claims": [
+    {
+     "t": "I frutti sono estremamente velenosi",
+     "s": [
+      "S1",
+      "S2"
+     ]
+    }
+   ]
+  },
+  "warnings": [],
+  "therapeutic_and_medicinal": {
+   "active_principles": [],
+   "traditional_uses": [],
+   "contraindications": [],
+   "interactions": [],
+   "preparations": []
+  },
+  "culinary_uses": {
+   "blocked_by_safety": true
+  },
+  "legal": {
+   "protection": null
+  },
+  "lookalikes": [
+   {
+    "name": "Laburnum alpinum",
+    "danger": "alta",
+    "claim": {
+     "t": "Specie simile",
+     "s": [
+      "S2"
+     ]
+    },
+    "distinguishing_features": []
+   }
+  ],
+  "lookalikes_curated": []
+ }
+}

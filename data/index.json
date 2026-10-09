@@ -1107,6 +1107,65 @@
   "at": "2026-10-04T21:42:58.768Z"
  },
  {
+  "slug": "laburnum-anagyroides",
+  "gbif_key": 5356345,
+  "name": "Laburnum anagyroides",
+  "family": "Fabaceae",
+  "common_names": {
+   "it": [
+    "Avorniello",
+    "Maggiociondolo comune",
+    "maggiociondolo"
+   ],
+   "en": [
+    "Common Laburnum",
+    "Golden Chain",
+    "Golden Rain",
+    "Golden chain tree",
+    "Golden rain tree",
+    "Laburnham",
+    "Laburnum",
+    "common laburnum"
+   ]
+  },
+  "synonyms": [
+   "Cytisus alschingeri",
+   "Cytisus insubricus",
+   "Cytisus jacquinianus",
+   "Cytisus laburnum",
+   "Cytisus laburnum aureum",
+   "Cytisus laburnum alschingeri",
+   "Cytisus laburnum jacquinianus",
+   "Cytisus laburnum linnaeanus",
+   "Cytisus laburnum bullatum",
+   "Cytisus laburnum pendulus",
+   "Cytisus laburnum quercifolium",
+   "Cytisus laburnum serotinus",
+   "Cytisus laburnum sessilifolium",
+   "Cytisus linneanus",
+   "Cytisus penduliflorus",
+   "Cytisus penduliformis",
+   "Cytisus pendulus",
+   "Cytisus weissmannii",
+   "Genista laburnum",
+   "Laburnum alschingeri",
+   "Laburnum anagyroides aureum",
+   "Laburnum anagyroides bullatum",
+   "Laburnum anagyroides chrysophyllum",
+   "Laburnum anagyroides jacquinianum",
+   "Laburnum anagyroides linnaeanum",
+   "Laburnum anagyroides pendulum",
+   "Laburnum anagyroides quercifolium",
+   "Laburnum anagyroides serotinum",
+   "Laburnum anagyroides sessilifolium",
+   "Laburnum anagyroides alschingeri"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": false,
+  "at": "2026-10-09T00:34:09.015Z"
+ },
+ {
   "slug": "malva-sylvestris",
   "gbif_key": 3152374,
   "name": "Malva sylvestris",
@@ -1964,6 +2023,64 @@
   "status": "auto",
   "protected": false,
   "at": "2026-10-05T09:40:42.332Z"
+ },
+ {
+  "slug": "taxus-baccata",
+  "gbif_key": 5284517,
+  "name": "Taxus baccata",
+  "family": "Taxaceae",
+  "common_names": {
+   "it": [
+    "Tasso comune",
+    "tasso"
+   ],
+   "en": [
+    "Canada yew",
+    "Common Yew",
+    "English yew",
+    "European Yew",
+    "European yew",
+    "Irish Yew",
+    "Yew",
+    "yew"
+   ]
+  },
+  "synonyms": [
+   "? pyramidalis",
+   "Cephalotaxus adpressa",
+   "Cephalotaxus brevifolia",
+   "Cephalotaxus tardiva",
+   "Taxus adpressa",
+   "Taxus adpressa adpressa-stricta",
+   "Taxus aurea",
+   "Taxus baccata aurea",
+   "Taxus baccata dovastoniana",
+   "Taxus baccata elegantissima",
+   "Taxus baccata erecta",
+   "Taxus baccata ericoides",
+   "Taxus baccata expansa",
+   "Taxus baccata glauca",
+   "Taxus baccata linearis",
+   "Taxus baccata lutea",
+   "Taxus baccata pendula",
+   "Taxus baccata pendula-graciosa",
+   "Taxus baccata pyramidalis",
+   "Taxus baccata repandens",
+   "Taxus baccata semperaurea",
+   "Taxus baccata stricta",
+   "Taxus baccata variegata",
+   "Taxus baccata xanthocarpa",
+   "Taxus baccata adpressa-pendula",
+   "Taxus baccata baccata",
+   "Taxus baccata dovastonii",
+   "Taxus baccata elvastonensis",
+   "Taxus baccata eubaccata",
+   "Taxus baccata fasciculata"
+  ],
+  "tier": "alto",
+  "status": "auto",
+  "protected": true,
+  "at": "2026-10-09T00:33:42.486Z"
  },
  {
   "slug": "thymus-vulgaris",
